@@ -8,5 +8,18 @@
     <artifactId>mercurius-comics-shop</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- Properties -->
+    <properties>
+        <mercurius.version>0.0.1-SNAPSHOT</mercurius.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.mercuriusframework</groupId>
+            <artifactId>mercurius-core</artifactId>
+            <version>${mercurius.version}</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
