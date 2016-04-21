@@ -1,39 +1,35 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
+<!--
+Material Design Lite
+Copyright 2015 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License
+-->
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Index page</title>
+    <title>Android</title>
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="/resources/images/android-desktop.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="/resources/images/ios-desktop.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="/resources/images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <link rel="shortcut icon" href="/resources/images/favicon.png">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/resources/css/material.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.min.css">
     <link rel="stylesheet" href="/resources/css/styles.css">
     <style>
         #view-source {
@@ -48,239 +44,288 @@
     </style>
 </head>
 <body>
-<div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-    <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-        <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title">Home</span>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-            <div class="mdl-layout-spacer"></div>
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-                <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="/resources/images/android-logo.png">
+          </span>
+            <!-- Add spacer, to align navigation to the right in desktop -->
+            <div class="android-header-spacer mdl-layout-spacer"></div>
+            <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
                     <i class="material-icons">search</i>
                 </label>
-
                 <div class="mdl-textfield__expandable-holder">
-                    <input class="mdl-textfield__input" type="text" id="search">
-                    <label class="mdl-textfield__label" for="search">Enter your query...</label>
+                    <input class="mdl-textfield__input" type="text" id="search-field">
                 </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <!-- Navigation -->
+            <div class="android-navigation-container">
+                <nav class="android-navigation mdl-navigation">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+                </nav>
+            </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="/resources/images/android-logo.png">
+          </span>
+            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
                 <i class="material-icons">more_vert</i>
             </button>
-            <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-                <li class="mdl-menu__item">About</li>
-                <li class="mdl-menu__item">Contact</li>
-                <li class="mdl-menu__item">Legal information</li>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+                <li class="mdl-menu__item">5.0 Lollipop</li>
+                <li class="mdl-menu__item">4.4 KitKat</li>
+                <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+                <li class="mdl-menu__item">Android History</li>
             </ul>
         </div>
-    </header>
-    <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-        <header class="demo-drawer-header">
-            <img src="/resources/images/user.jpg" class="demo-avatar">
+    </div>
 
-            <div class="demo-avatar-dropdown">
-                <span>hello@example.com</span>
-
-                <div class="mdl-layout-spacer"></div>
-                <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                    <i class="material-icons" role="presentation">arrow_drop_down</i>
-                    <span class="visuallyhidden">Accounts</span>
-                </button>
-                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-                    <li class="mdl-menu__item">hello@example.com</li>
-                    <li class="mdl-menu__item">info@example.com</li>
-                    <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
-                </ul>
-            </div>
-        </header>
-        <%-- Categories --%>
-        <nav class="demo-navigation mdl-navigation mdl-color--light-blue-800">
-            <c:forEach var="category" items="${categories}">
-                <a class="mdl-navigation__link mdl-color-text--white" href="<c:url value="/catalog/${category.code}"/>">
-                    <%--<i class="mdl-color-text--white material-icons" role="presentation">inbox</i>--%>
-                    <c:out value="${category.name}"/>
-                </a>
-            </c:forEach>
+    <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="/resources/images/android-logo-white.png">
+        </span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Phones</a>
+            <a class="mdl-navigation__link" href="">Tablets</a>
+            <a class="mdl-navigation__link" href="">Wear</a>
+            <a class="mdl-navigation__link" href="">TV</a>
+            <a class="mdl-navigation__link" href="">Auto</a>
+            <a class="mdl-navigation__link" href="">One</a>
+            <a class="mdl-navigation__link" href="">Play</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">Versions</span>
+            <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+            <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+            <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+            <a class="mdl-navigation__link" href="">Android history</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">Resources</span>
+            <a class="mdl-navigation__link" href="">Official blog</a>
+            <a class="mdl-navigation__link" href="">Android on Google+</a>
+            <a class="mdl-navigation__link" href="">Android on Twitter</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">For developers</span>
+            <a class="mdl-navigation__link" href="">App developer resources</a>
+            <a class="mdl-navigation__link" href="">Android Open Source Project</a>
+            <a class="mdl-navigation__link" href="">Android SDK</a>
         </nav>
     </div>
-    <main class="mdl-layout__content mdl-color--grey-100">
-        <div class="mdl-grid demo-content">
-            <%-- Banners --%>
-            <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-                <a href="<c:url value="/product/000100"/>" style="width: 100%;">
-                    <img src="/resources/images/banner.png" width="100%">
-                </a>
-            </div>
-                <div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-                    <h2 class="mdl-color-text--blue-grey-900" style="width: 100%; text-align: center">Top sales</h2>
-                </div>
-            <%-- Top sales --%>
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol01.jpg"); background-size:100%;'>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-navigation__link" href="<c:url value="/product/0001001"/>">
-                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 01</span>
-                        </a>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border" style="text-align: right" >
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-                            Add to cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol02.jpg"); background-size:100%;'>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-navigation__link" href="<c:url value="/product/000100"/>">
-                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 02</span>
-                        </a>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-                            Add to cart
-                        </button>
-                    </div>
-                </div>
+
+    <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+            <div class="logo-font android-slogan">be together. not the same.</div>
+            <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
+            <div class="logo-font android-create-character">
+                <a href=""><img src="/resources/images/andy.png"> create your android character</a>
             </div>
 
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol03.jpg"); background-size:100%;'>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-navigation__link" href="<c:url value="/product/000103"/>">
-                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 03</span>
-                        </a>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-                            Add to cart
-                        </button>
-                    </div>
+            <a href="#screens">
+                <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                    <i class="material-icons">expand_more</i>
+                </button>
+            </a>
+        </div>
+        <div class="android-screen-section mdl-typography--text-center">
+            <a name="screens"></a>
+            <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
+            <div class="android-screens">
+                <div class="android-wear android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="/resources/images/wear-silver-on.png">
+                        <img class="android-screen-image" src="/resources/images/wear-black-on.png">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+                </div>
+                <div class="android-phone android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="/resourcesimages/nexus6-on.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+                </div>
+                <div class="android-tablet android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="/resources/images/nexus9-on.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+                </div>
+                <div class="android-tv android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="/resources/images/tv-on.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+                </div>
+                <div class="android-auto android-screen">
+                    <a class="android-image-link" href="">
+                        <img class="android-screen-image" src="/resources/images/auto-on.jpg">
+                    </a>
+                    <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
                 </div>
             </div>
-
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol04.jpg"); background-size:100%;'>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-navigation__link" href="<c:url value="/product/000104"/>">
-                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 04</span>
+        </div>
+        <div class="android-wear-section">
+            <div class="android-wear-band">
+                <div class="android-wear-band-text">
+                    <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+                    <p class="mdl-typography--headline mdl-typography--font-thin">
+                        Android works perfectly with your favourite apps like Google Maps,
+                        Calendar and YouTube.
+                    </p>
+                    <p>
+                        <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                            See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
                         </a>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-                            Add to cart
-                        </button>
-                    </div>
+                    </p>
                 </div>
             </div>
-
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol05.jpg"); background-size:100%;'>
+        </div>
+        <div class="android-customized-section">
+            <div class="android-customized-section-text">
+                <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+                <p class="mdl-typography--font-light">
+                    Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+                    <br>
+                    <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+                </p>
+            </div>
+            <div class="android-customized-section-image"></div>
+        </div>
+        <div class="android-more-section">
+            <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+            <div class="android-card-container mdl-grid">
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="/resources/images/more-from-1.png">
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-navigation__link" href="<c:url value="/product/000105"/>">
-                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 05</span>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Get going on Android</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                            Make the switch
+                            <i class="material-icons">chevron_right</i>
                         </a>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border"style="text-align: right" >
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-                            Add to cart
-                        </button>
                     </div>
                 </div>
-            </div>
 
-            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol06.jpg"); background-size:100%;'>
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="/resources/images/more-from-4.png">
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-navigation__link" href="<c:url value="/product/000100"/>">
-                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 06</span>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Create your own Android character</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                            androidify.com
+                            <i class="material-icons">chevron_right</i>
                         </a>
                     </div>
-                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-                            Add to cart
-                        </button>
+                </div>
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="/resources/images/more-from-2.png">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                            Download now
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="/resources/images/more-from-3.png">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h4 class="mdl-card__title-text">Millions to choose from</h4>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                            Find apps
+                            <i class="material-icons">chevron_right</i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+
+        <footer class="android-footer mdl-mega-footer">
+            <div class="mdl-mega-footer--top-section">
+                <div class="mdl-mega-footer--left-section">
+                    <button class="mdl-mega-footer--social-btn"></button>
+                    &nbsp;
+                    <button class="mdl-mega-footer--social-btn"></button>
+                    &nbsp;
+                    <button class="mdl-mega-footer--social-btn"></button>
+                </div>
+                <div class="mdl-mega-footer--right-section">
+                    <a class="mdl-typography--font-light" href="#top">
+                        Back to Top
+                        <i class="material-icons">expand_less</i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mdl-mega-footer--middle-section">
+                <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
+                <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+            </div>
+
+            <div class="mdl-mega-footer--bottom-section">
+                <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+                    Versions
+                    <i class="material-icons">arrow_drop_up</i>
+                </a>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+                    <li class="mdl-menu__item">5.0 Lollipop</li>
+                    <li class="mdl-menu__item">4.4 KitKat</li>
+                    <li class="mdl-menu__item">4.3 Jelly Bean</li>
+                    <li class="mdl-menu__item">Android History</li>
+                </ul>
+                <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+                    For Developers
+                    <i class="material-icons">arrow_drop_up</i>
+                </a>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+                    <li class="mdl-menu__item">App developer resources</li>
+                    <li class="mdl-menu__item">Android Open Source Project</li>
+                    <li class="mdl-menu__item">Android SDK</li>
+                    <li class="mdl-menu__item">Android for Work</li>
+                </ul>
+                <a class="android-link mdl-typography--font-light" href="">Blog</a>
+                <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+            </div>
+
+        </footer>
+    </div>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-     style="position: fixed; left: -1000px; height: -1000px;">
-    <defs>
-        <mask id="piemask" maskContentUnits="objectBoundingBox">
-            <circle cx=0.5 cy=0.5 r=0.49 fill="white"/>
-            <circle cx=0.5 cy=0.5 r=0.40 fill="black"/>
-        </mask>
-        <g id="piechart">
-            <circle cx=0.5 cy=0.5 r=0.5/>
-                <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)"/>
-        </g>
-    </defs>
-</svg>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250"
-     style="position: fixed; left: -1000px; height: -1000px;">
-    <defs>
-        <g id="chart">
-            <g id="Gridlines">
-                <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3"/>
-                <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7"/>
-                <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3"/>
-                <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7"/>
-                <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3"/>
-            </g>
-            <g id="Numbers">
-                <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500
-                </text>
-                <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
-                <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300
-                </text>
-                <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
-                <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100
-                </text>
-                <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1
-                </text>
-                <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2
-                </text>
-                <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">
-                    3
-                </text>
-                <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">
-                    4
-                </text>
-                <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5
-                </text>
-                <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">
-                    6
-                </text>
-                <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">
-                    7
-                </text>
-            </g>
-            <g id="Layer_5">
-                <polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5
-              294.5,80.5 380,165.2 437,75.5 469.5,223.3 	"/>
-            </g>
-            <g id="Layer_4">
-                <polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
-              296.7,128 380.7,184.3 436.7,125 	"/>
-            </g>
-        </g>
-    </defs>
-</svg>
-<script src="/resources/js/material.min.js"></script>
+<a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 </body>
 </html>
