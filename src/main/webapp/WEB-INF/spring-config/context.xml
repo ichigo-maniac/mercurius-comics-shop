@@ -14,5 +14,7 @@
     <context:component-scan base-package="org.mercuriusframework, net.sample.comics.shop"/>
     <context:annotation-config/>
     <mvc:annotation-driven/>
+    <!-- Resources Mapping -->
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 
 </beans>
