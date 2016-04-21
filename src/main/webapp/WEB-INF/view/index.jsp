@@ -111,6 +111,9 @@
                     <img src="/resources/images/banner.png" width="100%">
                 </a>
             </div>
+                <div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+                    <h2 class="mdl-color-text--blue-grey-900" style="width: 100%; text-align: center">Top sales</h2>
+                </div>
             <%-- Top sales --%>
             <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
                 <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
