@@ -1,3 +1,5 @@
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
+    <title>Index page</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -91,124 +93,122 @@
                 </ul>
             </div>
         </header>
-        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">home</i>Home</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">inbox</i>Inbox</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">delete</i>Trash</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">report</i>Spam</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">forum</i>Forums</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">flag</i>Updates</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">local_offer</i>Promos</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">shopping_cart</i>Purchases</a>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">people</i>Social</a>
-
-            <div class="mdl-layout-spacer"></div>
-            <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons"
-                                                       role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+        <%-- Categories --%>
+        <nav class="demo-navigation mdl-navigation mdl-color--light-blue-800">
+            <c:forEach var="category" items="${categories}">
+                <a class="mdl-navigation__link mdl-color-text--white" href="<c:url value="/catalog/${category.code}"/>">
+                    <%--<i class="mdl-color-text--white material-icons" role="presentation">inbox</i>--%>
+                    <c:out value="${category.name}"/>
+                </a>
+            </c:forEach>
         </nav>
     </div>
     <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
+            <%-- Banners --%>
             <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
-                     class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-                    <use xlink:href="#piechart" mask="url(#piemask)"/>
-                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle"
-                          dy="0.1">82
-                        <tspan font-size="0.2" dy="-0.07">%</tspan>
-                    </text>
-                </svg>
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
-                     class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-                    <use xlink:href="#piechart" mask="url(#piemask)"/>
-                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle"
-                          dy="0.1">82
-                        <tspan dy="-0.07" font-size="0.2">%</tspan>
-                    </text>
-                </svg>
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
-                     class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-                    <use xlink:href="#piechart" mask="url(#piemask)"/>
-                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle"
-                          dy="0.1">82
-                        <tspan dy="-0.07" font-size="0.2">%</tspan>
-                    </text>
-                </svg>
-                <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1"
-                     class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-                    <use xlink:href="#piechart" mask="url(#piemask)"/>
-                    <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle"
-                          dy="0.1">82
-                        <tspan dy="-0.07" font-size="0.2">%</tspan>
-                    </text>
-                </svg>
+                <a href="<c:url value="/product/000100"/>" style="width: 100%;">
+                    <img src="/resources/images/banner.png" width="100%">
+                </a>
             </div>
-            <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
-                <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-                    <use xlink:href="#chart"/>
-                </svg>
-                <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-                    <use xlink:href="#chart"/>
-                </svg>
+            <%-- Top sales --%>
+            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol01.jpg"); background-size:100%;'>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-navigation__link" href="<c:url value="/product/0001001"/>">
+                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 01</span>
+                        </a>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border" style="text-align: right" >
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
                 <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                        <h2 class="mdl-card__title-text">Updates</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                        Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol02.jpg"); background-size:100%;'>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
+                        <a class="mdl-navigation__link" href="<c:url value="/product/000100"/>">
+                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 02</span>
+                        </a>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
-                <div class="demo-separator mdl-cell--1-col"></div>
-                <div class="demo-options mdl-card mdl-color--deep-purple-500 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
-                    <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
-                        <h3>View options</h3>
-                        <ul>
-                            <li>
-                                <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                    <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label">Click per object</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label for="chkbox2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                    <input type="checkbox" id="chkbox2" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label">Views per object</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label for="chkbox3" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                    <input type="checkbox" id="chkbox3" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label">Objects selected</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label for="chkbox4" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                                    <input type="checkbox" id="chkbox4" class="mdl-checkbox__input">
-                                    <span class="mdl-checkbox__label">Objects viewed</span>
-                                </label>
-                            </li>
-                        </ul>
+            </div>
+
+            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol03.jpg"); background-size:100%;'>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Change
-                            location</a>
+                        <a class="mdl-navigation__link" href="<c:url value="/product/000103"/>">
+                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 03</span>
+                        </a>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-                        <div class="mdl-layout-spacer"></div>
-                        <i class="material-icons">location_on</i>
+            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol04.jpg"); background-size:100%;'>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-navigation__link" href="<c:url value="/product/000104"/>">
+                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 04</span>
+                        </a>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol05.jpg"); background-size:100%;'>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-navigation__link" href="<c:url value="/product/000105"/>">
+                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 05</span>
+                        </a>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border"style="text-align: right" >
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+                <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+                    <div class="mdl-card__title mdl-card--expand mdl-color--teal-300" style='background: url("/resources/images/books/vol06.jpg"); background-size:100%;'>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-navigation__link" href="<c:url value="/product/000100"/>">
+                            <span class="mdl-color-text--blue- mdl-card__supporting-text mdl-color-text--blue-900" style="font-size: 120%; font-weight: bold;">Attack on titans vol. 06</span>
+                        </a>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border" style="text-align: right">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@
         </mask>
         <g id="piechart">
             <circle cx=0.5 cy=0.5 r=0.5/>
-            <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)"/>
+                <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)"/>
         </g>
     </defs>
 </svg>
