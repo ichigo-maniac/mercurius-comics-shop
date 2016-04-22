@@ -29,7 +29,7 @@ limitations under the License
     <!-- Page styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.min.css">
+    <link rel="stylesheet" href="/resources/css/material.min.css">
     <link rel="stylesheet" href="/resources/css/styles.css">
     <style>
         #view-source {
@@ -102,86 +102,110 @@ limitations under the License
         <%-- Banner --%>
         <div class="android-customized-section">
             <div class="android-customized-section-text">
-                <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Attack on titan vol. 02</div>
+                <h3 style="margin: 0px;"><a href="<c:url value="/product/000100"/>">Attack on titan vol. 06</a></h3>
                 <p class="mdl-typography--font-light">
-                    Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+                    A new book on the market. Meet the continuation of a series "Attack on titans".
                 </p>
             </div>
             <div class="android-customized-section-image"></div>
         </div>
         <%-- Top sales --%>
         <div class="android-more-section">
-            <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+            <div class="android-section-title mdl-typography--display-1-color-contrast">New merchandise</div>
             <div class="android-card-container mdl-grid">
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                     <div class="mdl-card__media">
-                        <img src="/resources/images/more-from-1.png">
+                        <img src="/resources/images/books/vol01.jpg">
                     </div>
-                    <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Get going on Android</h4>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
-                    </div>
-                    <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                            Make the switch
-                            <i class="material-icons">chevron_right</i>
-                        </a>
+                    <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 01</a></h5>
+                    </div><br>
+                    <div class="mdl-card__actions" style="text-align: right">
+                        <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
+                        &nbsp;&#0183;&nbsp
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--blue-700">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
 
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                     <div class="mdl-card__media">
-                        <img src="/resources/images/more-from-4.png">
+                        <img src="/resources/images/books/vol02.jpg">
                     </div>
-                    <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Create your own Android character</h4>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
-                    </div>
-                    <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                            androidify.com
-                            <i class="material-icons">chevron_right</i>
-                        </a>
+                    <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 02</a></h5>
+                    </div><br>
+                    <div class="mdl-card__actions" style="text-align: right">
+                        <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
+                        &nbsp;&#0183;&nbsp
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--blue-700">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
 
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                     <div class="mdl-card__media">
-                        <img src="/resources/images/more-from-2.png">
+                        <img src="/resources/images/books/vol03.jpg">
                     </div>
-                    <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-                    </div>
-                    <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                            Download now
-                            <i class="material-icons">chevron_right</i>
-                        </a>
+                    <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 03</a></h5>
+                    </div><br>
+                    <div class="mdl-card__actions" style="text-align: right">
+                        <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
+                        &nbsp;&#0183;&nbsp
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--blue-700">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
 
-                <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                     <div class="mdl-card__media">
-                        <img src="/resources/images/more-from-3.png">
+                        <img src="/resources/images/books/vol04.jpg">
                     </div>
-                    <div class="mdl-card__title">
-                        <h4 class="mdl-card__title-text">Millions to choose from</h4>
+                    <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 04</a></h5>
+                    </div><br>
+                    <div class="mdl-card__actions" style="text-align: right">
+                        <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
+                        &nbsp;&#0183;&nbsp
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--blue-700">
+                            Add to cart
+                        </button>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+                </div>
+
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="/resources/images/books/vol05.jpg">
                     </div>
-                    <div class="mdl-card__actions">
-                        <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                            Find apps
-                            <i class="material-icons">chevron_right</i>
-                        </a>
+                    <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 05</a></h5>
+                    </div><br>
+                    <div class="mdl-card__actions" style="text-align: right">
+                        <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
+                        &nbsp;&#0183;&nbsp
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--blue-700">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                    <div class="mdl-card__media">
+                        <img src="/resources/images/books/vol06.jpg">
+                    </div>
+                    <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 06</a></h5>
+                    </div><br>
+                    <div class="mdl-card__actions" style="text-align: right">
+                        <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
+                        &nbsp;&#0183;&nbsp
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--blue-700">
+                            Add to cart
+                        </button>
                     </div>
                 </div>
             </div>
@@ -189,6 +213,6 @@ limitations under the License
     </div>
 </div>
 <%-- Javascript libraries --%>
-<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<script src="/resources/js/material.min.js"></script>
 </body>
 </html>
