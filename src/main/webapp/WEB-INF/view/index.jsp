@@ -27,7 +27,8 @@ limitations under the License
     <title>Android</title>
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/resources/css/material.min.css">
     <link rel="stylesheet" href="/resources/css/styles.css">
@@ -57,6 +58,7 @@ limitations under the License
                 <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
                     <i class="material-icons">search</i>
                 </label>
+
                 <div class="mdl-textfield__expandable-holder">
                     <input class="mdl-textfield__input" type="text" id="search-field">
                 </div>
@@ -64,24 +66,26 @@ limitations under the License
             <!-- Navigation -->
             <div class="android-navigation-container">
                 <nav class="android-navigation mdl-navigation">
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Catalog</a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/cart"/>"><span class="mdl-badge" data-badge="0">Cart</span></a>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About us</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/catalog"/>">Catalog</a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/cart"/>"><span
+                            class="mdl-badge" data-badge="0">Cart</span></a>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/about_us"/>">About us</a>
                 </nav>
             </div>
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="/resources/images/android-logo.png">
-          </span>
-            <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-                <i class="material-icons">more_vert</i>
-                Catalog
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-                <li class="mdl-menu__item">5.0 Lollipop</li>
-                <li class="mdl-menu__item">4.4 KitKat</li>
-                <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-                <li class="mdl-menu__item">Android History</li>
-            </ul>
+          <%--<span class="android-mobile-title mdl-layout-title">--%>
+            <%--<img class="android-logo-image" src="/resources/images/android-logo.png">--%>
+          <%--</span>--%>
+            <%--<button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"--%>
+                    <%--id="more-button">--%>
+                <%--<i class="material-icons">more_vert</i>--%>
+                <%--Catalog--%>
+            <%--</button>--%>
+            <%--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">--%>
+                <%--<li class="mdl-menu__item">5.0 Lollipop</li>--%>
+                <%--<li class="mdl-menu__item">4.4 KitKat</li>--%>
+                <%--<li disabled class="mdl-menu__item">4.3 Jelly Bean</li>--%>
+                <%--<li class="mdl-menu__item">Android History</li>--%>
+            <%--</ul>--%>
         </div>
     </div>
 
@@ -92,10 +96,12 @@ limitations under the License
         </span>
         <nav class="mdl-navigation">
             <c:forEach var="category" items="${categories}">
-                <a class="mdl-navigation__link" href="<c:url value="/category/${category.code}"/>"><c:out value="${category.name}"/></a>
+                <a class="mdl-navigation__link" href="<c:url value="/category/${category.code}"/>"><c:out
+                        value="${category.name}"/></a>
             </c:forEach>
         </nav>
     </div>
+
     <%-- Main container --%>
     <div class="android-content mdl-layout__content">
         <a name="top"></a>
@@ -103,6 +109,7 @@ limitations under the License
         <div class="android-customized-section">
             <div class="android-customized-section-text">
                 <h3 style="margin: 0px;"><a href="<c:url value="/product/000100"/>">Attack on titan vol. 06</a></h3>
+
                 <p class="mdl-typography--font-light">
                     A new book on the market. Meet the continuation of a series "Attack on titans".
                 </p>
@@ -118,8 +125,11 @@ limitations under the License
                         <img src="/resources/images/books/vol01.jpg">
                     </div>
                     <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
-                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 01</a></h5>
-                    </div><br>
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan
+                            vol. 01</a></h5>
+                    </div>
+                    <br>
+
                     <div class="mdl-card__actions" style="text-align: right">
                         <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
                         &nbsp;&#0183;&nbsp
@@ -134,8 +144,11 @@ limitations under the License
                         <img src="/resources/images/books/vol02.jpg">
                     </div>
                     <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
-                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 02</a></h5>
-                    </div><br>
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan
+                            vol. 02</a></h5>
+                    </div>
+                    <br>
+
                     <div class="mdl-card__actions" style="text-align: right">
                         <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
                         &nbsp;&#0183;&nbsp
@@ -150,8 +163,11 @@ limitations under the License
                         <img src="/resources/images/books/vol03.jpg">
                     </div>
                     <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
-                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 03</a></h5>
-                    </div><br>
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan
+                            vol. 03</a></h5>
+                    </div>
+                    <br>
+
                     <div class="mdl-card__actions" style="text-align: right">
                         <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
                         &nbsp;&#0183;&nbsp
@@ -166,8 +182,11 @@ limitations under the License
                         <img src="/resources/images/books/vol04.jpg">
                     </div>
                     <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
-                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 04</a></h5>
-                    </div><br>
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan
+                            vol. 04</a></h5>
+                    </div>
+                    <br>
+
                     <div class="mdl-card__actions" style="text-align: right">
                         <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
                         &nbsp;&#0183;&nbsp
@@ -182,8 +201,11 @@ limitations under the License
                         <img src="/resources/images/books/vol05.jpg">
                     </div>
                     <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
-                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 05</a></h5>
-                    </div><br>
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan
+                            vol. 05</a></h5>
+                    </div>
+                    <br>
+
                     <div class="mdl-card__actions" style="text-align: right">
                         <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
                         &nbsp;&#0183;&nbsp
@@ -198,8 +220,11 @@ limitations under the License
                         <img src="/resources/images/books/vol06.jpg">
                     </div>
                     <div class="mdl-card__title" style="padding-top: 0px; padding-bottom: 25px;">
-                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan vol. 06</a></h5>
-                    </div><br>
+                        <h5 class="mdl-color-text--blue-900"><a href="<c:url value="/product/00000"/>">Attack on titan
+                            vol. 06</a></h5>
+                    </div>
+                    <br>
+
                     <div class="mdl-card__actions" style="text-align: right">
                         <span class="mdl-color-text--green-900 mdl-typography--font-bold">300 RUB</span>
                         &nbsp;&#0183;&nbsp
