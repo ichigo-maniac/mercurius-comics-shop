@@ -24,7 +24,7 @@ limitations under the License
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Android</title>
+    <title>Index page</title>
 
     <!-- Page styles -->
     <link rel="stylesheet"
@@ -72,20 +72,6 @@ limitations under the License
                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/about_us"/>">About us</a>
                 </nav>
             </div>
-          <%--<span class="android-mobile-title mdl-layout-title">--%>
-            <%--<img class="android-logo-image" src="/resources/images/android-logo.png">--%>
-          <%--</span>--%>
-            <%--<button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"--%>
-                    <%--id="more-button">--%>
-                <%--<i class="material-icons">more_vert</i>--%>
-                <%--Catalog--%>
-            <%--</button>--%>
-            <%--<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">--%>
-                <%--<li class="mdl-menu__item">5.0 Lollipop</li>--%>
-                <%--<li class="mdl-menu__item">4.4 KitKat</li>--%>
-                <%--<li disabled class="mdl-menu__item">4.3 Jelly Bean</li>--%>
-                <%--<li class="mdl-menu__item">Android History</li>--%>
-            <%--</ul>--%>
         </div>
     </div>
 
