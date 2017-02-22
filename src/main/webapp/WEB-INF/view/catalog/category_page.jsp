@@ -79,6 +79,100 @@
                             </c:choose>
                         </c:forEach>
                     </ol>
+                    <%-- Products --%>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="/resources/app/images/dummy/sao1.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4><a href="">Sword Art Online vol. 01 (ranobe)</a></h4>
+                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
+                                </div>
+                                <div class="col-md-3" style="text-align: center">
+                                    <h4>500 RUB</h4>
+                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body" style="border-top: 1px solid lightgray">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="/resources/app/images/dummy/sao2.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4><a href="">Sword Art Online vol. 02 (ranobe)</a></h4>
+                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
+                                </div>
+                                <div class="col-md-3" style="text-align: center">
+                                    <h4>500 RUB</h4>
+                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body" style="border-top: 1px solid lightgray">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="/resources/app/images/dummy/sao3.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4><a href="">Sword Art Online vol. 03 (ranobe)</a></h4>
+                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
+                                </div>
+                                <div class="col-md-3" style="text-align: center">
+                                    <h4>500 RUB</h4>
+                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body" style="border-top: 1px solid lightgray">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="/resources/app/images/dummy/sao4.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4><a href="">Sword Art Online vol. 04 (ranobe)</a></h4>
+                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
+                                </div>
+                                <div class="col-md-3" style="text-align: center">
+                                    <h4>500 RUB</h4>
+                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body" style="border-top: 1px solid lightgray">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="/resources/app/images/dummy/sao5.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4><a href="">Sword Art Online vol. 05 (ranobe)</a></h4>
+                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
+                                </div>
+                                <div class="col-md-3" style="text-align: center">
+                                    <h4>500 RUB</h4>
+                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body" style="border-top: 1px solid lightgray">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="/resources/app/images/dummy/sao6.jpg" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-7">
+                                    <h4><a href="">Sword Art Online vol. 06 (ranobe)</a></h4>
+                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
+                                </div>
+                                <div class="col-md-3" style="text-align: center">
+                                    <h4>500 RUB</h4>
+                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
