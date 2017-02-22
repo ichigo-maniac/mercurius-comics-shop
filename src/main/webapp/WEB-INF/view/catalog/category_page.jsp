@@ -11,12 +11,12 @@
     <%-- Toolbar --%>
     <jsp:include page="/WEB-INF/view/common/toolbar.jsp"/>
     <%-- Main container --%>
-    <div class="android-content mdl-layout__content">
+    <div class="mercurius-content mdl-layout__content">
         <a name="top"></a>
         <%-- Top sales --%>
-        <div class="android-more-section">
+        <div class="mercurius-more-section">
             <%-- Catalog --%>
-            <div class="android-card-container mdl-grid">
+            <div class="mercurius-card-container mdl-grid">
                 <%-- Categories and filters--%>
                 <div class="col-xs-6 col-md-4">
                     <c:if test="${not empty categories}">

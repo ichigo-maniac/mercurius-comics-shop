@@ -11,12 +11,12 @@
     <%-- Toolbar --%>
     <jsp:include page="/WEB-INF/view/common/toolbar.jsp"/>
     <%-- Main container --%>
-    <div class="android-content mdl-layout__content">
+    <div class="mercurius-content mdl-layout__content">
         <a name="top"></a>
 
-        <div class="android-more-section">
+        <div class="mercurius-more-section">
             <%-- Catalog --%>
-            <div class="android-card-container mdl-grid">
+            <div class="mercurius-card-container mdl-grid">
                 <%-- Categories --%>
                 <div class="col-xs-6 col-md-4">
                     <ul class="list-group">
@@ -34,7 +34,7 @@
                 </div>
                 <%-- Products --%>
                 <div class="col-xs-12 col-md-8">
-                    <img src="/resources/app/images/banner.png" alt="..." class="img-thumbnail">
+                    <img src="/resources/app/images/banner.png" class="img-thumbnail">
                 </div>
             </div>
         </div>
