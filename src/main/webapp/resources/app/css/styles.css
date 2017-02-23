@@ -504,3 +504,7 @@ a {
     opacity: 1.0;
     cursor: pointer;
 }
+
+.mercurius-content {
+    background: url("/resources/app/images/background.jpg");
+}

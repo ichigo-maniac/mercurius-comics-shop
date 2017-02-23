@@ -32,7 +32,7 @@
                         </ul>
                     </c:if>
                     <%-- Facets (dummy)  --%>
-                    <div class="panel panel-default">
+                    <div class="panel panel-success">
                         <div class="panel-heading">Genre</div>
                         <div class="panel-body">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
@@ -49,7 +49,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    <div class="panel panel-success">
                         <div class="panel-heading">Country</div>
                         <div class="panel-body">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
@@ -66,7 +66,7 @@
                 <%-- Products --%>
                 <div class="col-xs-12 col-md-8">
                     <%-- Bread crumbs --%>
-                    <ol class="breadcrumb">
+                    <ol class="breadcrumb" style="background-color: white; border: 1px solid lightgray">
                         <li><a href="<c:url value="/"/>">Main page</a></li>
                         <c:forEach var="categoryCrumb" items="${category.breadCrumbs}">
                             <c:choose>
