@@ -18,7 +18,7 @@
             <%-- Catalog --%>
             <div class="mercurius-card-container mdl-grid">
                 <%-- Categories --%>
-                <div class="col-xs-6 col-md-4">
+                <div class="col-xs-6 col-md-3">
                     <ul class="list-group">
                         <a href="<c:url value="/${mainCategory.code}"/>" class="list-group-item active">
                             <c:out value="${mainCategory.name}"/>
@@ -33,8 +33,41 @@
                     </ul>
                 </div>
                 <%-- Products --%>
-                <div class="col-xs-12 col-md-8">
+                <div class="col-xs-12 col-md-9">
                     <img src="/resources/app/images/banner.png" class="img-thumbnail">
+                    <h2>New releases</h2>
+                    <div class="mercurius-card-container mdl-grid">
+                        <div class="col-md-4" style="text-align: center">
+                            <img src="/resources/app/images/dummy/sao4.jpg" class="img-thumbnail">
+                            <a href="">
+                                <h4>Sword Art Online vol. 04</h4>
+                            </a>
+                            <h4>500 RUB</h4>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="col-md-4" style="text-align: center">
+                            <img src="/resources/app/images/dummy/sao5.jpg" class="img-thumbnail">
+                            <a href="">
+                                <h4>Sword Art Online vol. 05</h4>
+                            </a>
+                            <h4>500 RUB</h4>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                                Add to cart
+                            </button>
+                        </div>
+                        <div class="col-md-4" style="text-align: center">
+                            <img src="/resources/app/images/dummy/sao6.jpg" class="img-thumbnail">
+                            <a href="">
+                                <h4>Sword Art Online vol. 06</h4>
+                            </a>
+                            <h4>500 RUB</h4>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
