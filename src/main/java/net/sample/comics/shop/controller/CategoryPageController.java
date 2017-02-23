@@ -56,6 +56,9 @@ public class CategoryPageController extends AbstractController {
     public String catalogPage(Model model) {
         CatalogEntity catalog = uniqueCodeEntityService.getEntityByCode("master_catalog", CatalogEntity.class);
         CategoryEntity categoryEntity = catalogUniqueCodeEntityService.getEntityByCodeAndCatalog("catalog", catalog, CategoryEntity.class);
+        if (categoryEntity == null) {
+            return MercuriusComicsShopConstants.VIEW.PAGE_NOT_FOUND;
+        }
         List<CategoryEntity> subCategories = categoryService.getSubCategories(categoryEntity.getUuid());
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
@@ -72,6 +75,9 @@ public class CategoryPageController extends AbstractController {
     public String catalogPage(@PathVariable String categoryCode, Model model) {
         CatalogEntity catalog = uniqueCodeEntityService.getEntityByCode("master_catalog", CatalogEntity.class);
         CategoryEntity categoryEntity = catalogUniqueCodeEntityService.getEntityByCodeAndCatalog(categoryCode, catalog, CategoryEntity.class);
+        if (categoryEntity == null) {
+            return MercuriusComicsShopConstants.VIEW.PAGE_NOT_FOUND;
+        }
         List<CategoryEntity> subCategories = categoryService.getSubCategories(categoryEntity.getUuid());
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
