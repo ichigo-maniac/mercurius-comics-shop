@@ -92,7 +92,7 @@
                                 </div>
                                 <div class="col-md-3" style="text-align: center">
                                     <h4>500 RUB</h4>
-                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="col-md-3" style="text-align: center">
                                     <h4>500 RUB</h4>
-                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                                 </div>
                                 <div class="col-md-3" style="text-align: center">
                                     <h4>500 RUB</h4>
-                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                                 </div>
                                 <div class="col-md-3" style="text-align: center">
                                     <h4>500 RUB</h4>
-                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
                                 </div>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                                 </div>
                                 <div class="col-md-3" style="text-align: center">
                                     <h4>500 RUB</h4>
-                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                                 </div>
                                 <div class="col-md-3" style="text-align: center">
                                     <h4>500 RUB</h4>
-                                    <img width="36" src="/resources/app/images/icons/button_add_to_cart.png">
+                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
                                 </div>
                             </div>
                         </div>
