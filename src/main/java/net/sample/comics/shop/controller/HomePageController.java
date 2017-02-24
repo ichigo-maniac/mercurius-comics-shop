@@ -36,8 +36,8 @@ public class HomePageController extends AbstractController {
      */
     @RequestMapping(method = RequestMethod.GET, value = "/")
     public String homePage(Model model) {
-        CategoryEntity mainCategory = categoryService.getAllCategoriesWithoutMainSuperCategory("master_catalog").get(0);
-        List<CategoryEntity> categories = categoryService.getSubCategories(mainCategory.getCode(), "master_catalog");
+        CategoryEntity mainCategory = categoryService.getAllCategoriesWithoutMainSuperCategory().get(0);
+        List<CategoryEntity> categories = categoryService.getSubCategories(mainCategory.getCode());
         model.addAttribute("mainCategory", categoryConverter.convert(mainCategory));
         model.addAttribute("categories", categoryConverter.convertAll(categories));
         return MercuriusComicsShopConstants.VIEW.HOME_PAGE;
