@@ -80,99 +80,32 @@
                         </c:forEach>
                     </ol>
                     <%-- Products --%>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="/resources/app/images/dummy/sao1.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-7">
-                                    <h4><a href="">Sword Art Online vol. 01 (ranobe)</a></h4>
-                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <h4>500 RUB</h4>
-                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body" style="border-top: 1px solid lightgray">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="/resources/app/images/dummy/sao2.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-7">
-                                    <h4><a href="">Sword Art Online vol. 02 (ranobe)</a></h4>
-                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <h4>500 RUB</h4>
-                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
+                    <div class="panel panel-default" style="margin-bottom: 0px">
+                        <%-- Empty search result --%>
+                        <c:if test="${productsResult.totalEntriesCount == 0}">
+                            <h4 style="text-align: center; padding: 15px;">No products have been found</h4>
+                        </c:if>
+                        <%-- Products --%>
+                        <c:forEach var="product" items="${productsResult.entries}" varStatus="loop">
+                            <div class="panel-body" <c:if test="${loop.index != 0}">style="border-top: 1px solid lightgray"</c:if>>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="/resources/app/images/dummy/sao${(loop.index % 6) + 1}.jpg" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h4><a href="<c:url value="/product/${product.code}"/>"><c:out value="${product.name}"/></a></h4>
+                                        <h5 style="color: gray"><c:out value="${product.shortName}"/></h5>
+                                    </div>
+                                    <div class="col-md-3" style="text-align: center">
+                                        <h4>500 RUB</h4>
+                                        <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="panel-body" style="border-top: 1px solid lightgray">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="/resources/app/images/dummy/sao3.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-7">
-                                    <h4><a href="">Sword Art Online vol. 03 (ranobe)</a></h4>
-                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <h4>500 RUB</h4>
-                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body" style="border-top: 1px solid lightgray">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="/resources/app/images/dummy/sao4.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-7">
-                                    <h4><a href="">Sword Art Online vol. 04 (ranobe)</a></h4>
-                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <h4>500 RUB</h4>
-                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body" style="border-top: 1px solid lightgray">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="/resources/app/images/dummy/sao5.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-7">
-                                    <h4><a href="">Sword Art Online vol. 05 (ranobe)</a></h4>
-                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <h4>500 RUB</h4>
-                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-body" style="border-top: 1px solid lightgray">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <img src="/resources/app/images/dummy/sao6.jpg" class="img-thumbnail">
-                                </div>
-                                <div class="col-md-7">
-                                    <h4><a href="">Sword Art Online vol. 06 (ranobe)</a></h4>
-                                    <h5><a style="color: gray" href="">Reki Kawahara</a></h5>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <h4>500 RUB</h4>
-                                    <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
-                                </div>
-                            </div>
-                        </div>
-
+                        </c:forEach>
                     </div>
+                    <%-- Pagination --%>
+                    <jsp:include page="/WEB-INF/view/catalog/category_pagination_fragment.jsp"/>
                 </div>
             </div>
         </div>
