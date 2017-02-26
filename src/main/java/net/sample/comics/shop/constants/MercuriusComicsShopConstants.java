@@ -11,6 +11,7 @@ public class MercuriusComicsShopConstants {
         public static final String PAGE_NOT_FOUND = "common/404_not_found";
         public static final String HOME_PAGE = "index";
         public static final String CATEGORY_PAGE = "catalog/category_page";
+        public static final String PRODUCT_PAGE = "product/product_page";
     }
 
     /**
