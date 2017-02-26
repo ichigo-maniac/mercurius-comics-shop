@@ -35,17 +35,7 @@
                     <%-- Panel --%>
                     <div class="col-md-4" >
                         <p style="font-size: 85%; line-height: 150%;">
-                            Denote simple fat denied add worthy little use. As some he so high down am week.
-                            Conduct esteems by cottage to pasture we winding. On assistance he cultivated considered frequently.
-                            Person how having tended direct own day man. Saw sufficient indulgence one own you inquietude sympathize.
-
-                            Rank tall boy man them over post now. Off into she bed long fat room.
-                            Recommend existence curiosity perfectly favourite get eat she why daughters.
-                            Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have.
-
-                            An sincerity so extremity he additions. Her yet there truth merit.
-                            Mrs all projecting favourable now unpleasing. Son law garden chatty temper.
-                            Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.
+                            <c:out value="${product.description}"/>
                         </p>
                     </div>
                     <div class="col-md-4">
@@ -77,17 +67,7 @@
                 </div>
                 <div class="mdl-tabs__panel is-active" id="description-panel" style="padding: 15px 20px 15px 20px;">
                     <p>
-                        Denote simple fat denied add worthy little use. As some he so high down am week.
-                        Conduct esteems by cottage to pasture we winding. On assistance he cultivated considered frequently.
-                        Person how having tended direct own day man. Saw sufficient indulgence one own you inquietude sympathize.
-
-                        Rank tall boy man them over post now. Off into she bed long fat room.
-                        Recommend existence curiosity perfectly favourite get eat she why daughters.
-                        Not may too nay busy last song must sell. An newspaper assurance discourse ye certainly. Soon gone game and why many calm have.
-
-                        An sincerity so extremity he additions. Her yet there truth merit.
-                        Mrs all projecting favourable now unpleasing. Son law garden chatty temper.
-                        Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.
+                        <c:out value="${product.description}"/>
                     </p>
                 </div>
                 <div class="mdl-tabs__panel" id="specifications-panel">
