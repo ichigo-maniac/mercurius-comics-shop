@@ -37,36 +37,18 @@
                     <img src="/resources/app/images/banner.png" class="img-thumbnail">
                     <h2>New releases</h2>
                     <div class="mercurius-card-container mdl-grid">
-                        <div class="col-md-4" style="text-align: center">
-                            <img src="/resources/app/images/dummy/sao4.jpg" class="img-thumbnail">
-                            <a href="">
-                                <h4>Sword Art Online vol. 04</h4>
-                            </a>
-                            <h4>500 RUB</h4>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-                                Add to cart
-                            </button>
-                        </div>
-                        <div class="col-md-4" style="text-align: center">
-                            <img src="/resources/app/images/dummy/sao5.jpg" class="img-thumbnail">
-                            <a href="">
-                                <h4>Sword Art Online vol. 05</h4>
-                            </a>
-                            <h4>500 RUB</h4>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-                                Add to cart
-                            </button>
-                        </div>
-                        <div class="col-md-4" style="text-align: center">
-                            <img src="/resources/app/images/dummy/sao6.jpg" class="img-thumbnail">
-                            <a href="">
-                                <h4>Sword Art Online vol. 06</h4>
-                            </a>
-                            <h4>500 RUB</h4>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-                                Add to cart
-                            </button>
-                        </div>
+                        <c:forEach var="product" items="${products}" varStatus="loop">
+                            <div class="col-md-4" style="text-align: center">
+                                <img src="/resources/app/images/dummy/sao${loop.index % 6 + 1}.jpg" class="img-thumbnail">
+                                <a href="">
+                                    <h4><c:out value="${product.name}"/></h4>
+                                </a>
+                                <h4>500 RUB</h4>
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </c:forEach>
                     </div>
                 </div>
             </div>
