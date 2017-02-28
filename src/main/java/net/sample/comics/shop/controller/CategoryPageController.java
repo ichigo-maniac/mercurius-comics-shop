@@ -74,7 +74,7 @@ public class CategoryPageController extends AbstractController {
         }
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
         PageableResult<ProductEntity> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
-                productService.getAllProductByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
+                productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
                 productEntityConverter
         );
         /** Set attributes */
@@ -98,7 +98,7 @@ public class CategoryPageController extends AbstractController {
         }
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
         PageableResult<ProductEntity> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
-                productService.getAllProductByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
+                productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
                 productEntityConverter
         );
         /** Set attributes */
