@@ -33,24 +33,38 @@
                         <img src="/resources/app/images/dummy/sao1.jpg" class="img-thumbnail">
                     </div>
                     <%-- Panel --%>
-                    <div class="col-md-4" >
+                    <div class="col-md-5" >
                         <p style="font-size: 85%; line-height: 150%;">
                             <c:out value="${product.description}"/>
                         </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
 
                         <div class="panel panel-default">
                             <div class="panel-body" style="padding: 0px;">
                                 <h3 style="font-weight: bold; margin-left: 15px;">500 RUB</h3>
+                                <!-- Stock -->
                                 <div style="background-color: #F7F7F7; padding: 10px;">
                                     <div class="row">
-                                        <div class="col-md-8">In stock :</div>
-                                        <div class="col-md-4"><strong>A lot</strong></div>
+                                        <div class="col-md-7">
+                                            <img style="margin-left: 10px;" width="16" src="/resources/app/images/icons/warehouse.png">
+                                            <span style="margin-left: 7px;"> In stock :</span>
+                                        </div>
+                                        <c:choose>
+                                            <c:when test="${product.defaultStock.availableProductsCount > 100}">
+                                                <div class="col-md-4"><strong>A lot</strong></div>
+                                            </c:when>
+                                            <c:when test="${product.defaultStock.availableProductsCount < 100 and product.defaultStock.availableProductsCount > 0}">
+                                                <div class="col-md-4" style="color: red;"><strong>A few</strong></div>
+                                            </c:when>
+                                            <c:otherwise>
+                                                <div class="col-md-4" style="color: red; font-weight: bold"><strong>Sold</strong></div>
+                                            </c:otherwise>
+                                        </c:choose>
                                     </div>
                                 </div>
                                 <div style="padding : 15px;">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style="width: 100%">
+                                    <button <c:if test="${product.defaultStock.availableProductsCount <= 0}">disabled</c:if> class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style="width: 100%">
                                         Add to cart
                                     </button>
                                 </div>
