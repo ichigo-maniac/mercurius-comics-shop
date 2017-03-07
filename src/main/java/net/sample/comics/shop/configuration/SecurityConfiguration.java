@@ -2,6 +2,7 @@ package net.sample.comics.shop.configuration;
 
 import org.mercuriusframework.filters.CurrentStoreSetterFilter;
 import org.mercuriusframework.filters.DefaultCatalogSetterFilter;
+import org.mercuriusframework.filters.DefaultCurrencySetterFilter;
 import org.mercuriusframework.filters.DefaultUnitSetterFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -44,6 +45,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private DefaultUnitSetterFilter defaultUnitSetterFilter;
 
     /**
+     * Default currency setter filter
+     */
+    @Autowired
+    private DefaultCurrencySetterFilter defaultCurrencySetterFilter;
+
+    /**
      * Filter chain proxy (name of bean must be "springSecurityFilterChain")
      * @return Filter chain proxy
      */
@@ -56,7 +63,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         /** Common filter chain */
         filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/**"),
-                defaultCatalogSetterFilter, currentStoreSetterFilter, defaultUnitSetterFilter));
+                defaultCatalogSetterFilter, currentStoreSetterFilter, defaultCurrencySetterFilter, defaultUnitSetterFilter));
         return new FilterChainProxy(filterChains);
 
     }

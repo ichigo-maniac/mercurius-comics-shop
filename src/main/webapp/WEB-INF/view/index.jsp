@@ -43,7 +43,16 @@
                                 <a href="<c:url value="/product/${product.code}"/>">
                                     <h4><c:out value="${product.name}"/></h4>
                                 </a>
-                                <h4>500 RUB</h4>
+                                <h4>
+                                    <c:choose>
+                                        <c:when test="${product.price != null}">
+                                            <c:out value="${product.price.priceValue} ${product.price.currency.code}"/>
+                                        </c:when>
+                                        <c:otherwise>
+                                            Not available
+                                        </c:otherwise>
+                                    </c:choose>
+                                </h4>
                                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
                                     Add to cart
                                 </button>

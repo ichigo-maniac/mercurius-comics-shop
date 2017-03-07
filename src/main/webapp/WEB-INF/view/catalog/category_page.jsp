@@ -97,7 +97,16 @@
                                         <h5 style="color: gray"><c:out value="${product.shortName}"/></h5>
                                     </div>
                                     <div class="col-md-3" style="text-align: center">
-                                        <h4>500 RUB</h4>
+                                        <h4>
+                                            <c:choose>
+                                                <c:when test="${product.price != null}">
+                                                    <c:out value="${product.price.priceValue} ${product.price.currency.code}"/>
+                                                </c:when>
+                                                <c:otherwise>
+                                                    Not available
+                                                </c:otherwise>
+                                            </c:choose>
+                                        </h4>
                                         <img width="36" class="icon-button" src="/resources/app/images/icons/button_add_to_cart.png">
                                     </div>
                                 </div>

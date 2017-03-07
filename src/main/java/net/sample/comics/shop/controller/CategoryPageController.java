@@ -7,6 +7,7 @@ import org.mercuriusframework.dto.ProductEntityDto;
 import org.mercuriusframework.entities.CategoryEntity;
 import org.mercuriusframework.entities.ProductEntity;
 import org.mercuriusframework.enums.CategoryLoadOptions;
+import org.mercuriusframework.enums.ProductLoadOptions;
 import org.mercuriusframework.services.CatalogUniqueCodeEntityService;
 import org.mercuriusframework.services.CategoryService;
 import org.mercuriusframework.services.ProductService;
@@ -75,7 +76,7 @@ public class CategoryPageController extends AbstractController {
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
         PageableResult<ProductEntity> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
                 productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
-                productEntityConverter
+                productEntityConverter, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE
         );
         /** Set attributes */
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
@@ -99,7 +100,7 @@ public class CategoryPageController extends AbstractController {
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
         PageableResult<ProductEntity> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
                 productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
-                productEntityConverter
+                productEntityConverter, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE
         );
         /** Set attributes */
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));

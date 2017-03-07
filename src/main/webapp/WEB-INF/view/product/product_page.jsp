@@ -42,7 +42,16 @@
 
                         <div class="panel panel-default">
                             <div class="panel-body" style="padding: 0px;">
-                                <h3 style="font-weight: bold; margin-left: 15px;">500 RUB</h3>
+                                <h3 style="font-weight: bold; margin-left: 15px;">
+                                    <c:choose>
+                                        <c:when test="${product.price != null}">
+                                            <c:out value="${product.price.priceValue} ${product.price.currency.code}"/>
+                                        </c:when>
+                                        <c:otherwise>
+                                            Not available
+                                        </c:otherwise>
+                                    </c:choose>
+                                </h3>
                                 <!-- Stock -->
                                 <div style="background-color: #F7F7F7; padding: 10px;">
                                     <div class="row">
@@ -64,7 +73,8 @@
                                     </div>
                                 </div>
                                 <div style="padding : 15px;">
-                                    <button <c:if test="${product.defaultStock.availableProductsCount <= 0}">disabled</c:if> class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style="width: 100%">
+                                    <button <c:if test="${product.defaultStock.availableProductsCount <= 0 or product.price == null}">disabled</c:if>
+                                            class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" style="width: 100%">
                                         Add to cart
                                     </button>
                                 </div>

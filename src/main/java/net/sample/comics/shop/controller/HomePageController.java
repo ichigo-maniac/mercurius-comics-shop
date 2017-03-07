@@ -6,6 +6,7 @@ import org.mercuriusframework.converters.impl.CategoryEntityConverter;
 import org.mercuriusframework.converters.impl.ProductEntityConverter;
 import org.mercuriusframework.entities.CategoryEntity;
 import org.mercuriusframework.entities.ProductEntity;
+import org.mercuriusframework.enums.ProductLoadOptions;
 import org.mercuriusframework.services.CategoryService;
 import org.mercuriusframework.services.query.PageableResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,7 +59,7 @@ public class HomePageController extends AbstractController {
         /** Load products */
         PageableResult<ProductEntity> products = productService.getNewReleasesProducts();
         /** Set attributes */
-        model.addAttribute("products", productEntityConverter.convertAll(products.getEntries()));
+        model.addAttribute("products", productEntityConverter.convertAll(products.getEntries(), ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE));
         model.addAttribute("mainCategory", categoryConverter.convert(mainCategory));
         model.addAttribute("categories", categoryConverter.convertAll(categories));
         return MercuriusComicsShopConstants.VIEW.HOME_PAGE;

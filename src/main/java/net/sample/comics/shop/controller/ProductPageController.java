@@ -42,7 +42,8 @@ public class ProductPageController extends AbstractController {
         if (product == null) {
             return MercuriusComicsShopConstants.VIEW.PAGE_NOT_FOUND;
         }
-        model.addAttribute("product", productEntityConverter.convert(product, ProductLoadOptions.BREAD_CRUMBS, ProductLoadOptions.DESCRIPTION, ProductLoadOptions.DEFAULT_UNIT_STOCKS));
+        model.addAttribute("product", productEntityConverter.convert(product, ProductLoadOptions.BREAD_CRUMBS,
+                ProductLoadOptions.DESCRIPTION, ProductLoadOptions.DEFAULT_UNIT_STOCKS, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE));
         return MercuriusComicsShopConstants.VIEW.PRODUCT_PAGE;
     }
 }
