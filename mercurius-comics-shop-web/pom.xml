@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.mercuriusframework.samples</groupId>
+    <artifactId>mercurius-comics-shop-web</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <!-- Properties -->
+    <properties>
+        <mercurius.version>0.0.1-SNAPSHOT</mercurius.version>
+    </properties>
+
+    <!-- Dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>org.mercuriusframework</groupId>
+            <artifactId>mercurius-core</artifactId>
+            <version>${mercurius.version}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
