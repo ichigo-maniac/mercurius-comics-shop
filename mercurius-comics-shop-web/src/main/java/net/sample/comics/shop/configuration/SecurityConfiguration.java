@@ -62,7 +62,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/resources/**")));
 
         /** MMC filter chain */
-        filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/mcc/**")));
+        filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/mmc/**")));
 
         /** Common filter chain */
         filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/**"),
