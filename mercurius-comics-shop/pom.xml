@@ -12,6 +12,7 @@
     <!-- Modules -->
     <modules>
         <module>../mercurius-comics-shop-web</module>
+        <module>../mercurius-comics-shop-mmc</module>
     </modules>
 
     <!-- Properties -->
