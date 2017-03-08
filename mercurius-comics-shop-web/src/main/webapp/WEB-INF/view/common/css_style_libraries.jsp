@@ -11,7 +11,6 @@
 
 
 <link rel="stylesheet" href="/resources/app/css/material.min.css">
-<%--<link rel="stylesheet" href="/resources/lib/css/styles.css">--%>
 <link rel="stylesheet" href="/resources/lib/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="/resources/lib/css/bootstrap-theme.min.css"/>
 <link rel="stylesheet" href="/resources/lib/css/bootstrap-select.min.css"/>
