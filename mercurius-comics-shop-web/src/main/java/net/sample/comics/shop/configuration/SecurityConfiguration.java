@@ -54,7 +54,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
      * Filter chain proxy (name of bean must be "springSecurityFilterChain")
      * @return Filter chain proxy
      */
-    @Bean(name = "springSecurityFilterChain")
+    @Bean(name = "mercuriusFilterChain")
     public FilterChainProxy filterChainProxy() {
         List<SecurityFilterChain> filterChains = new ArrayList<SecurityFilterChain>();
 

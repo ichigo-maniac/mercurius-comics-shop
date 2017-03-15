@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns="http://mercurius-framework.org/mmc-config">
+
+    <!-- Other roles tree node view -->
+    <tree-nodes-view priority="1">
+        <!-- Catalog -->
+        <tree-node title="Catalog">
+            <tree-node-entity-element title="Products" entity-name="Product"/>
+            <tree-node-entity-element title="Categories" entity-name="Category"/>
+            <tree-node-entity-element title="Units" entity-name="Unit"/>
+            <tree-node-entity-element title="Warehouses" entity-name="Warehouse"/>
+        </tree-node>
+    </tree-nodes-view>
+
+</config>
