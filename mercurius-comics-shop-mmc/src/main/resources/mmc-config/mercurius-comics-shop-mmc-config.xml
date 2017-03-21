@@ -5,7 +5,7 @@
     <!-- Other roles tree node view -->
     <tree-nodes-view priority="1">
         <!-- Catalog -->
-        <tree-node title="Catalog">
+        <tree-node title="mmc.tree.view.catalog.label">
             <tree-node-entity-element title="Products" entity-name="Product"/>
             <tree-node-entity-element title="Categories" entity-name="Category"/>
             <tree-node-entity-element title="Units" entity-name="Unit"/>
