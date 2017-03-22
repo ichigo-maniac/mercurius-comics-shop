@@ -1,5 +1,7 @@
 package net.sample.comics.shop.configuration;
 
+import org.mercuriusframework.constants.MercuriusDataImportConstants;
+import org.mercuriusframework.constants.MercuriusMMCConstants;
 import org.mercuriusframework.filters.CurrentStoreSetterFilter;
 import org.mercuriusframework.filters.DefaultCatalogSetterFilter;
 import org.mercuriusframework.filters.DefaultCurrencySetterFilter;
@@ -62,7 +64,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/resources/**")));
 
         /** MMC filter chain */
-        filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/mmc/**")));
+        filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher(
+                MercuriusMMCConstants.URLS.BASE_PATH + "**")));
+
+        /** Data import filter chain */
+        filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher(
+                MercuriusDataImportConstants.URLS.BASE_PATH + "**")));
 
         /** Common filter chain */
         filterChains.add(new DefaultSecurityFilterChain(new AntPathRequestMatcher("/**"),
