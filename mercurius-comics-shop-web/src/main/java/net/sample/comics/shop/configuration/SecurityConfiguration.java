@@ -1,11 +1,12 @@
 package net.sample.comics.shop.configuration;
 
-import org.mercuriusframework.constants.MercuriusDataImportConstants;
-import org.mercuriusframework.constants.MercuriusMMCConstants;
+
+import org.mercuriusframework.dataimport.constants.MercuriusDataImportConstants;
 import org.mercuriusframework.filters.CurrentStoreSetterFilter;
 import org.mercuriusframework.filters.DefaultCatalogSetterFilter;
 import org.mercuriusframework.filters.DefaultCurrencySetterFilter;
 import org.mercuriusframework.filters.DefaultUnitSetterFilter;
+import org.mercuriusframework.mmc.constants.MercuriusMMCConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
