@@ -228,4 +228,37 @@
         </values>
     </insert>
 
+    <insert entity-name="Feature">
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="code">book_format_feature</column>
+                <column property="name">Format</column>
+                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+            </value>
+            <value>
+                <column property="code">book_size_feature</column>
+                <column property="name">Size</column>
+                <column property="featureType" value-import-bean="featureTypeImportBean">NUMERIC_TYPE</column>
+            </value>
+            <value>
+                <column property="code">book_pages_count_feature</column>
+                <column property="name">Pages count</column>
+                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+            </value>
+            <value>
+                <column property="code">book_isbn_feature</column>
+                <column property="name">ISBN</column>
+                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+            </value>
+            <value>
+                <column property="code">book_rating_feature</column>
+                <column property="name">Rating</column>
+                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+            </value>
+        </values>
+    </insert>
+
 </data-import>
