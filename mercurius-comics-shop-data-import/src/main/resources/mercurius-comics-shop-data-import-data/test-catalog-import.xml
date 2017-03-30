@@ -228,6 +228,7 @@
         </values>
     </insert>
 
+    <!-- Features -->
     <insert entity-name="Feature">
         <common-values>
             <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
@@ -257,6 +258,192 @@
                 <column property="code">book_rating_feature</column>
                 <column property="name">Rating</column>
                 <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+            </value>
+        </values>
+    </insert>
+
+    <!-- Feature values -->
+    <insert entity-name="FeatureValue">
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_01</column>
+            <column property="groupName">Common</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::220</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-60-1</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
+            </value>
+        </values>
+    </insert>
+
+    <!-- Feature values -->
+    <insert entity-name="FeatureValue">
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_02</column>
+            <column property="groupName">Common</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::214</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-20-5</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
+            </value>
+        </values>
+    </insert>
+
+    <!-- Feature values -->
+    <insert entity-name="FeatureValue">
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_03</column>
+            <column property="groupName">Common</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::198</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-55-4</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
+            </value>
+        </values>
+    </insert>
+
+    <!-- Feature values -->
+    <insert entity-name="FeatureValue">
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_04</column>
+            <column property="groupName">Common</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::236</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904672-78-2</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
+            </value>
+        </values>
+    </insert>
+
+    <!-- Feature values -->
+    <insert entity-name="FeatureValue">
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
+            <column property="groupName">Common</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::200</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-00-1</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
+            </value>
+        </values>
+    </insert>
+
+    <!-- Feature values -->
+    <insert entity-name="FeatureValue">
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
+            <column property="groupName">Common</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::312</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-88-4</column>
+            </value>
+            <value>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
         </values>
     </insert>

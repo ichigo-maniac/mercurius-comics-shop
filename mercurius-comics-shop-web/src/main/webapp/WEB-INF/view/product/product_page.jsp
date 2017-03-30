@@ -85,51 +85,42 @@
             </div>
             <%-- Tabs --%>
             <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect" style="background-color: white; border-top: 1px solid lightgrey">
+                <%-- Tabs panel --%>
                 <div class="mdl-tabs__tab-bar" >
-                    <a href="#description-panel" class="mdl-tabs__tab is-active">Description</a>
-                    <a href="#specifications-panel" class="mdl-tabs__tab">Specifications</a>
+                    <a href="#description-panel" class="mdl-tabs__tab is-active" style="font-weight: bold">Description</a>
+                    <c:if test="${not empty product.featureValues}">
+                        <a href="#specifications-panel" class="mdl-tabs__tab" style="font-weight: bold">Specifications</a>
+                    </c:if>
                 </div>
+                <%-- Description --%>
                 <div class="mdl-tabs__panel is-active" id="description-panel" style="padding: 15px 20px 15px 20px;">
                     <p>
                         <c:out value="${product.description}"/>
                     </p>
                 </div>
-                <div class="mdl-tabs__panel" id="specifications-panel">
-                    <h4>Common</h4>
-                    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width: 100%; text-align: left">
-                        <tbody>
-                        <tr style="background-color: lightgray">
-                            <td class="mdl-data-table__cell--non-numeric" style="width: 50%;text-align: left">Acrylic (Transparent)</td>
-                            <td style="width: 50%;text-align: left">25</td>
-                        </tr>
-                        <tr style="background-color: lightgray">
-                            <td class="mdl-data-table__cell--non-numeric" style="width: 50%;text-align: left">Plywood (Birch)</td>
-                            <td style="width: 50%;text-align: left">50</td>
-                        </tr>
-                        <tr style="background-color: lightgray">
-                            <td class="mdl-data-table__cell--non-numeric" style="width: 50%;text-align: left">Laminate (Gold on Blue)</td>
-                            <td style="width: 50%;text-align: left">10</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <h4>Other</h4>
-                    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width: 100%; text-align: left">
-                        <tbody>
-                        <tr style="background-color: lightgray">
-                            <td class="mdl-data-table__cell--non-numeric" style="width: 50%;text-align: left">Acrylic (Transparent)</td>
-                            <td style="width: 50%;text-align: left">25</td>
-                        </tr>
-                        <tr style="background-color: lightgray">
-                            <td class="mdl-data-table__cell--non-numeric" style="width: 50%;text-align: left">Plywood (Birch)</td>
-                            <td style="width: 50%;text-align: left">50</td>
-                        </tr>
-                        <tr style="background-color: lightgray">
-                            <td class="mdl-data-table__cell--non-numeric" style="width: 50%;text-align: left">Laminate (Gold on Blue)</td>
-                            <td style="width: 50%;text-align: left">10</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <%-- Specification --%>
+                <c:if test="${not empty product.featureValues}">
+                    <div class="mdl-tabs__panel" id="specifications-panel">
+                        <c:forEach var="featureValuesEntry" items="${product.featureValuesMap}">
+                            <h4 style="padding: 5px 0px 5px 25px; color: gray; font-weight: bold"><c:out value="${featureValuesEntry.key}"/></h4>
+                            <%-- Values --%>
+                            <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width: 100%; text-align: left;">
+                                <tbody>
+                                    <c:forEach var="featureValue" items="${featureValuesEntry.value}">
+                                        <tr style="background-color: #EEEEEE; font-size: 110%;  border-color: white">
+                                            <td class="mdl-data-table__cell--non-numeric" style="width: 50%;  border-color: white">
+                                                <b><c:out value="${featureValue.feature.name}"/></b>
+                                            </td>
+                                            <td style="width: 50%;text-align: left;  border-color: white">
+                                                <c:out value="${featureValue.value}"/>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
+                                </tbody>
+                            </table>
+                        </c:forEach>
+                    </div>
+                </c:if>
             </div>
         </div>
     </div>

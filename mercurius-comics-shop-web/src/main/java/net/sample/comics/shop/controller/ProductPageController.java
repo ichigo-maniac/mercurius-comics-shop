@@ -38,11 +38,12 @@ public class ProductPageController extends AbstractController {
      */
     @RequestMapping(method = RequestMethod.GET, value = "/product/{productCode}")
     public String productPage(@PathVariable String productCode, Model model) {
-        ProductEntity product = catalogUniqueCodeEntityService.getEntityByCode(productCode, ProductEntity.class, ProductEntity.MAIN_CATEGORY, ProductEntity.DESCRIPTION);
+        ProductEntity product = catalogUniqueCodeEntityService.getEntityByCode(productCode, ProductEntity.class,
+                ProductEntity.MAIN_CATEGORY, ProductEntity.DESCRIPTION, ProductEntity.FEATURE_VALUES);
         if (product == null) {
             return MercuriusComicsShopConstants.VIEW.PAGE_NOT_FOUND;
         }
-        model.addAttribute("product", productEntityConverter.convert(product, ProductLoadOptions.BREAD_CRUMBS,
+        model.addAttribute("product", productEntityConverter.convert(product, ProductLoadOptions.BREAD_CRUMBS, ProductLoadOptions.FEATURE_VALUES,
                 ProductLoadOptions.DESCRIPTION, ProductLoadOptions.DEFAULT_UNIT_STOCKS, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE));
         return MercuriusComicsShopConstants.VIEW.PRODUCT_PAGE;
     }
