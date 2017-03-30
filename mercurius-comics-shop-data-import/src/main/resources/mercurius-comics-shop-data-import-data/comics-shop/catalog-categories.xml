@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+    <!-- Categories -->
+    <insert entity-name="Category">
+        <!-- Common values -->
+        <common-values>
+            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+        </common-values>
+        <!-- Values -->
+        <values>
+            <value>
+                <column property="name">Каталог</column>
+                <column property="code">catalog</column>
+            </value>
+
+            <!-- Main catalog -->
+
+            <value>
+                <column property="name">Игровые приставки</column>
+                <column property="code">video_game_consoles</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+            </value>
+
+            <value>
+                <column property="name">Видео игры</column>
+                <column property="code">video_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+            </value>
+
+            <value>
+                <column property="name">Манга</column>
+                <column property="code">manga</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+            </value>
+
+            <value>
+                <column property="name">Комиксы</column>
+                <column property="code">comics_books</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+            </value>
+
+            <value>
+                <column property="name">Книги</column>
+                <column property="code">books</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+            </value>
+
+            <value>
+                <column property="name">Stuff</column>
+                <column property="code">stuff</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+            </value>
+
+            <value>
+                <column property="name">Фигурки</column>
+                <column property="code">figures</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+            </value>
+
+            <!-- Game consoles -->
+
+            <value>
+                <column property="name">Playstation 3</column>
+                <column property="code">playstation_3</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+            </value>
+
+            <value>
+                <column property="name">Playstation 4</column>
+                <column property="code">playstation_4</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+            </value>
+
+            <value>
+                <column property="name">Xbox 360</column>
+                <column property="code">xbox_360</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+            </value>
+
+            <value>
+                <column property="name">Xbox One</column>
+                <column property="code">xbox_one</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+            </value>
+
+            <value>
+                <column property="name">Nintendo 3DS</column>
+                <column property="code">nintendo_3ds</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+            </value>
+
+            <value>
+                <column property="name">Nintendo Wii U</column>
+                <column property="code">nintendo_wii_u</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+            </value>
+
+            <value>
+                <column property="name">Nintendo Switch</column>
+                <column property="code">nintendo_switch</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_game_consoles</column>
+            </value>
+
+            <!-- Video games -->
+            <value>
+                <column property="name">Playstation 3</column>
+                <column property="code">playstation_3_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_games</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_games</column>
+            </value>
+
+            <value>
+                <column property="name">Playstation 4</column>
+                <column property="code">playstation_4_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_games</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_games</column>
+            </value>
+
+            <value>
+                <column property="name">Xbox 360</column>
+                <column property="code">xbox_360_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_games</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_games</column>
+            </value>
+
+            <value>
+                <column property="name">Xbox One</column>
+                <column property="code">xbox_one_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_games</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_games</column>
+            </value>
+
+            <value>
+                <column property="name">Nintendo 3DS</column>
+                <column property="code">nintendo_3ds_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_games</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_games</column>
+            </value>
+
+            <value>
+                <column property="name">Nintendo Wii U</column>
+                <column property="code">nintendo_wii_u_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_games</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_games</column>
+            </value>
+
+            <value>
+                <column property="name">Nintendo Switch</column>
+                <column property="code">nintendo_switch_games</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::video_games</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::video_games</column>
+            </value>
+
+        </values>
+    </insert>
+</data-import>
