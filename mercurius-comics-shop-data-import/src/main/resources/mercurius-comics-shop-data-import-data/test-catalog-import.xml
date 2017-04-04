@@ -448,4 +448,26 @@
         </values>
     </insert>
 
+    <insert entity-name="SolrIndexTask">
+        <values>
+            <value>
+                <column property="name">Full product index task</column>
+                <column property="code">fullProductIndexTask</column>
+                <column property="enabled">true</column>
+                <column property="query">
+                    SELECT product FROM Product as product
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Old ull product index task</column>
+                <column property="code">oldFullProductIndexTask</column>
+                <column property="enabled">false</column>
+                <column property="query">
+                    SELECT product FROM Product as product
+                </column>
+            </value>
+        </values>
+    </insert>
+
 </data-import>
