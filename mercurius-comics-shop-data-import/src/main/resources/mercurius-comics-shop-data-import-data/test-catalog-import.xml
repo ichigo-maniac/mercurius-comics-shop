@@ -457,15 +457,8 @@
                 <column property="query">
                     SELECT product FROM Product as product
                 </column>
-            </value>
-
-            <value>
-                <column property="name">Old ull product index task</column>
-                <column property="code">oldFullProductIndexTask</column>
-                <column property="enabled">false</column>
-                <column property="query">
-                    SELECT product FROM Product as product
-                </column>
+                <column property="indexEntityName">Product</column>
+                <column property="taskRunBeanName">fullProductSolrIndexTaskRunner</column>
             </value>
         </values>
     </insert>
