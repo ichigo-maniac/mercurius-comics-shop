@@ -271,22 +271,27 @@
         </common-values>
         <values>
             <value>
+                <column property="code">book_format_sao_01</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
+                <column property="code">book_pages_count_sao_01</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::220</column>
             </value>
             <value>
+                <column property="code">book_size_sao_01</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
+                <column property="code">book_isbn_sao_01</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-60-1</column>
             </value>
             <value>
+                <column property="code">book_rating_sao_01</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
@@ -302,22 +307,27 @@
         </common-values>
         <values>
             <value>
+                <column property="code">book_format_sao_02</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
+                <column property="code">book_pages_count_sao_02</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::214</column>
             </value>
             <value>
+                <column property="code">book_size_sao_02</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
+                <column property="code">book_isbn_sao_02</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-20-5</column>
             </value>
             <value>
+                <column property="code">book_rating_sao_02</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
@@ -333,22 +343,27 @@
         </common-values>
         <values>
             <value>
+                <column property="code">book_format_sao_03</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
+                <column property="code">book_pages_count_sao_03</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::198</column>
             </value>
             <value>
+                <column property="code">book_size_sao_03</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
+                <column property="code">book_isbn_sao_03</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-55-4</column>
             </value>
             <value>
+                <column property="code">book_rating_sao_03</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
@@ -364,22 +379,27 @@
         </common-values>
         <values>
             <value>
+                <column property="code">book_format_sao_04</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
+                <column property="code">book_pages_count_sao_04</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::236</column>
             </value>
             <value>
+                <column property="code">book_size_sao_04</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
+                <column property="code">book_isbn_sao_04</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904672-78-2</column>
             </value>
             <value>
+                <column property="code">book_rating_sao_04</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
@@ -395,22 +415,27 @@
         </common-values>
         <values>
             <value>
+                <column property="code">book_format_sao_05</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
+                <column property="code">book_pages_count_sao_05</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::200</column>
             </value>
             <value>
+                <column property="code">book_size_sao_05</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
+                <column property="code">book_isbn_sao_05</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-00-1</column>
             </value>
             <value>
+                <column property="code">book_rating_sao_05</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
@@ -426,24 +451,44 @@
         </common-values>
         <values>
             <value>
+                <column property="code">book_format_sao_06</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
+                <column property="code">book_pages_count_sao_06</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::312</column>
             </value>
             <value>
+                <column property="code">book_size_sao_06</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
+                <column property="code">book_isbn_sao_06</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-88-4</column>
             </value>
             <value>
+                <column property="code">book_rating_sao_06</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
+            </value>
+        </values>
+    </insert>
+
+    <!-- Solr tasks -->
+    <insert entity-name="SolrIndexTaskProperty">
+        <values>
+            <value>
+                <column property="name">Full product index task property</column>
+                <column property="code">fullProductIndexTaskProperty</column>
+                <column property="solrCollectionName">mercurius_products</column>
+                <column property="query">
+                    SELECT product FROM Product as product
+                </column>
+                <column property="indexEntityName">Product</column>
             </value>
         </values>
     </insert>
@@ -454,11 +499,21 @@
                 <column property="name">Full product index task</column>
                 <column property="code">fullProductIndexTask</column>
                 <column property="enabled">true</column>
-                <column property="query">
-                    SELECT product FROM Product as product
-                </column>
-                <column property="indexEntityName">Product</column>
                 <column property="taskRunBeanName">fullProductSolrIndexTaskRunner</column>
+                <column property="indexProperty" value-import-bean="uniqueCodeImportBean">fullProductIndexTaskProperty</column>
+            </value>
+        </values>
+    </insert>
+
+    <insert entity-name="SolrIndexField">
+        <common-values>
+            <column property="solrIndexProperty" value-import-bean="uniqueCodeImportBean">fullProductIndexTaskProperty</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="code">full_product_index_field_name</column>
+                <column property="solrDocumentFieldName">name</column>
+                <column property="entityFieldName">name</column>
             </value>
         </values>
     </insert>
