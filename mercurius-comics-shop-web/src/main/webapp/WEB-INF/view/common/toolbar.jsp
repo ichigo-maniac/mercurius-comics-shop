@@ -16,7 +16,7 @@
         <%-- Navigation --%>
         <div class="mercurius-navigation-container">
             <nav class="mercurius-navigation mdl-navigation">
-                <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                <div class="mercurius-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
                     <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
                         <i class="material-icons">search</i>
                     </label>
