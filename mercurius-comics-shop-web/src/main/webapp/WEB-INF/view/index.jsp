@@ -39,7 +39,7 @@
                     <div class="mercurius-card-container mdl-grid">
                         <c:forEach var="product" items="${products}" varStatus="loop">
                             <div class="col-md-4" style="text-align: center">
-                                <img src="/resources/app/images/dummy/sao${loop.index % 6 + 1}.jpg" class="img-thumbnail">
+                                <img src="/resources/app/images/no_image.jpg" class="img-thumbnail">
                                 <a href="<c:url value="/product/${product.code}"/>">
                                     <h4><c:out value="${product.name}"/></h4>
                                 </a>

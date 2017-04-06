@@ -30,7 +30,7 @@
                 <div class="row" style="padding: 15px 10px 10px 10px">
                     <%-- Image --%>
                     <div class="col-md-4" style="text-align: center;">
-                        <img src="/resources/app/images/dummy/sao1.jpg" class="img-thumbnail">
+                        <img src="/resources/app/images/no_image.jpg" class="img-thumbnail">
                     </div>
                     <%-- Panel --%>
                     <div class="col-md-5" >

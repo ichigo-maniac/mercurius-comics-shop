@@ -90,7 +90,7 @@
                             <div class="panel-body" <c:if test="${loop.index != 0}">style="border-top: 1px solid lightgray"</c:if>>
                                 <div class="row">
                                     <div class="col-md-2">
-                                        <img src="/resources/app/images/dummy/sao${(loop.index % 6) + 1}.jpg" class="img-thumbnail">
+                                        <img src="/resources/app/images/no_image.jpg" class="img-thumbnail">
                                     </div>
                                     <div class="col-md-7">
                                         <h4><a href="<c:url value="/product/${product.code}"/>"><c:out value="${product.name}"/></a></h4>
