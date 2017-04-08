@@ -487,6 +487,11 @@
                 <column property="solrCollectionName">mercurius_products</column>
                 <column property="query">
                     SELECT product FROM Product as product
+                    LEFT JOIN FETCH product.mainUnit
+                    LEFT JOIN FETCH product.units
+                    LEFT JOIN FETCH product.description
+                    LEFT JOIN FETCH product.mainCategory
+                    LEFT JOIN FETCH product.categories
                 </column>
                 <column property="indexEntityName">Product</column>
             </value>
@@ -507,13 +512,36 @@
 
     <insert entity-name="SolrIndexField">
         <common-values>
-            <column property="solrIndexProperty" value-import-bean="uniqueCodeImportBean">fullProductIndexTaskProperty</column>
+            <column property="indexProperties" value-import-bean="multiUniqueCodeImportBean">fullProductIndexTaskProperty</column>
         </common-values>
         <values>
             <value>
                 <column property="code">full_product_index_field_name</column>
                 <column property="solrDocumentFieldName">name</column>
                 <column property="entityFieldName">name</column>
+            </value>
+            <value>
+                <column property="code">full_product_index_field_code</column>
+                <column property="solrDocumentFieldName">code</column>
+                <column property="entityFieldName">code</column>
+            </value>
+            <value>
+                <column property="code">full_product_index_field_main_unit</column>
+                <column property="solrDocumentFieldName">main_unit</column>
+                <column property="entityFieldName">mainUnit</column>
+                <column property="solrFieldConverterBeanName">catalogUniqueEntitySolrFieldConverter</column>
+            </value>
+            <value>
+                <column property="code">full_product_index_field_units</column>
+                <column property="solrDocumentFieldName">units</column>
+                <column property="entityFieldName">units</column>
+                <column property="solrFieldConverterBeanName">multiCatalogUniqueEntitySolrFieldConverter</column>
+            </value>
+            <value>
+                <column property="code">full_product_index_field_description</column>
+                <column property="solrDocumentFieldName">description</column>
+                <column property="entityFieldName">description</column>
+                <column property="solrFieldConverterBeanName">bigStringEntitySolrFieldConverter</column>
             </value>
         </values>
     </insert>
