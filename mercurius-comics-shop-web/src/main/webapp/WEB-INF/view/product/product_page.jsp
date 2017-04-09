@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +19,7 @@
             <div style="background-color: white; padding: 5px 20px 10px 25px; border-bottom: 1px solid lightgray;">
                 <%-- Bread crumbs --%>
                 <ol class="breadcrumb" style="background: white; padding: 10px 0px 5px 0px; margin-bottom: 5px;">
-                    <li><a style="color: gray" href="<c:url value="/"/>">Main page</a></li>
+                    <li><a style="color: gray" href="<c:url value="/"/>"><spring:message code="comics.shop.main.page.label"/></a></li>
                     <c:forEach var="categoryCrumb" items="${product.breadCrumbs}">
                         <li><a style="color: gray" href="<c:url value="${categoryCrumb.builtUrl}"/>"><c:out value="${categoryCrumb.name}"/></a></li>
                     </c:forEach>
