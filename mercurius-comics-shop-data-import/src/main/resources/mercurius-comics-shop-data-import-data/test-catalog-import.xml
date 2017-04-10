@@ -516,32 +516,49 @@
         </common-values>
         <values>
             <value>
-                <column property="code">full_product_index_field_name</column>
+                <column property="code">product_index_field_name</column>
                 <column property="solrDocumentFieldName">name</column>
                 <column property="entityFieldName">name</column>
+                <column property="caseInsensitive">true</column>
             </value>
             <value>
-                <column property="code">full_product_index_field_code</column>
+                <column property="code">product_index_field_code</column>
                 <column property="solrDocumentFieldName">code</column>
                 <column property="entityFieldName">code</column>
+                <column property="caseInsensitive">true</column>
             </value>
             <value>
-                <column property="code">full_product_index_field_main_unit</column>
+                <column property="code">product_index_field_main_unit</column>
                 <column property="solrDocumentFieldName">main_unit</column>
                 <column property="entityFieldName">mainUnit</column>
                 <column property="solrFieldConverterBeanName">catalogUniqueEntitySolrFieldConverter</column>
             </value>
             <value>
-                <column property="code">full_product_index_field_units</column>
+                <column property="code">product_index_field_units</column>
                 <column property="solrDocumentFieldName">units</column>
                 <column property="entityFieldName">units</column>
                 <column property="solrFieldConverterBeanName">multiCatalogUniqueEntitySolrFieldConverter</column>
             </value>
             <value>
-                <column property="code">full_product_index_field_description</column>
+                <column property="code">product_index_field_description</column>
                 <column property="solrDocumentFieldName">description</column>
                 <column property="entityFieldName">description</column>
                 <column property="solrFieldConverterBeanName">bigStringEntitySolrFieldConverter</column>
+                <column property="caseInsensitive">true</column>
+            </value>
+        </values>
+    </insert>
+
+    <insert entity-name="SolrSearchResolver">
+        <values>
+            <value>
+                <column property="code">productSearchResolver</column>
+                <column property="pageSize">20</column>
+                <column property="solrCollectionName">mercurius_products</column>
+                <column property="indexEntityName">Product</column>
+                <column property="textSearchFields" value-import-bean="multiUniqueCodeImportBean">
+                    product_index_field_name;product_index_field_code;product_index_field_description
+                </column>
             </value>
         </values>
     </insert>
