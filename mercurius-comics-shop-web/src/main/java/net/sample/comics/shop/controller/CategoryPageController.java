@@ -74,7 +74,7 @@ public class CategoryPageController extends AbstractController {
             return MercuriusComicsShopConstants.VIEW.PAGE_NOT_FOUND;
         }
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
-        PageableResult<ProductEntity> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
+        PageableResult<ProductEntityDto> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
                 productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
                 productEntityConverter, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE
         );
@@ -98,7 +98,7 @@ public class CategoryPageController extends AbstractController {
             return MercuriusComicsShopConstants.VIEW.PAGE_NOT_FOUND;
         }
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
-        PageableResult<ProductEntity> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
+        PageableResult<ProductEntityDto> products = new ConvertiblePageableResult<ProductEntity, ProductEntityDto>(
                 productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
                 productEntityConverter, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE
         );
