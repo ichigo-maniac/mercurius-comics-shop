@@ -14,6 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Search controller
  */
@@ -37,16 +41,23 @@ public class SearchController {
      * @param searchText Search text
      * @param page Current page
      * @param model Model
+     * @param request Http-request
      * @return View path
      */
     @RequestMapping(method = RequestMethod.GET, value = "/search")
-    public String searchProducts(@RequestParam String searchText, @RequestParam(name = "page", required = false, defaultValue = "0") Integer page, Model model) {
+    public String searchProducts(@RequestParam String searchText, @RequestParam(name = "page", required = false, defaultValue = "0") Integer page,
+                                 Model model, HttpServletRequest request) {
         PageableResult<ProductEntityDto> products = searchFacade.search("productSearchResolver", searchText, page,
                 productEntityConverter,
                 new ProductLoadOptions[]{ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE}, ProductEntity.CATEGORIES);
 
         model.addAttribute("productsResult", products);
         model.addAttribute("searchText", searchText);
+        model.addAttribute("builtUrl", request.getRequestURI());
+        /** Create params map */
+        Map<String, String> queryParams = new HashMap<>();
+        queryParams.put("searchText", searchText);
+        model.addAttribute("queryParams", queryParams);
         return MercuriusComicsShopConstants.VIEW.SEARCH_PAGE;
     }
 

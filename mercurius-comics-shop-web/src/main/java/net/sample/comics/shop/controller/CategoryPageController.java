@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -82,6 +83,7 @@ public class CategoryPageController extends AbstractController {
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
         model.addAttribute("productsResult", products);
+        model.addAttribute("queryParams", new HashMap<String, String>());
         return MercuriusComicsShopConstants.VIEW.CATEGORY_PAGE;
     }
 
@@ -106,6 +108,7 @@ public class CategoryPageController extends AbstractController {
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
         model.addAttribute("productsResult", products);
+        model.addAttribute("queryParams", new HashMap<String, String>());
         return MercuriusComicsShopConstants.VIEW.CATEGORY_PAGE;
     }
 }

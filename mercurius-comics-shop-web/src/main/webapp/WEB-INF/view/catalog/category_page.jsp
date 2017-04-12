@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib prefix="catalog" tagdir="/WEB-INF/tags/catalog" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -115,7 +116,9 @@
                         </c:forEach>
                     </div>
                     <%-- Pagination --%>
-                    <jsp:include page="/WEB-INF/view/catalog/category_pagination_fragment.jsp"/>
+                    <catalog:catalog_pagination productsResult="${productResult}"
+                                                queryParams="${queryParams}"
+                                                builtUrl="${category.builtUrl}"/>
                 </div>
             </div>
         </div>
