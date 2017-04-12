@@ -23,7 +23,7 @@
                 <div class="col-xs-6 col-md-4">
                     <c:if test="${not empty categories}">
                         <ul class="list-group">
-                            <li class="list-group-item active">Subcategories</li>
+                            <li class="list-group-item active"><spring:message code="comics.shop.catalog.subcategories.label"/></li>
                             <c:forEach var="category" items="${categories}">
                                 <li class="list-group-item">
                                     <a href="<c:url value="${category.builtUrl}"/>">

@@ -1,12 +1,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <div class="mercurius-header mdl-layout__header mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row" style="padding-left: 50px;">
 
         <span class="mercurius-title mdl-layout-title">
-            <a href="<c:url value=""/>">
+            <a href="<c:url value="/"/>">
                 <img class="mercurius-logo-image" src="/resources/app/images/logo.png">
             </a>
         </span>
@@ -31,9 +32,9 @@
                 </form:form>
                 <%-- Links --%>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase"
-                   href="<c:url value="/catalog"/>">Catalog</a>
+                   href="<c:url value="/catalog"/>"><spring:message code="comics.shop.toolbar.catalog.label"/></a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/cart"/>"><span
-                        class="mdl-badge" data-badge="0">Cart</span></a>
+                        class="mdl-badge" data-badge="0"><spring:message code="comics.shop.toolbar.cart.label"/></span></a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/about_us"/>">About
                     us</a>
             </nav>
