@@ -3,67 +3,67 @@
 <data-import xmlns="http://mercurius-framework.org/data-import">
 
     <!-- Categories -->
-    <insert entity-name="Category">
+    <insert-update entity-name="Category">
         <!-- Common values -->
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
         </common-values>
         <!-- Values -->
         <values>
             <value>
                 <column property="name">Catalog</column>
-                <column property="code">catalog</column>
+                <column include-in-search="true" property="code">catalog</column>
             </value>
             <value>
                 <column property="name">Blu-ray discs</column>
-                <column property="code">bluray</column>
+                <column include-in-search="true" property="code">bluray</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
             </value>
             <value>
                 <column property="name">Manga</column>
-                <column property="code">manga</column>
+                <column include-in-search="true" property="code">manga</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
             </value>
             <value>
                 <column property="name">Ranobe</column>
-                <column property="code">ranobe</column>
+                <column include-in-search="true" property="code">ranobe</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
             </value>
             <value>
                 <column property="name">Fantasy</column>
-                <column property="code">manga_fantasy</column>
+                <column include-in-search="true" property="code">manga_fantasy</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::manga</column>
             </value>
             <value>
                 <column property="name">Science fiction</column>
-                <column property="code">manga_sci_fi</column>
+                <column include-in-search="true" property="code">manga_sci_fi</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::manga</column>
             </value>
             <value>
                 <column property="name">Fantasy</column>
-                <column property="code">ranobe_fantasy</column>
+                <column include-in-search="true" property="code">ranobe_fantasy</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::ranobe</column>
             </value>
             <value>
                 <column property="name">Science fiction</column>
-                <column property="code">ranobe_sci_fi</column>
+                <column include-in-search="true" property="code">ranobe_sci_fi</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::ranobe</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Products -->
-    <insert entity-name="Product">
+    <insert-update entity-name="Product">
         <!-- Common column values -->
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
             <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
             <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
             <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_fantasy</column>
@@ -74,416 +74,386 @@
         <values>
             <value>
                 <column property="name">Sword Art Online vol. 01</column>
-                <column property="code">product_sao_01</column>
+                <column include-in-search="true" property="code">product_sao_01</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     A solo player named Kirito, who had the luck-of-the-draw to once play the beta version of the first VRMMORPG, «Sword Art Online» (SAO) , was among the 10,000 players who were trapped inside of the game during the first day of its official service. The only way for them to escape is by clearing all the floors of Aincrad, the floating castle that is the setting for the game, and defeating the final boss. Death in-game means death in the real world, due to the NerveGear, a console that simulates the in-game character controls by redirecting brain signals. Two years after the start of the death game, out of the original ten thousand players at the start, less than seven thousand remain with twenty-five floors left to clear.
                 </column>
             </value>
             <value>
                 <column property="name">Sword Art Online vol. 02</column>
-                <column property="code">product_sao_02</column>
+                <column include-in-search="true" property="code">product_sao_02</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Linked up and logged into the deadly VMMORPG ''Sword Art Online'' in both the real and virtual worlds, Kirito is stuck in a hell of one man''s making, and like everyone else, unable to escape until the game is beaten. But while some players are crippled by fear and others throw themselves into completing the game, still others relax into everyday life in the face of their cruel predicament and live to the best of their ability...laughing, crying, but always enjoying the game. Among them are four women who make a mark upon the solo adventurer that Kirito has become: Silica, the best tamer; Lisbeth, the blacksmith; Yui, the mysterious orphan; and the tragic Sachi, never to be forgotten by the black swordsman...
                 </column>
             </value>
             <value>
                 <column property="name">Sword Art Online vol. 03</column>
-                <column property="code">product_sao_03</column>
+                <column include-in-search="true" property="code">product_sao_03</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Kirito returned from «Sword Art Online» (SAO), only to find that Asuna, as well as 300 other people, was still asleep, and has been seen in a new game, «ALfheim Online» (ALO).
                 </column>
             </value>
             <value>
                 <column property="name">Sword Art Online vol. 04</column>
-                <column property="code">product_sao_04</column>
+                <column include-in-search="true" property="code">product_sao_04</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     After thwarting the would-be assault on the Sylph-Cait Sith conference, Kirito and Leafa set out for Alne, towards the World Tree, only to be sidetracked by an event and end up in the underworld, «Jötunheimr». With some help from an unlikely ally, they reached the city only to find that the way to the World Tree was locked. In the end, Kirito saved Asuna. Several months later, they, along with other Sword Art Online (SAO) players began attending a special school for SAO survivors, and playing ALfheim Online, but with a new feature added to the game, New Aincrad. Kirito vowed to complete all 100 floors as they all flew toward the castle.
                 </column>
             </value>
             <value>
                 <column property="name">Sword Art Online vol. 05</column>
-                <column property="code">product_sao_05</column>
+                <column include-in-search="true" property="code">product_sao_05</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Read the novel that sparked an international phenomenon! Kirito reenters the world of VRMMOs, this time logging in to Gun Gale Online in order to investigate the Death Gun, an in-game item rumored to be responsible for real-world deaths. He immediately runs into trouble when, after transferring his old avatar into the new game, he discovers that he looks a bit more feminine than he''d anticipated! With the help of Sinon the sniper, he enters the Bullet of Bullets tournament and tries to adapt his old skills to the new gun-based combat of Gun Gale Online. He''ll need every friend he can get and every trick in the book, though, to crack the mystery of the Phantom Bullet and learn the truth about the Death Gun!
                 </column>
             </value>
             <value>
                 <column property="name">Sword Art Online vol. 06</column>
-                <column property="code">product_sao_06</column>
+                <column include-in-search="true" property="code">product_sao_06</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Kirito entered the finals of the Bullet of Bullets (BoB) tournament to find the truth about the mysterious Death Gun. Assisted by the sniper Sinon, he fought for his life and others to stop a mysterious but lethal force.
                 </column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Warehouses -->
-    <insert entity-name="Warehouse">
+    <insert-update entity-name="Warehouse">
         <common-values>
             <column property="store" value-import-bean="uniqueCodeImportBean">default_store</column>
         </common-values>
         <values>
             <value>
                 <column property="name">Warehouse 1</column>
-                <column property="code">warehouse_1</column>
+                <column include-in-search="true" property="code">warehouse_1</column>
                 <column property="enabled">true</column>
             </value>
             <value>
                 <column property="name">Warehouse 2</column>
-                <column property="code">warehouse_2</column>
+                <column include-in-search="true" property="code">warehouse_2</column>
                 <column property="enabled">true</column>
             </value>
             <value>
                 <column property="name">Warehouse 3</column>
-                <column property="code">warehouse_3</column>
+                <column include-in-search="true" property="code">warehouse_3</column>
                 <column property="enabled">false</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Stocks -->
-    <insert entity-name="Stock">
+    <insert-update entity-name="Stock">
         <common-values>
-            <column property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column include-in-search="true" property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
         </common-values>
         <!-- Values -->
         <values>
             <!-- Warehouse 1 -->
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_01</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_01</column>
                 <column property="count">10</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_02</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_02</column>
                 <column property="count">200</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_03</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_03</column>
                 <column property="count">400</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_04</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_04</column>
                 <column property="count">400</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
                 <column property="count">600</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
                 <column property="count">600</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_1</column>
             </value>
             <!-- Warehouse 02 -->
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
                 <column property="count">100</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_2</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_2</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
                 <column property="count">100</column>
-                <column property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_2</column>
+                <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">warehouse_2</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Prices -->
-    <insert entity-name="Price">
+    <insert-update entity-name="Price">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
-            <column property="currency" value-import-bean="uniqueCodeImportBean">rub</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column include-in-search="true" property="currency" value-import-bean="uniqueCodeImportBean">rub</column>
         </common-values>
         <values>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_01</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_01</column>
                 <column property="priceValue">500.0</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_02</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_02</column>
                 <column property="priceValue">500.0</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_03</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_03</column>
                 <column property="priceValue">500.0</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_04</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_04</column>
                 <column property="priceValue">500.0</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
                 <column property="priceValue">500.0</column>
             </value>
             <value>
-                <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
                 <column property="priceValue">500.0</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Features -->
-    <insert entity-name="Feature">
+    <insert-update entity-name="Feature">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
         </common-values>
         <values>
             <value>
-                <column property="code">book_format_feature</column>
+                <column include-in-search="true" property="code">book_format_feature</column>
                 <column property="name">Format</column>
                 <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
             </value>
             <value>
-                <column property="code">book_size_feature</column>
+                <column include-in-search="true" property="code">book_size_feature</column>
                 <column property="name">Size</column>
                 <column property="featureType" value-import-bean="featureTypeImportBean">NUMERIC_TYPE</column>
             </value>
             <value>
-                <column property="code">book_pages_count_feature</column>
+                <column include-in-search="true" property="code">book_pages_count_feature</column>
                 <column property="name">Pages count</column>
                 <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
             </value>
             <value>
-                <column property="code">book_isbn_feature</column>
+                <column include-in-search="true" property="code">book_isbn_feature</column>
                 <column property="name">ISBN</column>
                 <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
             </value>
             <value>
-                <column property="code">book_rating_feature</column>
+                <column include-in-search="true" property="code">book_rating_feature</column>
                 <column property="name">Rating</column>
                 <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Feature values -->
-    <insert entity-name="FeatureValue">
+    <insert-update entity-name="FeatureValue">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_01</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_01</column>
             <column property="groupName">Common</column>
         </common-values>
         <values>
             <value>
-                <column property="code">book_format_sao_01</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
-                <column property="code">book_pages_count_sao_01</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::220</column>
             </value>
             <value>
-                <column property="code">book_size_sao_01</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
-                <column property="code">book_isbn_sao_01</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-60-1</column>
             </value>
             <value>
-                <column property="code">book_rating_sao_01</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Feature values -->
-    <insert entity-name="FeatureValue">
+    <insert-update entity-name="FeatureValue">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_02</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_02</column>
             <column property="groupName">Common</column>
         </common-values>
         <values>
             <value>
-                <column property="code">book_format_sao_02</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
-                <column property="code">book_pages_count_sao_02</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::214</column>
             </value>
             <value>
-                <column property="code">book_size_sao_02</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
-                <column property="code">book_isbn_sao_02</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-20-5</column>
             </value>
             <value>
-                <column property="code">book_rating_sao_02</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Feature values -->
-    <insert entity-name="FeatureValue">
+    <insert-update entity-name="FeatureValue">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_03</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_03</column>
             <column property="groupName">Common</column>
         </common-values>
         <values>
             <value>
-                <column property="code">book_format_sao_03</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
-                <column property="code">book_pages_count_sao_03</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::198</column>
             </value>
             <value>
-                <column property="code">book_size_sao_03</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
-                <column property="code">book_isbn_sao_03</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-55-4</column>
             </value>
             <value>
-                <column property="code">book_rating_sao_03</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Feature values -->
-    <insert entity-name="FeatureValue">
+    <insert-update entity-name="FeatureValue">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_04</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_04</column>
             <column property="groupName">Common</column>
         </common-values>
         <values>
             <value>
-                <column property="code">book_format_sao_04</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
-                <column property="code">book_pages_count_sao_04</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::236</column>
             </value>
             <value>
-                <column property="code">book_size_sao_04</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
-                <column property="code">book_isbn_sao_04</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904672-78-2</column>
             </value>
             <value>
-                <column property="code">book_rating_sao_04</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Feature values -->
-    <insert entity-name="FeatureValue">
+    <insert-update entity-name="FeatureValue">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_05</column>
             <column property="groupName">Common</column>
         </common-values>
         <values>
             <value>
-                <column property="code">book_format_sao_05</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
-                <column property="code">book_pages_count_sao_05</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::200</column>
             </value>
             <value>
-                <column property="code">book_size_sao_05</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
-                <column property="code">book_isbn_sao_05</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-00-1</column>
             </value>
             <value>
-                <column property="code">book_rating_sao_05</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Feature values -->
-    <insert entity-name="FeatureValue">
+    <insert-update entity-name="FeatureValue">
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::product_sao_06</column>
             <column property="groupName">Common</column>
         </common-values>
         <values>
             <value>
-                <column property="code">book_format_sao_06</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
             <value>
-                <column property="code">book_pages_count_sao_06</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_pages_count_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">NUMERIC_TYPE::312</column>
             </value>
             <value>
-                <column property="code">book_size_sao_06</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_size_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::142x215x22</column>
             </value>
             <value>
-                <column property="code">book_isbn_sao_06</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_isbn_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::978-5-904676-88-4</column>
             </value>
             <value>
-                <column property="code">book_rating_sao_06</column>
-                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_rating_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::12+</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
     <!-- Solr tasks -->
-    <insert entity-name="SolrIndexTaskProperty">
+    <insert-update entity-name="SolrIndexTaskProperty">
         <values>
             <value>
                 <column property="name">Full product index task property</column>
-                <column property="code">fullProductIndexTaskProperty</column>
+                <column include-in-search="true" property="code">fullProductIndexTaskProperty</column>
                 <column property="solrCollectionName">mercurius_products</column>
                 <column property="query">
                     SELECT product FROM Product as product
@@ -496,63 +466,63 @@
                 <column property="indexEntityName">Product</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
-    <insert entity-name="SolrIndexTask">
+    <insert-update entity-name="SolrIndexTask">
         <values>
             <value>
                 <column property="name">Full product index task</column>
-                <column property="code">fullProductIndexTask</column>
+                <column include-in-search="true" property="code">fullProductIndexTask</column>
                 <column property="enabled">true</column>
                 <column property="taskRunBeanName">fullProductSolrIndexTaskRunner</column>
                 <column property="indexProperty" value-import-bean="uniqueCodeImportBean">fullProductIndexTaskProperty</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
-    <insert entity-name="SolrIndexField">
+    <insert-update entity-name="SolrIndexField">
         <common-values>
             <column property="indexProperties" value-import-bean="multiUniqueCodeImportBean">fullProductIndexTaskProperty</column>
         </common-values>
         <values>
             <value>
-                <column property="code">product_index_field_name</column>
+                <column include-in-search="true" property="code">product_index_field_name</column>
                 <column property="solrDocumentFieldName">name</column>
                 <column property="entityFieldName">name</column>
                 <column property="caseInsensitive">true</column>
             </value>
             <value>
-                <column property="code">product_index_field_code</column>
+                <column include-in-search="true" property="code">product_index_field_code</column>
                 <column property="solrDocumentFieldName">code</column>
                 <column property="entityFieldName">code</column>
                 <column property="caseInsensitive">true</column>
             </value>
             <value>
-                <column property="code">product_index_field_main_unit</column>
+                <column include-in-search="true" property="code">product_index_field_main_unit</column>
                 <column property="solrDocumentFieldName">main_unit</column>
                 <column property="entityFieldName">mainUnit</column>
                 <column property="solrFieldConverterBeanName">catalogUniqueEntitySolrFieldConverter</column>
             </value>
             <value>
-                <column property="code">product_index_field_units</column>
+                <column include-in-search="true" property="code">product_index_field_units</column>
                 <column property="solrDocumentFieldName">units</column>
                 <column property="entityFieldName">units</column>
                 <column property="solrFieldConverterBeanName">multiCatalogUniqueEntitySolrFieldConverter</column>
             </value>
             <value>
-                <column property="code">product_index_field_description</column>
+                <column include-in-search="true" property="code">product_index_field_description</column>
                 <column property="solrDocumentFieldName">description</column>
                 <column property="entityFieldName">description</column>
                 <column property="solrFieldConverterBeanName">bigStringEntitySolrFieldConverter</column>
                 <column property="caseInsensitive">true</column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
-    <insert entity-name="SolrSearchResolver">
+    <insert-update entity-name="SolrSearchResolver">
         <values>
             <value>
-                <column property="code">productSearchResolver</column>
+                <column include-in-search="true" property="code">productSearchResolver</column>
                 <column property="pageSize">20</column>
                 <column property="solrCollectionName">mercurius_products</column>
                 <column property="indexEntityName">Product</column>
@@ -561,6 +531,6 @@
                 </column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
 </data-import>

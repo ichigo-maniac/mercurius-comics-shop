@@ -3,10 +3,10 @@
 <data-import xmlns="http://mercurius-framework.org/data-import">
 
     <!-- Products -->
-    <insert entity-name="Product">
+    <insert-update entity-name="Product">
         <!-- Common column values -->
         <common-values>
-            <column property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
             <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
             <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
             <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::playstation_4_games</column>
@@ -16,7 +16,7 @@
         <values>
             <value>
                 <column property="name">Bloodborne: Порождение крови</column>
-                <column property="code">product_bloodborne_ps4</column>
+                <column include-in-search="true" property="code">product_bloodborne_ps4</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Великолепный и пугающий Ихарнам
                     История города, в котором будет разворачиваться действие игры, мистична и загадочна. Местные жители обладают умением переливания крови, позволяющим лечить болезни. Однако свои знания они получили от темных богов, называемых здесь Великими, а значит беда не заставит себя ждать. Чума, погрузившая город в хаос и безумие, возникает по их воле. Главному герою придется остановить толпы монстров, некогда бывших людьми, для того, чтобы вырваться из ужасного кошмара или остаться в нем навсегда, став частью творящегося безумия.
@@ -38,7 +38,7 @@
             </value>
             <value>
                 <column property="name">Bloodborne: Порождение крови - Game Of The Year</column>
-                <column property="code">product_bloodborne_game_of_the_year_ps4</column>
+                <column include-in-search="true" property="code">product_bloodborne_game_of_the_year_ps4</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Великолепный и пугающий Ихарнам
                     История города, в котором будет разворачиваться действие игры, мистична и загадочна. Местные жители обладают умением переливания крови, позволяющим лечить болезни. Однако свои знания они получили от темных богов, называемых здесь Великими, а значит беда не заставит себя ждать. Чума, погрузившая город в хаос и безумие, возникает по их воле. Главному герою придется остановить толпы монстров, некогда бывших людьми, для того, чтобы вырваться из ужасного кошмара или остаться в нем навсегда, став частью творящегося безумия.
@@ -60,7 +60,7 @@
             </value>
             <value>
                 <column property="name">Dark Souls 3</column>
-                <column property="code">product_dark_souls_3_ps4</column>
+                <column include-in-search="true" property="code">product_dark_souls_3_ps4</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Когда пламя угасает, и все обращается в прах, вас ждёт новое путешествие в мир полный невероятных противников и грандиозных локаций. Бездна уникального геймплея и великолепной графики поглотит как ветеранов, так и новичков. И останутся лишь угли...
                     «Dark Souls 3» – ожидаемая игра, продолжение популярной RPG-серии «Dark Souls» от японской студии «From Software». Отличительной особенностью игр серии стала высокая сложность прохождения, что требует от игрока развития определенных навыков и многократного прохождения сложных эпизодов. События игры рассказывают о древних временах, когда в мире бок о бок царствовали силы тьмы и света, жизни и смерти, холода и огня. Главный герой – безымянный полуживой мертвец, который задержался между мирами и старается понять причины своего проклятья.
@@ -77,7 +77,7 @@
             </value>
             <value>
                 <column property="name">Dark Souls 3 - The Fire Fades Edition PS4 Game Of The Year</column>
-                <column property="code">product_dark_souls_3_game_of_the_year_ps4</column>
+                <column include-in-search="true" property="code">product_dark_souls_3_game_of_the_year_ps4</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Когда пламя угасает, и все обращается в прах, вас ждёт новое путешествие в мир полный невероятных противников и грандиозных локаций. Бездна уникального геймплея и великолепной графики поглотит как ветеранов, так и новичков. И останутся лишь угли...
                     «Dark Souls 3» – ожидаемая игра, продолжение популярной RPG-серии «Dark Souls» от японской студии «From Software». Отличительной особенностью игр серии стала высокая сложность прохождения, что требует от игрока развития определенных навыков и многократного прохождения сложных эпизодов. События игры рассказывают о древних временах, когда в мире бок о бок царствовали силы тьмы и света, жизни и смерти, холода и огня. Главный герой – безымянный полуживой мертвец, который задержался между мирами и старается понять причины своего проклятья.
@@ -94,7 +94,7 @@
             </value>
             <value>
                 <column property="name">Ведьмак 3: Дикая Охота - Game Of The Year</column>
-                <column property="code">product_witcher_3_game_of_the_year_ps4</column>
+                <column include-in-search="true" property="code">product_witcher_3_game_of_the_year_ps4</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     У Меча Предназначения два острия. Одно из них – ты.
                     «Ведьмак 3: Дикая Охота» – ролевая игра нового поколения, действие которой разворачивается в удивительном фэнтезийном мире, где необходимо принимать сложные решения и отвечать за их последствия.
@@ -111,7 +111,7 @@
             </value>
             <value>
                 <column property="name">Grand Theft Auto V</column>
-                <column property="code">product_gta_5_ps4</column>
+                <column include-in-search="true" property="code">product_gta_5_ps4</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Создай свою банду в «Grand Theft Auto V»
                     «Grand Theft Auto V» – самый масштабный проект, имитирующий жизнь города и его деревенских окрестностей. Здесь игроку придется взять на себя управление 3 героями одновременно:
@@ -131,6 +131,6 @@
                 </column>
             </value>
         </values>
-    </insert>
+    </insert-update>
 
 </data-import>
