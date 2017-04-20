@@ -228,12 +228,50 @@
         </values>
     </insert-update>
 
+    <!-- Dictionary types -->
+    <insert-update entity-name="DictionaryType">
+        <values>
+            <value>
+                <column property="name">Country</column>
+                <column include-in-search="true" property="code">dictionary_country</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Dictionary items -->
+    <insert-update entity-name="DictionaryItem">
+        <common-values>
+            <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_country</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="name">Japan</column>
+                <column include-in-search="true" property="code">country_japan</column>
+            </value>
+            <value>
+                <column property="name">USA</column>
+                <column include-in-search="true" property="code">country_usa</column>
+            </value>
+            <value>
+                <column property="name">Russia</column>
+                <column include-in-search="true" property="code">country_russia</column>
+            </value>
+        </values>
+    </insert-update>
+
+
     <!-- Features -->
     <insert-update entity-name="Feature">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
         </common-values>
         <values>
+            <value>
+                <column include-in-search="true" property="code">book_country_feature</column>
+                <column property="name">Country</column>
+                <column property="featureType" value-import-bean="featureTypeImportBean">DICTIONARY_TYPE</column>
+                <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_country</column>
+            </value>
             <value>
                 <column include-in-search="true" property="code">book_format_feature</column>
                 <column property="name">Format</column>
@@ -271,6 +309,10 @@
         </common-values>
         <values>
             <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+            <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
@@ -301,6 +343,10 @@
             <column property="groupName">Common</column>
         </common-values>
         <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
@@ -333,6 +379,10 @@
         </common-values>
         <values>
             <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+            <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
@@ -363,6 +413,10 @@
             <column property="groupName">Common</column>
         </common-values>
         <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
@@ -395,6 +449,10 @@
         </common-values>
         <values>
             <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+            <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
             </value>
@@ -425,6 +483,10 @@
             <column property="groupName">Common</column>
         </common-values>
         <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::book_format_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">STRING_TYPE::Hardcover</column>
