@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Dictionary types -->
+    <insert-update entity-name="DictionaryType">
+        <values>
+            <value>
+                <column property="name">Страна</column>
+                <column include-in-search="true" property="code">dictionary_country</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Dictionary items -->
+    <insert-update entity-name="DictionaryItem">
+        <common-values>
+            <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_country</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="name">Япония</column>
+                <column include-in-search="true" property="code">country_japan</column>
+            </value>
+            <value>
+                <column property="name">США</column>
+                <column include-in-search="true" property="code">country_usa</column>
+            </value>
+            <value>
+                <column property="name">Россия</column>
+                <column include-in-search="true" property="code">country_russia</column>
+            </value>
+        </values>
+    </insert-update>
+
+
+</data-import>

@@ -70,7 +70,7 @@
                     <div class="panel panel-default" style="margin-bottom: 0px">
                         <%-- Empty search result --%>
                         <c:if test="${productsResult.totalEntriesCount == 0}">
-                            <h4 style="text-align: center; padding: 15px;">No products have been found</h4>
+                            <h4 style="text-align: center; padding: 15px;"><spring:message code="comics.shop.catalog.no.products"/></h4>
                         </c:if>
                         <%-- Products --%>
                         <c:forEach var="product" items="${productsResult.entries}" varStatus="loop">

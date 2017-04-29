@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Solr index properties -->
+    <insert-update entity-name="SolrIndexTaskProperty">
+        <values>
+            <value>
+                <column property="name">Full product index task property</column>
+                <column include-in-search="true" property="code">fullProductIndexTaskProperty</column>
+                <column property="solrCollectionName">mercurius_products</column>
+                <column property="query">
+                    SELECT product FROM Product as product
+                    LEFT JOIN FETCH product.mainUnit
+                    LEFT JOIN FETCH product.units
+                    LEFT JOIN FETCH product.description
+                    LEFT JOIN FETCH product.mainCategory
+                    LEFT JOIN FETCH product.categories
+                    LEFT JOIN FETCH product.featureValues
+                </column>
+                <column property="indexEntityName">Product</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Solr index tasks -->
+    <insert-update entity-name="SolrIndexTask">
+        <values>
+            <value>
+                <column property="name">Full product index task</column>
+                <column include-in-search="true" property="code">fullProductIndexTask</column>
+                <column property="enabled">true</column>
+                <column property="taskRunBeanName">fullProductSolrIndexTaskRunner</column>
+                <column property="indexProperty" value-import-bean="uniqueCodeImportBean">fullProductIndexTaskProperty</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Solr index fields -->
+    <insert-update entity-name="SolrIndexField">
+        <common-values>
+            <column property="indexProperties" value-import-bean="multiUniqueCodeImportBean">fullProductIndexTaskProperty</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_name</column>
+                <column property="solrDocumentFieldName">name</column>
+                <column property="entityFieldName">name</column>
+                <column property="caseInsensitive">true</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_code</column>
+                <column property="solrDocumentFieldName">code</column>
+                <column property="entityFieldName">code</column>
+                <column property="caseInsensitive">true</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_main_unit</column>
+                <column property="solrDocumentFieldName">main_unit</column>
+                <column property="entityFieldName">mainUnit</column>
+                <column property="solrFieldConverterBeanName">catalogUniqueEntitySolrFieldConverter</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_units</column>
+                <column property="solrDocumentFieldName">units</column>
+                <column property="entityFieldName">units</column>
+                <column property="solrFieldConverterBeanName">multiCatalogUniqueEntitySolrFieldConverter</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_description</column>
+                <column property="solrDocumentFieldName">description</column>
+                <column property="entityFieldName">description</column>
+                <column property="solrFieldConverterBeanName">bigStringEntitySolrFieldConverter</column>
+                <column property="caseInsensitive">true</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_feature_values</column>
+                <column property="solrDocumentFieldName"></column>
+                <column property="entityFieldName">featureValues</column>
+                <column property="solrFieldConverterBeanName">featureValuesSolrFieldConverter</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Solr search resolver -->
+    <insert-update entity-name="SolrSearchResolver">
+        <values>
+            <value>
+                <column include-in-search="true" property="code">productSearchResolver</column>
+                <column property="pageSize">20</column>
+                <column property="solrCollectionName">mercurius_products</column>
+                <column property="indexEntityName">Product</column>
+                <column property="textSearchFields" value-import-bean="multiUniqueCodeImportBean">
+                    product_index_field_name;product_index_field_code;product_index_field_description
+                </column>
+            </value>
+        </values>
+    </insert-update>
+
+</data-import>
