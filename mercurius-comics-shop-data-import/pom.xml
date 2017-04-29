@@ -12,6 +12,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.mercuriusframework.samples</groupId>
+            <artifactId>mercurius-comics-shop-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.mercuriusframework</groupId>
             <artifactId>mercurius-data-import</artifactId>
             <version>${mercurius.version}</version>

@@ -21,6 +21,7 @@
         <profile>
             <id>all</id>
             <modules>
+                <module>../mercurius-comics-shop-core</module>
                 <module>../mercurius-comics-shop-web</module>
                 <module>../mercurius-comics-shop-mmc</module>
                 <module>../mercurius-comics-shop-data-import</module>
@@ -29,6 +30,7 @@
         <profile>
             <id>only_web</id>
             <modules>
+                <module>../mercurius-comics-shop-core</module>
                 <module>../mercurius-comics-shop-web</module>
             </modules>
         </profile>
