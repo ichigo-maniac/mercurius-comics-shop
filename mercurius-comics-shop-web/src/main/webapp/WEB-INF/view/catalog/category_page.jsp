@@ -33,37 +33,22 @@
                             </c:forEach>
                         </ul>
                     </c:if>
-                    <%-- Facets (dummy)  --%>
-                    <div class="panel panel-success">
-                        <div class="panel-heading">Genre</div>
-                        <div class="panel-body">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Fantasy</span>
-                            </label>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Science-fiction</span>
-                            </label>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
-                                <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Drama</span>
-                            </label>
+                    <%-- Facets --%>
+                    <c:forEach var="facet" items="${facets}">
+                        <div class="panel panel-success">
+                            <div class="panel-heading"><c:out value="${facet.name}"/></div>
+                            <div class="panel-body">
+                                <c:forEach var="dictionaryItem" items="${facet.availableValues}">
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-<c:out value="${dictionaryItem.code}"/>">
+                                        <input type="checkbox" id="checkbox-<c:out value="${dictionaryItem.code}"/>" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">
+                                            <c:out value="${dictionaryItem.name}"/>
+                                        </span>
+                                    </label>
+                                </c:forEach>
+                            </div>
                         </div>
-                    </div>
-                    <div class="panel panel-success">
-                        <div class="panel-heading">Country</div>
-                        <div class="panel-body">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                                <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" checked>
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Japan</span>
-                            </label>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                                <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Republic of Korea</span>
-                            </label>
-                        </div>
-                    </div>
+                    </c:forEach>
                 </div>
                 <%-- Products --%>
                 <div class="col-xs-12 col-md-8">

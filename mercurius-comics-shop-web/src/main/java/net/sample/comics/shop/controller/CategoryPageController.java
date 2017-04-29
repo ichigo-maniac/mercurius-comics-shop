@@ -2,14 +2,17 @@ package net.sample.comics.shop.controller;
 
 import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
 import org.mercuriusframework.converters.impl.CategoryEntityConverter;
+import org.mercuriusframework.converters.impl.FacetEntityConverter;
 import org.mercuriusframework.converters.impl.ProductEntityConverter;
 import org.mercuriusframework.dto.ProductEntityDto;
 import org.mercuriusframework.entities.CategoryEntity;
+import org.mercuriusframework.entities.FacetEntity;
 import org.mercuriusframework.entities.ProductEntity;
 import org.mercuriusframework.enums.CategoryLoadOptions;
 import org.mercuriusframework.enums.ProductLoadOptions;
 import org.mercuriusframework.services.CatalogUniqueCodeEntityService;
 import org.mercuriusframework.services.CategoryService;
+import org.mercuriusframework.services.FacetService;
 import org.mercuriusframework.services.ProductService;
 import org.mercuriusframework.services.query.ConvertiblePageableResult;
 import org.mercuriusframework.services.query.PageableResult;
@@ -64,6 +67,18 @@ public class CategoryPageController extends AbstractController {
     private ProductEntityConverter productEntityConverter;
 
     /**
+     * Facet service
+     */
+    @Autowired
+    private FacetService facetService;
+
+    /**
+     * Facet entity converter
+     */
+    @Autowired
+    private FacetEntityConverter facetEntityConverter;
+
+    /**
      * Main catalog page
      * @param model Model
      * @return View path
@@ -79,11 +94,13 @@ public class CategoryPageController extends AbstractController {
                 productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
                 productEntityConverter, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE
         );
+        List<FacetEntity> facets = facetService.getFacetsByCategory(categoryEntity);
         /** Set attributes */
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
         model.addAttribute("productsResult", products);
         model.addAttribute("queryParams", new HashMap<String, String>());
+        model.addAttribute("facets", facetEntityConverter.convertAll(facets));
         return MercuriusComicsShopConstants.VIEW.CATEGORY_PAGE;
     }
 
@@ -104,11 +121,13 @@ public class CategoryPageController extends AbstractController {
                 productService.getAllProductsByCategoryUuid(categoryEntity.getUuid(), page, PAGE_SIZE),
                 productEntityConverter, ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE
         );
+        List<FacetEntity> facets = facetService.getFacetsByCategory(categoryEntity);
         /** Set attributes */
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
         model.addAttribute("productsResult", products);
         model.addAttribute("queryParams", new HashMap<String, String>());
+        model.addAttribute("facets", facetEntityConverter.convertAll(facets));
         return MercuriusComicsShopConstants.VIEW.CATEGORY_PAGE;
     }
 }
