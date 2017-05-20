@@ -19,39 +19,44 @@
         <div class="mercurius-more-section">
             <%-- Catalog --%>
             <div class="mercurius-card-container mdl-grid">
-                <%-- Categories and filters--%>
+                <%-- Filters--%>
                 <div class="col-xs-6 col-md-4">
-                    <%-- Facets (dummy)  --%>
-                    <div class="panel panel-success">
-                        <div class="panel-heading">Genre</div>
-                        <div class="panel-body">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Fantasy</span>
-                            </label>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Science-fiction</span>
-                            </label>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
-                                <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Drama</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="panel panel-success">
-                        <div class="panel-heading">Country</div>
-                        <div class="panel-body">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                                <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input" checked>
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Japan</span>
-                            </label>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                                <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">Republic of Korea</span>
-                            </label>
-                        </div>
-                    </div>
+                    <%-- Facets --%>
+                    <c:if test="${not empty facets}">
+                        <form method="GET" action="${builtUrl}">
+                            <input type="hidden" name="searchText" value="<c:out value="${searchText}"/>">
+                            <c:forEach var="facet" items="${facets}">
+                                <div class="panel panel-success">
+                                    <div class="panel-heading"><c:out value="${facet.name}"/></div>
+                                    <c:set var="facetValuesName" scope="page" value="${facetPrefix}${facet.solrDocumentFieldName}"/>
+                                    <div class="panel-body">
+                                        <c:forEach var="dictionaryItem" items="${facet.availableValues}">
+                                            <%-- Check - is value selected --%>
+                                            <c:set var="selectedValue" value="false" scope="page"/>
+                                            <c:forEach var="currentValue" items="${requestScope[facetValuesName]}">
+                                                <c:if test="${currentValue eq dictionaryItem.code}">
+                                                    <c:set var="selectedValue" value="true" scope="page"/>
+                                                </c:if>
+                                            </c:forEach>
+                                            <%-- Show facet --%>
+                                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-<c:out value="${dictionaryItem.code}"/>">
+                                                <input type="checkbox" id="checkbox-<c:out value="${dictionaryItem.code}"/>"
+                                                       <c:if test="${selectedValue}">checked</c:if>
+                                                       name="<c:out value="${facetPrefix}"/><c:out value="${facet.solrDocumentFieldName}"/>"
+                                                       class="mdl-checkbox__input" value="<c:out value="${dictionaryItem.code}"/>">
+                                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">
+                                                    <c:out value="${dictionaryItem.name}"/>
+                                                </span>
+                                            </label>
+                                        </c:forEach>
+                                    </div>
+                                </div>
+                            </c:forEach>
+                            <div class="bs-example" data-example-id="btn-variants">
+                                <button type="submit" style="width: 100%" type="button" class="btn btn-primary">Search</button>
+                            </div>
+                        </form>
+                    </c:if>
                 </div>
                 <%-- Products --%>
                 <div class="col-xs-12 col-md-8">

@@ -271,33 +271,33 @@
                 <column property="includeInIndex">true</column>
                 <column property="solrDocumentFieldName">country</column>
                 <column property="name">Country</column>
-                <column property="featureType" value-import-bean="featureTypeImportBean">DICTIONARY_TYPE</column>
+                <column property="featureType" value-import-bean="enumImportBean">DICTIONARY_TYPE</column>
                 <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_country</column>
             </value>
             <value>
                 <column include-in-search="true" property="code">book_format_feature</column>
                 <column property="name">Format</column>
-                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+                <column property="featureType" value-import-bean="enumImportBean">STRING_TYPE</column>
             </value>
             <value>
                 <column include-in-search="true" property="code">book_size_feature</column>
                 <column property="name">Size</column>
-                <column property="featureType" value-import-bean="featureTypeImportBean">NUMERIC_TYPE</column>
+                <column property="featureType" value-import-bean="enumImportBean">NUMERIC_TYPE</column>
             </value>
             <value>
                 <column include-in-search="true" property="code">book_pages_count_feature</column>
                 <column property="name">Pages count</column>
-                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+                <column property="featureType" value-import-bean="enumImportBean">STRING_TYPE</column>
             </value>
             <value>
                 <column include-in-search="true" property="code">book_isbn_feature</column>
                 <column property="name">ISBN</column>
-                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+                <column property="featureType" value-import-bean="enumImportBean">STRING_TYPE</column>
             </value>
             <value>
                 <column include-in-search="true" property="code">book_rating_feature</column>
                 <column property="name">Rating</column>
-                <column property="featureType" value-import-bean="featureTypeImportBean">STRING_TYPE</column>
+                <column property="featureType" value-import-bean="enumImportBean">STRING_TYPE</column>
             </value>
         </values>
     </insert-update>
@@ -587,6 +587,12 @@
                 <column property="entityFieldName">featureValues</column>
                 <column property="solrFieldConverterBeanName">featureValuesSolrFieldConverter</column>
             </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_categories</column>
+                <column property="solrDocumentFieldName">categories</column>
+                <column property="entityFieldName">categories</column>
+                <column property="solrFieldConverterBeanName">productCategoriesSolrFieldConverter</column>
+            </value>
         </values>
     </insert-update>
 
@@ -610,8 +616,9 @@
                 <column property="code" include-in-search="true">country_facet</column>
                 <column property="name">Country</column>
                 <column property="forAllCategories">true</column>
-                <column property="facetType" value-import-bean="facetTypeImportBean">DICTIONARY</column>
+                <column property="facetType" value-import-bean="enumImportBean">DICTIONARY</column>
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="solrCriteriaValueType" value-import-bean="enumImportBean">IN</column>
             </value>
         </values>
     </insert-update>

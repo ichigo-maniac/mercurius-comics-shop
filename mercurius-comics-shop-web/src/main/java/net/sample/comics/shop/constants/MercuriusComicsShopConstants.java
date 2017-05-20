@@ -4,6 +4,16 @@ package net.sample.comics.shop.constants;
  * Mercurius comics shop constants
  */
 public class MercuriusComicsShopConstants {
+
+    /**
+     * Solr search constants
+     */
+    public class SOLR_SEARCH {
+        public static final String PRODUCT_SEARCH_RESOLVER = "productSearchResolver";
+        public static final String CATEGORY_FACET_PARAM_PREFIX = "category-facet-";
+        public static final String CATEGORIES_SOLR_FIELD = "categories";
+    }
+
     /**
      * JSP view constants
      */
