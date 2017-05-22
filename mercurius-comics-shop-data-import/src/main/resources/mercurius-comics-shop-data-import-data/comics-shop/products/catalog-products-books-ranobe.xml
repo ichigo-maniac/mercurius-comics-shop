@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Products -->
+    <insert-update entity-name="Product">
+
+        <!-- Common column values -->
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe</column>
+            <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::ranobe</column>
+        </common-values>
+        <!-- Entity values -->
+        <values>
+            <value>
+                <column property="name">Sword Art Online. Том 01</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Виртуальный мир, почти неотличимый от настоящего, — новейшая VRMMO «Sword Art Online».
+                    Однако смерть в этом мире означает смерть в мире реальном.
+                    Почти десять тысяч человек становятся пленниками игры и смогут освободиться, только если пройдут её до конца.
+                    Мечник Кирито пытается сделать это в одиночку, но встреча с виртуозной фехтовальщицей Асуной круто меняет его судьбу... и не только его.
+                </column>
+            </value>
+            <value>
+                <column property="name">Sword Art Online. Том 02</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Кирито, как и многие другие игроки, заключён в мире игры «Sword Art Online».
+                    За время, проведённое в ней, он встречает разных людей: приручительницу Силику, хозяйку кузницы Лизбет, таинственную девочку Юи, а также робкую копейщицу Сати, которую чёрный мечник не может забыть.
+                    В этом томе собраны четыре истории, в разное время случившиеся с Кирито, когда тот штурмовал уровни Айнкрада.
+                </column>
+            </value>
+            <value>
+                <column property="name">Sword Art Online. Том 03</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Кирито вернулся из смертельно опасной VRMMO «Sword Art Online» в реальный мир и первым делом принялся разыскивать Асуну, свою возлюбленную... но та ещё не пробудилась от виртуального сна. Кирито не понимает, что происходит.
+                    В отчаянии он хватается за единственную зацепку — таинственный скриншот с Асуной, запертой в птичьей клетке, и с головой погружается в VR-игру «ALfheim Online» — мир летающих по небу игроков-фей.
+                </column>
+            </value>
+            <value>
+                <column property="name">Sword Art Online. Том 04</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Ради спасения Асуны, так и не вернувшейся в реальный мир, Кирито погрузился в подозрительную VRMMO под названием «ALfheim Online».
+                    ALO очаровывает игроков многим:  продвинутой магией; боями, требующими быстрой реакции; системой полёта, позволяющей парить в небесах; графикой, не уступающей SAO, и, конечно, Большим квестом.
+                    Став феей-спригганом, Кирито устремился к главной цели всех игроков — «Древу мира» Иггдрасилю!
+                </column>
+            </value>
+            <value>
+                <column property="name">Sword Art Online. Том 05</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_05</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Виртуальность и реальность переплетаются всё сильнее. И вот уже слухи о человеке, который способен выстрелом в игре убить противника из реального мира, берёт на заметку даже Министерство внутренних дел.
+                    Только ли это слухи, или за ними кроются настоящие преступления? Чтобы выяснить правду, Кирито придётся нырнуть в новую VR-игру.
+                    В игру, пахнущую сталью и порохом... «GunGale Online».
+                </column>
+            </value>
+            <value>
+                <column property="name">Sword Art Online. Том 06</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_06</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Чтобы выяснить личность загадочного игрока по имени Дес Ган и узнать, действительно ли он умеет убивать людей, находясь внутри игры, Кирито ныряет в VRMMO «GunGale Online».
+                    Предположив, что Дес Ган примет участие в турнире «Золотая пуля», он делает то же самое.
+                    Вместе с девушкой-снайпером Синон ему предстоит разгадать зловещую загадку виртуального мира и бросить вызов своему прошлому.
+                </column>
+            </value>
+        </values>
+
+    </insert-update>
+
+
+</data-import>

@@ -79,6 +79,12 @@
                 <column property="entityFieldName">featureValues</column>
                 <column property="solrFieldConverterBeanName">featureValuesSolrFieldConverter</column>
             </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_categories</column>
+                <column property="solrDocumentFieldName">categories</column>
+                <column property="entityFieldName">categories</column>
+                <column property="solrFieldConverterBeanName">productCategoriesSolrFieldConverter</column>
+            </value>
         </values>
     </insert-update>
 
