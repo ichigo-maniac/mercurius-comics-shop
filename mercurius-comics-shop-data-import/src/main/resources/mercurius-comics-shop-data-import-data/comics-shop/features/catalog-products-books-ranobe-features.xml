@@ -17,6 +17,14 @@
                 <column property="featureType" value-import-bean="enumImportBean">DICTIONARY_TYPE</column>
                 <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_publisher</column>
             </value>
+            <value>
+                <column include-in-search="true" property="code">country_feature</column>
+                <column property="includeInIndex">true</column>
+                <column property="solrDocumentFieldName">country</column>
+                <column property="name">Страна</column>
+                <column property="featureType" value-import-bean="enumImportBean">DICTIONARY_TYPE</column>
+                <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_country</column>
+            </value>
         </values>
     </insert-update>
 
@@ -32,6 +40,10 @@
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
             </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
         </values>
     </insert-update>
 
@@ -45,6 +57,10 @@
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
             </value>
         </values>
     </insert-update>
@@ -60,6 +76,10 @@
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
             </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
         </values>
     </insert-update>
 
@@ -73,6 +93,10 @@
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
             </value>
         </values>
     </insert-update>
@@ -88,6 +112,10 @@
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
             </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
         </values>
     </insert-update>
 
@@ -101,6 +129,10 @@
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
             </value>
         </values>
     </insert-update>
@@ -116,6 +148,10 @@
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
             </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
         </values>
     </insert-update>
 
@@ -130,6 +166,10 @@
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
             </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
         </values>
     </insert-update>
 
@@ -143,6 +183,10 @@
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
             </value>
         </values>
     </insert-update>

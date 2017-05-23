@@ -27,6 +27,10 @@
                 <column include-in-search="true" property="code">country_japan</column>
             </value>
             <value>
+                <column property="name">Южная Корея</column>
+                <column include-in-search="true" property="code">country_republic_korea</column>
+            </value>
+            <value>
                 <column property="name">США</column>
                 <column include-in-search="true" property="code">country_usa</column>
             </value>
