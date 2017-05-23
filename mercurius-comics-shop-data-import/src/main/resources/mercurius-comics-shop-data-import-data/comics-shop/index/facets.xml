@@ -12,7 +12,7 @@
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
                 <column property="solrCriteriaValueType" value-import-bean="enumImportBean">IN</column>
                 <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">
-                    master_catalog::books;ranobe
+                    master_catalog::books;ranobe;manga
                 </column>
             </value>
         </values>

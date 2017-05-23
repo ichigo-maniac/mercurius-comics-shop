@@ -24,7 +24,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_01</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_01</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -38,7 +38,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_02</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_02</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -52,7 +52,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_03</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_03</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -66,7 +66,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_04</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_04</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -80,7 +80,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_05</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_05</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -94,7 +94,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_06</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_06</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -108,7 +108,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_spice_and_wolf_01</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_07</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -122,13 +122,13 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_kanojo_1000_nen_ikiteita</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_08</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
-                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
             </value>
         </values>
     </insert-update>
@@ -136,15 +136,86 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_no_game_no_life_01</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_09</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
             <value>
                 <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
-                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
             </value>
         </values>
     </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_10</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_11</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_12</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_13</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_14</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+        </values>
+    </insert-update>
+
 
 </data-import>

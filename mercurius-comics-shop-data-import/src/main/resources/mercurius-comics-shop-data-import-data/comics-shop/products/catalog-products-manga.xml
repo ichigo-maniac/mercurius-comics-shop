@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Products -->
+    <insert-update entity-name="Product">
+
+        <!-- Common column values -->
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga</column>
+            <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::manga</column>
+        </common-values>
+        <!-- Entity values -->
+        <values>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 01</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Заглянув на праздник в деревню, странствующий торговец Лоуренс ещё не знал, что случайно поможет сбежать оттуда местной богине урожая — Холо.
+                    Она хочет вернутся домой, на Север, и Лоуренс соглашается путешествовать вместе с ней. Впереди их ждёт путь, полный приключений и финансовых авантюр!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 02</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Лоуренс и Холо начинают догадываться, что они оказались втянуты в масштабную финансовую махинацию.
+                    Чтобы извлечь из неё выгоду, они обращаются за помощью к торговому дому Милоне, но кто сказал, что это сойдёт им с рук?..
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 03</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Лоуренсу удаётся освободить Холо, и кажется, что им уже ничто не угрожает. Однако самое тяжёлое впереди!
+                    По лабиринту подземных тоннелей им приходится убегать от наёмников торгового дома Медио, надеясь, что следующий поворот не закончится тупиком.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 04</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Разоблачив обман,  Лоуренс заключает новую сделку, и они с Холо направляются в Рюбинхайген, чтобы выгодно продать там ценный груз.
+                    Но по пути их ждёт судьбоносная встреча…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 05</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_05</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Цены на военное снаряжение стремительно упали, так что Лоуренсу приходится забыть о прибыли и думать, как отдать долг.
+                    К счастью, Холо всё ещё с ним. Но как за два дня раздобыть сто золотых в городе праведников?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 06</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_06</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Пока авантюра с золотом развивается успешно, но Лоуренсу, Холо и их попутчикам нужно выбраться из леса, отделяющего Рамтору от Рюбинхайгена.
+                    Однако это может оказаться не такой простой задачей, ведь волчьей стае нужны совсем не овцы…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 07</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_07</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В поисках дороги в Йойс, Лоуренс и Холо приезжают в небольшую деревню Терэо. Где-то в её окрестностях расположен тайный монастырь, в котором хранятся книги с древними легендами.
+                    Но уйти из этого монастыря может быть даже сложнее, чем найти его...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 08</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_08</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Благополучно разрешив кризис в Терэо, Лоуренс и Холо оставляют повозку в Реносе и плывут по реке, пытаясь догнать ускользающее от них богатство. И плывут они не одни...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 09</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_09</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В городе, разделённом рекой на два лагеря, Лоуренс пытается делать дела с одним берегом, не испортив отношения с другим.
+                    Новые знакомства сулят новую прибыль... и новые неприятности. Но даже это не так страшно, как ревность Холо.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 10</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_10</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Борьба между северным и южным берегами разгорается не на шутку. Случайно втянутый в круговорот торговой войны, Лоуренс хочет выйти из дела с минимальными потерями.
+                    И плохи были бы его дела, если бы его сторону не принимала мудрая и могущественная Холо.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 11</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_11</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Неожиданный поворот в переговорах ставит жизни их участников под угрозу.
+                    Как доказать, что ты не предатель, если все факты против тебя? Кульминация и развязка грандиозного противостояния.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 12</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_12</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Долгое путешествие Лоуренса и Холо в поисках Йойса подходит к концу. Заглянув в Ренос, Лоуренс случайно сталкивается с торговцем по имени Ле Руа и пытается узнать у него о книге по горному делу, содержимое которой грозит Йойсу бедой…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 13</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_13</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Долгое путешествие Лоуренса и Холо в поисках Йойса подходит к концу. Они находят отряд наёмников, носящий имя Мюра, старого друга Холо, и решают остаться в весьма оживлённом городе под названием Реско.
+                    Какой же секрет скрывается за его благополучием?..
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчица и пряности. Том 14</column>
+                <column include-in-search="true" property="code">manga_spice_and_wolf_14</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Лоуренс, который уже почти стал хозяином магазина своей мечты, оказывается втянут в политический конфликт компании Дебау.
+                    Игра идёт нешуточная, и, похоже, им с Холо придётся поделиться книгой, которую они так долго искали. Но правильную ли сторону они заняли?..
+                </column>
+            </value>
+
+        </values>
+    </insert-update>
+
+</data-import>
