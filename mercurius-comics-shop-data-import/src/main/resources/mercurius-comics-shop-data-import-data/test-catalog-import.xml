@@ -19,18 +19,21 @@
                 <column include-in-search="true" property="code">bluray</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">0</column>
             </value>
             <value>
                 <column property="name">Manga</column>
                 <column include-in-search="true" property="code">manga</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">2</column>
             </value>
             <value>
                 <column property="name">Ranobe</column>
                 <column include-in-search="true" property="code">ranobe</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">1</column>
             </value>
             <value>
                 <column property="name">Fantasy</column>

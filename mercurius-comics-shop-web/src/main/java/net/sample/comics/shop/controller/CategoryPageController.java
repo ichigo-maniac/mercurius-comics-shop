@@ -4,6 +4,7 @@ import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
 import org.mercuriusframework.converters.impl.CategoryEntityConverter;
 import org.mercuriusframework.converters.impl.FacetEntityConverter;
 import org.mercuriusframework.converters.impl.ProductEntityConverter;
+import org.mercuriusframework.dto.CategoryEntityDto;
 import org.mercuriusframework.dto.ProductEntityDto;
 import org.mercuriusframework.entities.CategoryEntity;
 import org.mercuriusframework.entities.FacetEntity;
@@ -99,9 +100,16 @@ public class CategoryPageController extends AbstractController {
                 "", createCriteriaParameters(request, model, categoryEntity), page,
                 productEntityConverter,
                 new ProductLoadOptions[]{ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE}, ProductEntity.CATEGORIES);
+        /** Categories */
+        List<CategoryEntityDto> categoriesDto = categoryConverter.convertAll(subCategories);
+        Collections.sort(categoriesDto, (cat1, cat2) -> {
+            Integer p1 = cat1.getPriority() != null ? cat1.getPriority() : 0;
+            Integer p2 = cat2.getPriority() != null ? cat2.getPriority() : 0;
+            return p2.compareTo(p1);
+        });
         /** Set attributes */
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
-        model.addAttribute("categories", categoryConverter.convertAll(subCategories));
+        model.addAttribute("categories", categoriesDto);
         model.addAttribute("productsResult", products);
         model.addAttribute("queryParams", new HashMap<String, String>());
         model.addAttribute("facets", facetEntityConverter.convertAll(facets));
