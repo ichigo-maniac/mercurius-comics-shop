@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <insert-update entity-name="Facet">
+        <values>
+            <value>
+                <column property="code" include-in-search="true">publisher_facet</column>
+                <column property="name">Издательство</column>
+                <column property="forAllCategories">false</column>
+                <column property="facetType" value-import-bean="enumImportBean">DICTIONARY</column>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="solrCriteriaValueType" value-import-bean="enumImportBean">IN</column>
+                <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">
+                    master_catalog::books;ranobe
+                </column>
+            </value>
+        </values>
+    </insert-update>
+
+</data-import>

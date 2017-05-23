@@ -21,6 +21,7 @@
                 <column include-in-search="true" property="code">video_game_consoles</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">7</column>
             </value>
 
             <value>
@@ -28,6 +29,7 @@
                 <column include-in-search="true" property="code">video_games</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">6</column>
             </value>
 
             <value>
@@ -35,6 +37,7 @@
                 <column include-in-search="true" property="code">manga</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">5</column>
             </value>
 
             <value>
@@ -42,6 +45,7 @@
                 <column include-in-search="true" property="code">comics_books</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">4</column>
             </value>
 
             <value>
@@ -49,13 +53,7 @@
                 <column include-in-search="true" property="code">books</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
-            </value>
-
-            <value>
-                <column property="name">Stuff</column>
-                <column include-in-search="true" property="code">stuff</column>
-                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
-                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">3</column>
             </value>
 
             <value>
@@ -63,6 +61,15 @@
                 <column include-in-search="true" property="code">figures</column>
                 <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">2</column>
+            </value>
+
+            <value>
+                <column property="name">Stuff</column>
+                <column include-in-search="true" property="code">stuff</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::catalog</column>
+                <column property="priority">1</column>
             </value>
 
             <!-- Game consoles -->

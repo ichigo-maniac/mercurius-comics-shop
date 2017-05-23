@@ -9,6 +9,10 @@
                 <column property="name">Страна</column>
                 <column include-in-search="true" property="code">dictionary_country</column>
             </value>
+            <value>
+                <column property="name">Издательство</column>
+                <column include-in-search="true" property="code">dictionary_publisher</column>
+            </value>
         </values>
     </insert-update>
 
@@ -29,6 +33,23 @@
             <value>
                 <column property="name">Россия</column>
                 <column include-in-search="true" property="code">country_russia</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Dictionary items -->
+    <insert-update entity-name="DictionaryItem">
+        <common-values>
+            <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_publisher</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="name">Истари Комикс</column>
+                <column include-in-search="true" property="code">publisher_istari_comics</column>
+            </value>
+            <value>
+                <column property="name">Xl Media</column>
+                <column include-in-search="true" property="code">publisher_xl_media</column>
             </value>
         </values>
     </insert-update>

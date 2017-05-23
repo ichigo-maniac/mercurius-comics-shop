@@ -8,7 +8,7 @@
             <value>
                 <column property="name">Full product index task property</column>
                 <column include-in-search="true" property="code">fullProductIndexTaskProperty</column>
-                <column property="solrCollectionName">mercurius_products</column>
+                <column property="solrCollectionName">mercurius_products_war</column>
                 <column property="query">
                     SELECT product FROM Product as product
                     LEFT JOIN FETCH product.mainUnit
@@ -94,7 +94,7 @@
             <value>
                 <column include-in-search="true" property="code">productSearchResolver</column>
                 <column property="pageSize">20</column>
-                <column property="solrCollectionName">mercurius_products</column>
+                <column property="solrCollectionName">mercurius_products_war</column>
                 <column property="indexEntityName">Product</column>
                 <column property="textSearchFields" value-import-bean="multiUniqueCodeImportBean">
                     product_index_field_name;product_index_field_code;product_index_field_description
