@@ -140,6 +140,34 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">В лес, где мерцают светлячки</column>
+                <column include-in-search="true" property="code">manga_hotarubi_no_mori_e</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Хотару приезжает на лето в родную деревню и, заблудившись в лесу, встречает молодого человека в маске, который называет себя духом.
+                    Тот выводит её из леса, и это становится началом дружбы, растянувшейся на годы. Но как дружить с тем, до кого ты даже не можешь дотронуться?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Возвращение в море</column>
+                <column include-in-search="true" property="code">manga_kaikisen</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Жители побережья заключили договор с русалками о том, что будут хранить и беречь их яйцо в обмен на благосклонность моря.
+                    Но амбициозные планы и жажда наживы вот-вот разрушат устоявшийся порядок жизни небольшого городка.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Голос далёкой звезды</column>
+                <column include-in-search="true" property="code">manga_hoshi_no_koe</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Человечество установило первый контакт с внеземной цивилизацией, и старшеклассница Микако Нагаминэ была рекрутирована для военно-исследовательской миссии за пределами Солнечной системы.
+                    Она пишет текстовые сообщения своему другу Нобору Тэрао, который остался на Земле.
+                    И чем дальше она от родной планеты, тем дольше идут сообщения, заставляя его годами ждать, когда сквозь разделяющую их пустоту космоса он услышит её голос...
+                </column>
+            </value>
+
         </values>
     </insert-update>
 
