@@ -107,6 +107,15 @@
                     Смогут ли Сора и Сиро стать спасителями человечества в чужом мире?
                 </column>
             </value>
+
+            <value>
+                <column property="name">Волчьи дети Амэ и Юки</column>
+                <column include-in-search="true" property="code">ranobe_wolf_children_ame_yuki</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Девятнадцатилетняя Хана влюбилась в парня-волка, и вскоре у них родились два ребёнка-оборотня — Юки и Амэ, которые могли принимать обличие и человека, и волка. Это история о тринадцати годах жизни Ханы и её детей.
+                    Первый роман знаменитого режиссера Мамору Хосоды, послуживший основой для одноимённого аниме.
+                </column>
+            </value>
         </values>
 
     </insert-update>
