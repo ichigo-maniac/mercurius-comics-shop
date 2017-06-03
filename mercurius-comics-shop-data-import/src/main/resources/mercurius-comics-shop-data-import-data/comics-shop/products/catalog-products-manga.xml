@@ -241,6 +241,134 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Невеста чародея. Том 01</column>
+                <column include-in-search="true" property="code">manga_the_magicians_bride_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Тисэ Хатори пятнадцать лет, и ничто не держит её в этом мире: у неё нет ни семьи, ни цели в жизни.
+                    Но однажды её покупает на аукционе древний как мир чародей. И когда она, попав в его дом, становится сначала его ученицей, а потом — невестой, что-то внутри неё пробуждается…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста чародея. Том 02</column>
+                <column include-in-search="true" property="code">manga_the_magicians_bride_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Элиас и Тисэ выполняют поручения Церкви, но внезапно на них нападает таинственная парочка.
+                    Чего они хотят? В чём сила Тисэ и что такое «Слэ Беге»? Читайте долгожданный второй том фантастической истории о помолвке двух противоположностей.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста чародея. Том 03</column>
+                <column include-in-search="true" property="code">manga_the_magicians_bride_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Слэ Беге обладают огромной силой, но Тисэ от этого не легче. Однажды на неё нападает моложавый волшебник, которого она уже встречала в Ултаре. Когда с его воспитанницей случается несчастье, Элиас показывает своё мастерство, называемое «Пилум Муриалис».
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста чародея. Том 04</column>
+                <column include-in-search="true" property="code">manga_the_magicians_bride_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Тисэ снова посещает драконьи гнёзда по зову хранителя Линдера. И пока
+                    она мастерит себе посох, Линдер рассказывает ей, как в далёком прошлом
+                    встретил Элиаса. Что за чувства появились в душе Тисэ, когда она это
+                    услышала?..
+                    Долгожданный четвёртый том истории о союзе между девушкой и нечеловеком!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста чародея. Том 05</column>
+                <column include-in-search="true" property="code">manga_the_magicians_bride_05</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Оба героя изменились с момента первой встречи: Элиас начал открывать для себя мир человеческих чувств, а Тисэ научилась не жить прошлым. Однажды
+                    их дом посещает ланнан-ши с мольбой о помощи. Но что Тисэ может сделать для неё?
+                    Фантастическая история о помолвке двух противоположностей продолжает раскрывать все тонкости отношений между человеком и нечеловеческим существом.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Повелители терний. Том 01</column>
+                <column include-in-search="true" property="code">manga_ibara_no_ou_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Планета охвачена эпидемией болезни, превращающей человеческое тело в камень. Сто шестьдесят заражённых погружаются в анабиоз, чтобы дождаться лекарства от вируса, но их пробуждение становится неожиданным: медицинский центр лежит в руинах, а кругом бродят кровожадные твари.
+                    Болезнь медленно убивает людей, но они всё же пытаются выжить в новом враждебном мире.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Повелители терний. Том 02</column>
+                <column include-in-search="true" property="code">manga_ibara_no_ou_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Касуми и другие уцелевшие пробиваются обратно в замок, надеясь отыскать там спасение. Но по пути один человек отделяется от группы и, забрав с собой Касуми, скрывается в развалинах.
+                    Оставшиеся из последних сил отражают нападения загадочных чудовищ. Напряжение нарастает, и будущее героев смутно.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Повелители терний. Том 03</column>
+                <column include-in-search="true" property="code">manga_ibara_no_ou_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Через кишащие монстрами лабиринты разрушенного замка пятеро выживших идут на свет... только для того, чтобы увидеть бескрайнее море вокруг. Загадки прошлого и будущего сплетаются воедино.
+                    В поисках правды группе предстоит пересечь границу секретного четвёртого уровня...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Повелители терний. Том 04</column>
+                <column include-in-search="true" property="code">manga_ibara_no_ou_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Марко Оуэн оставляет своих спутников, которым грозит окаменение, и в одиночку пробирается дальше по четвёртому уровню. Всё больше тайн получают своё объяснение.
+                    Происхождение таинственной болезни «Медуза», причина изоляции замка, задание Марко... Но кого же находит Касуми?! Кульминация уже близко!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Повелители терний. Том 05</column>
+                <column include-in-search="true" property="code">manga_ibara_no_ou_05</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Он называет себя «Зевс», и это он с помощью «Медузы» создал невиданных чудовищ. Чтобы победить Зевса и спасти друзей, Марко в одиночку добирается до центральной лаборатории.
+                    А тем временем Касуми встречает Алису, и та ведёт её во вторую лабораторию... Каждому из них открывается шокирующая правда!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Повелители терний. Том 06</column>
+                <column include-in-search="true" property="code">manga_ibara_no_ou_06</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В самом глубоком подземелье старого замка, в центральной лаборатории, Зевс создал своих солдат — «божественное воинство».
+                    Они схватили Рона и Тима, а Марко пронзён острым клинком. Кто же сможет разрушить планы Зевса?! Читайте ураганное завершение невероятного триллера!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Летние войны. Том 01</column>
+                <column include-in-search="true" property="code">manga_summer_wars_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Во время летних каникул Кэндзи получает от своей обожаемой Нацуки-сэмпай предложение поработать, и они отправляются в дом её прабабушки. Но кто же знал, что работа — притворяться женихом Нацуки?! Он проводит день в гостях у её большой семьи, а ночью ему приходит подозрительное письмо с математической задачей.
+                    Кэндзи находит ответ, даже не подозревая, какую небывалую катастрофу это вызовет...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Летние войны. Том 02</column>
+                <column include-in-search="true" property="code">manga_summer_wars_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Взбунтовавшийся искусственный интеллект, известный под именем «Лав Машин», захватил виртуальную реальность OZ, вызвав панику по всей Японии. А его разработчиком оказался Вабисукэ, трудный ребёнок семьи Дзинноути, и теперь ответственность за произошедшее лежит на всех них.
+                    Увидев, как страдают Нацуки и её близкие, Кэндзи решает отомстить Лав Машин. Где же состоится битва?..
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Летние войны. Том 03</column>
+                <column include-in-search="true" property="code">manga_summer_wars_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Лав Машин сбежал из расставленной на него ловушки и превратился в огромного монстра. Он наносит ответный удар, направляя захваченный космический зонд на одну из атомных электростанций! Когда до катастрофы остаются считаные минуты, Кэндзи решает рискнуть всем в азартных играх. Теперь судьба человечества зависит от Нацуки и её умения играть в кой-кой! Последний том потрясающей истории — с эпилогом, придуманным специально для манги.
+                </column>
+            </value>
+
         </values>
     </insert-update>
 
