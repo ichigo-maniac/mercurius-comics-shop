@@ -335,5 +335,149 @@
         </values>
     </insert-update>
 
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tokikake</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_first_squad</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_the_garden_of_words</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_bloodhound</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_kamisama_ga_uso_wo_tsuku</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_furou_kyoudai</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_gigantomakhia</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_wolfull_moon</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
 
 </data-import>

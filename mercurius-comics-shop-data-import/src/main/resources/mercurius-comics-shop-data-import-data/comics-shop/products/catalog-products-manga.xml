@@ -168,6 +168,79 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Девочка, покорившая время</column>
+                <column include-in-search="true" property="code">manga_tokikake</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Семнадцатилетняя школьница Макото не задумывается о будущем: ни о том, кем хочет стать, ни о том, кем для неё являются её друзья Коскэ и Тиаки.
+                    Она не хочет ничего менять, и тут, как нарочно, обретает способность перемещаться назад во времени.
+                    С её помощью она начинает решать свои маленькие проблемы, не подозревая, что будущее, с которым она так легкомысленно обходится, рано или поздно всё-таки настанет.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Первый отряд: Момент истины</column>
+                <column include-in-search="true" property="code">manga_first_squad</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Чтобы сломить контрнаступление на Восточном фронте, фашистская Германия призывает из мира мёртвых магистра Ордена Святого меча, фон Вольффа. Отразить потустороннее вторжение Шестой отдел УВР поручает Наде Руслановой, которая должна призвать на помощь погибших пионеров Первого отряда.
+                    Смогут ли мёртвые помочь живым и изменить ход Великой отечественной войны в Момент истины?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Сад изящных слов</column>
+                <column include-in-search="true" property="code">manga_the_garden_of_words</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Старшеклассник Такао мечтает стать дизайнером обуви. Дождливым днём он случайно знакомится в парке с женщиной по имени Юкино.
+                    Он не знает о ней ничего: ни её имени, ни возраста, ни того, что её сюда привело. Но каждая новая встреча сближает их всё больше...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Бладхаунд: Гостевой клуб полуночных любовников</column>
+                <column include-in-search="true" property="code">manga_bloodhound</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Полутёмная комната, увешанная крестами. Бессвязная болтовня и любовная страсть.
+                    А ещё — прикосновение к истине… Старшеклассница Рион Кано расследует исчезновение своей подруги, и поиски приводят её в гостевой клуб, хозяева которого хранят зловещую тайну. Удастся ли вывести их на чистую воду?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Даже боги лгут</column>
+                <column include-in-search="true" property="code">manga_kamisama_ga_uso_wo_tsuku</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В новой школе, куда перевёлся Нацуру Нанао, девочки не обращают на него внимания. Однажды он случайно узнаёт секрет своей одноклассницы, Рио Судзумуры.
+                    Внезапный ливень, городской праздник, белый котёнок по имени Тофу... Последнее лето в младших классах. Тайное приключение начинается.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Двойняшки Фуро</column>
+                <column include-in-search="true" property="code">manga_furou_kyoudai</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Двойняшки Кёко и Дайскэ Фуро никогда не разлучаются!
+                    Тому есть причина: они очень восприимчивы к потустороннему миру. Когда они ходят поодиночке, в них легко вселяются духи, а отогнать призраков брат с сестрой могут только вдвоём! Но что же нарушило их привычную  повседневную жизнь?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Гигантомахия</column>
+                <column include-in-search="true" property="code">manga_gigantomakhia</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Катаклизм, происходящий раз в несколько миллионов лет, изменил Землю. На обломках былых цивилизаций Делос и Проме бросают вызов империи, владеющей легендарными боевыми гигантами.
+                    Какую удивительную тайну скрывает эта пара и к чему стремится? Как устроен этот новый мир, где существа разных видов ожесточённо сражаются за жизнь?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волколуние</column>
+                <column include-in-search="true" property="code">manga_wolfull_moon</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Яя Тооцуки с детства видит невидимых обычным людям чудовищ. И вот однажды, когда одно из них вдруг на неё напало, ей на помощь неожиданно пришёл щенок. Щенок оказался говорящим и поведал ей, что он — грозный король демонов Фенрир, тысячу лет назад заключённый в собачьем теле.
+                    И только Яя может снять с него проклятие…
+                </column>
+            </value>
+
         </values>
     </insert-update>
 
