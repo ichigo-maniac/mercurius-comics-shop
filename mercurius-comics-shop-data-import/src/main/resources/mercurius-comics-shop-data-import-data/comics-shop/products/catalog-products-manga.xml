@@ -419,6 +419,57 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Излом. Том 01</column>
+                <column include-in-search="true" property="code">manhua_dangu_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Яран со своим телохранителем Бату по приказу господина отправляется на разведку в клан мятежников. Однако там воины попадают в засаду, и им приходится принять бой даже не зная, кто желает им смерти.
+                    Так начинается история о противостоянии кланов и судьбах людей, которых оно затронуло.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Излом. Том 02</column>
+                <column include-in-search="true" property="code">manhua_dangu_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Бату, выполняя волю своего господина, заботится о его дочери Яки, а в истории появляются новые действующие лица.
+                    Молодой шаман Хоракхан пытается убежать от преследующих его воинов клана Кугаи. Но хуже всего, что за головой шамана охотятся не только они…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Излом. Том 03</column>
+                <column include-in-search="true" property="code">manhua_dangu_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Охота на шамана продолжается, и самое время Бату показать, за что его прозвали Королём стального захвата. Однако помощь приходит с неожиданной стороны…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Излом. Том 04</column>
+                <column include-in-search="true" property="code">manhua_dangu_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Бату решает выяснить, что стоит за истреблением шаманов. Чтобы уберечь Яки до его возвращения, Кенджи отводит её в Деревню изгоев, где в жестоких испытаниях растят борцов и убийц.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Хищная принцесса Егрина. Том 01</column>
+                <column include-in-search="true" property="code">manhua_carnivorous_princess_yegrinna_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    18-летний Чхве Сикнам интересуется только книгами и учёбой, а на других людей ему наплевать. Зато принцессе-собаке по имени Егрина — не наплевать. Её задача — покарать людей, осквернивших этот мир, поголовно превратив их в животных.
+                    И жить этим двоим в одном доме. Может ли кто-нибудь представить последствия этого невероятного стечения обстоятельств?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Хищная принцесса Егрина. Том 02</column>
+                <column include-in-search="true" property="code">manhua_carnivorous_princess_yegrinna_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Смогут ли принцесса Егрина и отменный эгоист Чхве Сикнам ужиться под одной крышей? Спокойное, размеренное существование, которым так гордился школьник, меняется в один момент!
+                    А оккупация мира людей выходцами из Царства зверей вот-вот начнётся!
+                </column>
+            </value>
 
         </values>
     </insert-update>
