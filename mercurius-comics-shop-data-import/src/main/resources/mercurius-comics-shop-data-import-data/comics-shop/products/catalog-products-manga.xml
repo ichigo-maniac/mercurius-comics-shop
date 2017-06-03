@@ -369,6 +369,57 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Форма голоса. Том 01</column>
+                <column include-in-search="true" property="code">manga_koe_no_katachi_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    «Она меня бесит!» — думал обычный малолетний хулиган Сёя Исида. К ним в класс перевелась глухая девочка Сёко Нисимия.
+                    Их встреча навсегда изменила класс, школу и даже жизнь Сёи.
+                    Манга Koe No Katachi печаталась с 2013 по 2014 г. и состоит из 7 томов. В 2014 г. манга номинирована на премию Manga Taisho, а в 2015 г. на премию Тэдзука Осаму, получив в итоге приз за лучшую новую мангу.
+                    17 сентября по ней вышла полнометражная аниме картина от студии Kyoto Animation.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Форма голоса. Том 02</column>
+                <column include-in-search="true" property="code">manga_koe_no_katachi_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    «Сёко, не убегай!» Прошло пять лет. Сёя хочет в последний раз встретиться с Сёко.
+                    Неожиданно они услышали голоса друг друга. Так и начинается эта история.
+                    Манга Koe No Katachi печаталась с 2013 по 2014 г. и состоит из 7 томов. В 2014 г. манга номинирована на премию Manga Taisho, а в 2015 г. на премию Тэдзука Осаму, получив в итоге приз за лучшую новую мангу.
+                    17 сентября по ней вышла полнометражная аниме картина от студии Kyoto Animation.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Шерлок. Том 01. Этюд в розовых тонах</column>
+                <column include-in-search="true" property="code">manga_sherlok_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Шерлок Холмс живёт в наши дни. Он преследует преступников со смартфоном и своим всемогущим дедуктивным методом.
+                    За приключениями Холмса и его компаньона, военного врача Ватсона, следит весь мир.
+                    И вот ТВ-сериал ВВС про знаменитого сыщика наконец-то получил комикс-адаптацию!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Шерлок. Том 02. Слепой банкир</column>
+                <column include-in-search="true" property="code">manga_sherlok_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Что таится за попавшим к Шерлоку и Джону делом об убийстве в банке и надписи на стене?
+                    Вторая серия первого сезона популярного ТВ-сериала «Шерлок», повествующая о тайне известного банкира и оставленном шифре, наконец-то получила комикс-адаптацию!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Шерлок. Том 03. Большая игра</column>
+                <column include-in-search="true" property="code">manga_sherlok_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Таинственный Мориарти стоит за множеством преступлений. Человек, называющий себя криминальным консультантом, наконец-то объявляет Шерлоку войну.
+                    Что же из этого выйдет?.. Шокирующая концовка первого сезона теперь в виде комикса!
+                </column>
+            </value>
+
+
         </values>
     </insert-update>
 
