@@ -471,6 +471,121 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Невеста речного бога. Том 01</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Только получив в жёны красавицу, речной бог пошлёт людям дождь. Девушка Соа решает стать его невестой, чтобы спасти свою деревню от засухи. Оставив безутешную семью, она попадает в подводный мир и встречается со своим женихом, однако тот выглядит совсем не так, как она его себе представляла…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 02</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Днём Хабэк — ребёнок, по ночам же он становится взрослым. Соа не знает его истинного облика, но однажды сталкивается с Муи, и с тех пор при каждой новой встрече с ним её сердце замирает от волнения. Случайно сказанные Тхэыльджином слова о том, что Муи  — это Хабэк, прозвучали для Соа как гром среди ясного неба. Соа пытается проверить это и находит первые доказательства.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 03</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Соа случайно видит встречу Хабэка с умершей, как она считала, Накпин. Той же ночью, не успев оправиться от потрясения, она получает ещё один удар, уже от Муи. Тогда она принимает решение вернуться домой.
+                    Но после возвращения, очнувшись в своей комнате, Соа понимает, что ничего не помнит…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 04</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Забыв про Хабэка и Подводное царство, Соа решает принять предложение своего друга детства Тонёна. Но явление Муи приводит её в замешательство, втягивая в водоворот сомнений и заставляя колебаться, в то время как день её свадьбы неотвратимо приближается. В ночь перед церемонией, когда Соа пребывает в раздумьях относительно своего выбора, Муи внезапно появляется снова.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 05</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_05</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Муи хватает Соа на руки, и они вместе возвращаются в Подводное царство. Муи со всей решительностью предлагает Соа выйти за него, но в этот самый миг в Подводное царство попадает ещё одна невеста Хабэка. Новая невеста говорит, что её зовут Накпин, и ей удаётся завоевать доверие своего жениха. Соа, терзаемая муками ревности, принимает опрометчивое решение отправиться на прогулку вместе с Хее.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 06</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_06</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Забрав Соа у Хее, Муи возвращается в Подводное царство, но полученные от императора ранения дают о себе знать. С наступлением дня Муи, став Хабэком, поспешно скрывается. Отправившись на поиски пропавшего Муи, Соа попадает в опасность. В этот момент рядом с ней возникает таинственный мужчина, который говорит, что теперь она - его рабыня…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 07</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_07</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Коварная Накпин дала Хабэку зелье, из-за которого тот забыл всё, связанное с Соа. Однако потрясённая Соа не теряет надежды, что он её вспомнит. Пав жертвой интриг Императора, она, против своей воли, оказывается в императорском дворце, в то время, как не догадывающийся об этом Хабэк вместе с Накпин отправляется с визитом туда же...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 08</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_08</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Во владениях Императора Хабэк встречает Соа, которую совсем не помнит. Она же, узнав о тайне, связывающей Хабэка и Муи, страдает, что её так обманули. Тем временем Император устраивает приём в честь Хабэка, на котором знакомит того с будущей невестой Хее!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 09</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_09</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Муи вовсе не терял воспоминаний о Соа, но она об этом даже не догадывается. Чтобы контролировать Муи, Императору нужно знать его настоящее имя. Он приказывает Соа выведать эту тайну, и, оставшись с Муи наедине, она осторожно задаёт ему вопрос…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 10</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_10</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Пирём, участвовавший в нападении мятежников на императорский дворец, сбежал, забрав Соа с собой. Сованмо ради спасения сына отправляется к Императору и предлагает тому жизнь Синнона в обмен на свободу Муи, однако тот не может покинуть дворец из-за Накпин. А в это время Соа, попавшая на Луну, пытается встретиться с Муи, но внезапно оказывается в прошлом...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 11</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_11</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В гневе Накпин выкалывает Хабэку глаз, но затем, придя в себя, решает окончательно разорвать связь между ними. После этого у Хабэка нет причин оставаться во дворце. Но Сованмо приходится следить, чтобы Император сдержал данное ей обещание. И в качестве дополнения: первая встреча богини смерти Сованмо и бога жизни Тонвангона!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 12</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_12</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Влюблённый Муи делает Соа предложение, которое та с радостью принимает. Отец Муи, Тонвангон держит своё обещание и организовывает их свадьбу. После долгой и сложной церемонии Соа, не дождавшись Муи, засыпает в покоях для новобрачных…
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 13</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_13</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Один-единственный кусочек персика бессмертия может подарить человеку вечную жизнь, и последний такой персик оказывается в руках Муры. Хабэк отправляется на его поиски, чтобы разделить вечность с Соа.
+                    Оставив Соа под присмотром Пирёма, Хабэк встречается с Мурой. Но та уже расставила ловушку — для всех героев...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста речного бога. Том 14</column>
+                <column include-in-search="true" property="code">manhua_bride_of_the_water_god_14</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Хабэк пожертвовал Мурой ради возможности подарить Соа вечную жизнь, но оценит ли та его поступок?
+                    Соа продолжают терзать сомнения, и она решается проверить силу чувств Хабэка, предложив ему отказаться ради неё от своих божественных сил и стать человеком. Решится ли Хабэк на подобное ради того, чтобы доказать свою любовь?
+                </column>
+            </value>
+
         </values>
     </insert-update>
 

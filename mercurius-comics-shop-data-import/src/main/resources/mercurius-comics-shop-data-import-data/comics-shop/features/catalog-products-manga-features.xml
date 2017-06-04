@@ -929,5 +929,256 @@
         </values>
     </insert-update>
 
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_01</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_02</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_03</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_04</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_05</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_06</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_07</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_08</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_09</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_10</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_11</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_12</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_13</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_14</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_istari_comics</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_republic_korea</column>
+            </value>
+        </values>
+    </insert-update>
 
 </data-import>
