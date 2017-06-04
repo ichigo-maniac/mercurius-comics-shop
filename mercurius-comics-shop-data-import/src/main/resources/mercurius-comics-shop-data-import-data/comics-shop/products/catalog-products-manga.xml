@@ -586,6 +586,78 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Песня куклы. Том 01</column>
+                <column include-in-search="true" property="code">manhua_doll_song_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Полюбоваться на прекрасную Ухи приезжают со всех концов страны, но отец не разрешает той выходить из дома чаще, чем раз в месяц. Преодолеет ли любовь отцовский запрет и сумрак забвения?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Песня куклы. Том 02</column>
+                <column include-in-search="true" property="code">manhua_doll_song_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Время жизни куклы истекает, а загадки её прошлого так и остаются неразгаданными. Но кто же этот человек с белыми волосами, которого она видела во сне? И как он связан с её хозяином?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Песня куклы. Том 03</column>
+                <column include-in-search="true" property="code">manhua_doll_song_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Нахлынувшие воспоминания возвращают старую боль... Побег не удался, и теперь Нари и Кае самое время решить, на чьей они стороне.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Песня куклы. Том 04</column>
+                <column include-in-search="true" property="code">manhua_doll_song_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Чёрный ливень обрушился на деревню, и тьма объяла сердца. А кукла всё не может выбрать, кто ей дороже: тот, кто дал ей жизнь, или тот, кто освободил её?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Песня куклы. Том 05</column>
+                <column include-in-search="true" property="code">manhua_doll_song_05</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Песня куклы спета, а на плечи Сину легла тяжёлая ноша. Какая же сила сильнее смерти и проклятия?
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Библиотека вампиров. Том 01</column>
+                <column include-in-search="true" property="code">manhua_vampire_library_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Ю Мано, юноша с необычной внешностью, устраивается библиотекарем на полставки. Другие сотрудники библиотеки — персоны экстравагантные, чтобы не сказать сильнее. И он бы с радостью с ними распрощался, если бы не случайный укус в шею, который меняет всё.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Скунс и оцелот. Том 01</column>
+                <column include-in-search="true" property="code">manga_skunk_and_ocelot_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Прожжённого хиппаря, П. Дж. Бладватерза, и законченного металлюгу, Сэна Тавра, по ошибке упрятали в два монастыря боевых искусств на разных склонах горы Шаньдзан, и быть там монахом сразу стало весьма небезопасно. Здесь-то они и начнут свою карьеру всеобщего разрушения и глобальных катаклизмов.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Скунс и оцелот. Том 02</column>
+                <column include-in-search="true" property="code">manga_skunk_and_ocelot_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Наши шальные герои чудом вырываются из цепких лап своих вконец ошалевших учителей, лишь для того чтобы попасть в еще более ошалелую ситуацию!  Смертоносные ниньзя, могучие танки, загадочные артефакты и беспросветное уныние офисной работы: всё это вы найдёте на страницах нового тома «Скунс и Оцелот» от Хатчетта и Богдана!  Даже если вы ещё не прочли первый том, это не повод не прикупить второй!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Якутия</column>
+                <column include-in-search="true" property="code">manga_yakutia</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Якутия — край суровых морозов и страшных чудовищ абахы. Когда-то давным-давно абахы были заточены под землёй и долго не появлялись на белый свет… Но недавно кто-то вновь выпустил древних монстров на волю, и теперь весь мир оказался в опасности! Казалось, спасения нет… Но вот удача! Максим, обычный якутский школьник (ОЯШ), оказался самым настоящим Избранным, который способен остановить чудовищ! Вперёд, Максим! Покажи этим ужасным монстрам… Э-э-э… постой! Ты куда?! Макс, вернись! А, ну вот и всё. Убежал… Похоже, нам всем конец.
+                </column>
+            </value>
+
         </values>
     </insert-update>
 
