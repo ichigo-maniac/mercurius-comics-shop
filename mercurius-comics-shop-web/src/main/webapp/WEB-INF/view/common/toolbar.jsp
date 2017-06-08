@@ -2,6 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 
 <div class="mercurius-header mdl-layout__header mdl-layout__header--waterfall">
     <div class="mdl-layout__header-row" style="padding-left: 50px;">
@@ -35,8 +36,12 @@
                    href="<c:url value="/catalog"/>"><spring:message code="comics.shop.toolbar.catalog.label"/></a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/cart"/>"><span
                         class="mdl-badge" data-badge="0"><spring:message code="comics.shop.toolbar.cart.label"/></span></a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/about_us"/>">About
-                    us</a>
+                <%-- Anonymous --%>
+                <security:authorize access="isAnonymous()">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#" data-toggle="modal" data-target="#sign-in-dialog">
+                        <spring:message code="comics.shop.toolbar.sign.in.label"/>
+                    </a>
+                </security:authorize>
             </nav>
         </div>
     </div>
