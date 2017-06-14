@@ -26,9 +26,20 @@ public class MercuriusComicsShopConstants {
     }
 
     /**
+     * Parameters keys constants
+     */
+    public class PARAMETERS {
+        public static final String APP_HOST_PATH = "comics.shop.application.host.path";
+        public static final String VK_CLIENT_ID = "comics.shop.vk.com.clientId";
+        public static final String VK_SECRET = "comics.shop.vk.com.clientSecret";
+        public static final String VK_OAUTH_METHOD = "comics.shop.vk.com.oauth.method";
+    }
+
+    /**
      * Redirect constants
      */
     public class REDIRECT {
+        public static final String HOME = "redirect:/";
         public static final String PAGE_NOT_FOUND = "redirect:/";
     }
 

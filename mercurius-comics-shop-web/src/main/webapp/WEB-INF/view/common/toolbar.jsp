@@ -42,6 +42,12 @@
                         <spring:message code="comics.shop.toolbar.sign.in.label"/>
                     </a>
                 </security:authorize>
+                <%-- Authenticated --%>
+                <security:authorize access="isAuthenticated()">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/logout"/>">
+                        <spring:message code="comics.shop.toolbar.logout.label"/>
+                    </a>
+                </security:authorize>
             </nav>
         </div>
     </div>
