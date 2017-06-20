@@ -32,20 +32,24 @@
                     </div>
                 </form:form>
                 <%-- Links --%>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase"
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" style="padding-left: 16px; padding-right: 16px;"
                    href="<c:url value="/catalog"/>"><spring:message code="comics.shop.toolbar.catalog.label"/></a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/cart"/>"><span
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" style="padding-left: 16px; padding-right: 16px;"
+                   href="<c:url value="/cart"/>"><span
                         class="mdl-badge" data-badge="0"><spring:message code="comics.shop.toolbar.cart.label"/></span></a>
                 <%-- Anonymous --%>
                 <security:authorize access="isAnonymous()">
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#" data-toggle="modal" data-target="#sign-in-dialog">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#" style="padding-left: 16px; padding-right: 16px;"
+
+                       data-toggle="modal" data-target="#sign-in-dialog">
                         <spring:message code="comics.shop.toolbar.sign.in.label"/>
                     </a>
                 </security:authorize>
                 <%-- Authenticated --%>
                 <security:authorize access="isAuthenticated()">
                     <%-- Personal info --%>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" id="solr"
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" style="padding-left: 16px; padding-right: 16px;"
+                       data-toggle="dropdown" href="#" role="button" aria-haspopup="true" id="solr"
                        aria-expanded="false">
                         <c:choose>
                             <c:when test="${not empty sessionScope.currentUser.firstName}">
@@ -72,7 +76,8 @@
                         </li>
                     </ul>
                     <%-- Log out --%>
-                    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/logout"/>">
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" style="padding-left: 16px; padding-right: 16px;"
+                       href="<c:url value="/logout"/>">
                         <spring:message code="comics.shop.toolbar.logout.label"/>
                     </a>
                 </security:authorize>
