@@ -28,6 +28,8 @@ public class ISTUserFacadeImpl extends UserFacadeImpl implements ISTUserFacade {
         customerEntity.setSocialNetworkType(socialNetworkType);
         customerEntity.setSocialNetworkId(socialNetworkId);
         customerEntity.setName(lastName + " " + firstName);
+        customerEntity.setFirstName(firstName);
+        customerEntity.setLastName(lastName);
         return entityService.save(customerEntity);
     }
 }

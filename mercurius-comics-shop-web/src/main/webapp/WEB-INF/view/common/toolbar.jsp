@@ -44,6 +44,34 @@
                 </security:authorize>
                 <%-- Authenticated --%>
                 <security:authorize access="isAuthenticated()">
+                    <%-- Personal info --%>
+                    <a class="mdl-navigation__link mdl-typography--text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" id="solr"
+                       aria-expanded="false">
+                        <c:choose>
+                            <c:when test="${not empty sessionScope.currentUser.firstName}">
+                                <c:out value="${sessionScope.currentUser.firstName}"/>
+                            </c:when>
+                            <c:otherwise>
+                                [Username]
+                            </c:otherwise>
+                        </c:choose>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="solr">
+                        <%-- Personal info --%>
+                        <li class="mdl-menu__item">
+                            <a href="#">
+                                <spring:message code="toolbar.personal.info.personal.info.label"/>
+                            </a>
+                        </li>
+                        <%-- Orders --%>
+                        <li class="mdl-menu__item">
+                            <a href="#">
+                                <spring:message code="toolbar.personal.info.orders.label"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <%-- Log out --%>
                     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="<c:url value="/logout"/>">
                         <spring:message code="comics.shop.toolbar.logout.label"/>
                     </a>
