@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Products -->
+    <insert-update entity-name="Product">
+        <!-- Common column values -->
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_switch_games</column>
+            <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::nintendo_switch_games</column>
+        </common-values>
+        <!-- Entity values -->
+        <values>
+
+            <value>
+                <column property="name">Mario Kart 8 Deluxe Edition</column>
+                <column include-in-search="true" property="code">mario_kart_8_deluxe_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    На консоли Nintendo Switch поклонники смогут насладиться наиболее полной версией Mario Kart 8.
+                    Вы сможете устраивать гонки с 8 друзьями где угодно и когда угодно в локальном многопользовательском режиме.
+                    Здесь собраны все ваши любимые трассы и персонажи из версии для Wii U, все трассы и персонажи из наборов дополнительного контента, а также новые персонажи: инклинг-мальчик и инклинг-девочка из Splatoon, бу-король, купа-скелет и Боузер-младший! Кроме того, режим Бой был переработан и включает в себя Шаробой и Боб-омб-битву с такими новыми трассами, как Станция «Дека» и Гоночная арена, а также с такими хорошо знакомыми, как Особняк Луиджи из Mario Kart: Double Dash!! для Nintendo GameCube и Боевая трасса 1 из Super Mario Kart для Super Nintendo Entertainment System. Игроки смогут брать сразу два предмета, включая новые предметы из предыдущих игр Mario Kart, например, бу — призрак, крадущий предметы, — и перо, которое позволяет прыгать выше в режиме Бой. Игроки даже могут выбрать новую функцию смарт-управления, с помощью которой начинающие водители справятся с вождением даже в болидах с 200 куб. см. Играйте в режиме ТВ с разрешением до 1080p.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Splatoon 2</column>
+                <column include-in-search="true" property="code">splatoon_2_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Ведите бои за территорию где угодно, когда угодно и с кем угодно в Splatoon 2 для Nintendo Switch.
+                    В этом полноценном продолжении игрокам будут доступны традиционные бои 4 на 4 за район, другие уже полюбившиеся режимы, а также новые арены, новая одежда, новое оружие и многое другое! В боях за район цель предельно проста — захватить как можно большую территорию, закрасив ее краской. Побеждает команда, закрасившая большую поверхность. Превращайтесь в кальмара, чтобы быстро плавать по чернилам своей команды. Вы даже сможете забираться по стенам (если они закрашены краской вашей команды), чтобы захватить выгодное положение с хорошим обзором, или затаиться в засаде, поджидая неосторожных игроков.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Nintendo Switch Arms</column>
+                <column include-in-search="true" property="code">arms_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Глаза завидущие, руки загребущие — пора хватать призы! Новое слово в файтингах! Чтобы победить в ARMS, вам придется на полную катушку использовать возможности своих эластичных рук! Найдите нужную пару, выбирайте персонажа и вступайте в битву за звание чемпиона! Боец двигается в унисон с движениями ваших рук. Вспоминайте все, что знаете о боевых искусствах, и придумывайте новые приемы.
+                    Контроллеры Joy-Con помогут полностью погрузиться в жар битвы. Уклоняйтесь от атак противника и отвечайте на них собственными.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">The Legend of Zelda: Breath of the Wild</column>
+                <column include-in-search="true" property="code">zelda_breath_of_the_wild_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Приготовьтесь к самому грандиозному приключению The Legend of Zelda в игре, которая раздвигает границы любимой многими франшизы, но при этом остается верной традициям.
+                    Исследуйте мир беспрецедентного масштаба, отыщите святилища с сотней разных головоломок, используйте широкий ассортимент оружия, одежды и снаряжения. Подбирайте правильную тактику, чтобы одержать верх над противниками. Игрокам не захочется прекращать игру, и им не придется этого делать, ведь с Nintendo Switch они смогут продолжить приключения где угодно и когда угодно. Полная свобода в исследовании Хайрула.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">The Legend of Zelda: Breath of the Wild. Limited Edition</column>
+                <column include-in-search="true" property="code">zelda_breath_of_the_wild_limited_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Приготовьтесь к самому грандиозному приключению The Legend of Zelda в игре, которая раздвигает границы любимой многими франшизы, но при этом остается верной традициям.
+                    Исследуйте мир беспрецедентного масштаба, отыщите святилища с сотней разных головоломок, используйте широкий ассортимент оружия, одежды и снаряжения. Подбирайте правильную тактику, чтобы одержать верх над противниками. Игрокам не захочется прекращать игру, и им не придется этого делать, ведь с Nintendo Switch они смогут продолжить приключения где угодно и когда угодно. Полная свобода в исследовании Хайрула. В ограниченное издание входит игровая карта The Legend of Zelda: Breath of the Wild, компакт-диск с саундтреком и фигурка Высший Меч Жизни.
+                </column>
+            </value>
+
+        </values>
+    </insert-update>
+
+</data-import>

@@ -37,6 +37,7 @@ public class ComicsShopPackageDataImportService implements PackageDataImportServ
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-manga.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-videogames-ps4.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-videogames-xbox-one.xml"));
+        logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-videogames-nintendo-switch.xml"));
         /** Features */
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "features/catalog-products-books-ranobe-features.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "features/catalog-products-manga-features.xml"));

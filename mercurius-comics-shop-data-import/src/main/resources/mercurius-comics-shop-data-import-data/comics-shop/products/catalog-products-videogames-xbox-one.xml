@@ -17,7 +17,7 @@
 
             <value>
                 <column property="name">Dark Souls 3</column>
-                <column include-in-search="true" property="code">product_dark_souls_3_xbox_one</column>
+                <column include-in-search="true" property="code">dark_souls_3_xbox_one</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Когда пламя угасает, и все обращается в прах, вас ждёт новое путешествие в мир полный невероятных противников и грандиозных локаций. Бездна уникального геймплея и великолепной графики поглотит как ветеранов, так и новичков. И останутся лишь угли...
                     «Dark Souls 3» – ожидаемая игра, продолжение популярной RPG-серии «Dark Souls» от японской студии «From Software». Отличительной особенностью игр серии стала высокая сложность прохождения, что требует от игрока развития определенных навыков и многократного прохождения сложных эпизодов. События игры рассказывают о древних временах, когда в мире бок о бок царствовали силы тьмы и света, жизни и смерти, холода и огня. Главный герой – безымянный полуживой мертвец, который задержался между мирами и старается понять причины своего проклятья.
@@ -34,7 +34,7 @@
             </value>
             <value>
                 <column property="name">Dark Souls 3 - The Fire Fades Edition Game Of The Year</column>
-                <column include-in-search="true" property="code">product_dark_souls_3_game_of_the_year_xbox_one</column>
+                <column include-in-search="true" property="code">dark_souls_3_game_of_the_year_xbox_one</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Когда пламя угасает, и все обращается в прах, вас ждёт новое путешествие в мир полный невероятных противников и грандиозных локаций. Бездна уникального геймплея и великолепной графики поглотит как ветеранов, так и новичков. И останутся лишь угли...
                     «Dark Souls 3» – ожидаемая игра, продолжение популярной RPG-серии «Dark Souls» от японской студии «From Software». Отличительной особенностью игр серии стала высокая сложность прохождения, что требует от игрока развития определенных навыков и многократного прохождения сложных эпизодов. События игры рассказывают о древних временах, когда в мире бок о бок царствовали силы тьмы и света, жизни и смерти, холода и огня. Главный герой – безымянный полуживой мертвец, который задержался между мирами и старается понять причины своего проклятья.
@@ -51,7 +51,7 @@
             </value>
             <value>
                 <column property="name">Grand Theft Auto V</column>
-                <column include-in-search="true" property="code">product_gta_5_xbox_one</column>
+                <column include-in-search="true" property="code">gta_5_xbox_one</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Создай свою банду в «Grand Theft Auto V»
                     «Grand Theft Auto V» – самый масштабный проект, имитирующий жизнь города и его деревенских окрестностей. Здесь игроку придется взять на себя управление 3 героями одновременно:
