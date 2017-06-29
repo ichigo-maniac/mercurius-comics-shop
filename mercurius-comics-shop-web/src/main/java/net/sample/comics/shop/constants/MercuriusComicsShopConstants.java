@@ -23,6 +23,7 @@ public class MercuriusComicsShopConstants {
         public static final String SEARCH_PAGE = "catalog/search_page";
         public static final String CATEGORY_PAGE = "catalog/category_page";
         public static final String PRODUCT_PAGE = "product/product_page";
+        public static final String PERSONAL_INFO_PAGE = "personal_info/personal_info";
     }
 
     /**

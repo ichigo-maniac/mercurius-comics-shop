@@ -63,17 +63,17 @@
                     </a>
                     <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="solr">
                         <%-- Personal info --%>
-                        <li class="mdl-menu__item">
-                            <a href="#">
+                        <a href="<c:url value="/personal_info"/>">
+                            <li class="mdl-menu__item">
                                 <spring:message code="toolbar.personal.info.personal.info.label"/>
-                            </a>
-                        </li>
+                            </li>
+                        </a>
                         <%-- Orders --%>
-                        <li class="mdl-menu__item">
-                            <a href="#">
+                        <a href="#">
+                            <li class="mdl-menu__item">
                                 <spring:message code="toolbar.personal.info.orders.label"/>
-                            </a>
-                        </li>
+                            </li>
+                        </a>
                     </ul>
                     <%-- Log out --%>
                     <a class="mdl-navigation__link mdl-typography--text-uppercase" style="padding-left: 16px; padding-right: 16px;"
