@@ -53,7 +53,9 @@
                                 </div>
                             </c:forEach>
                             <div class="bs-example" data-example-id="btn-variants">
-                                <button type="submit" style="width: 100%" type="button" class="btn btn-primary">Search</button>
+                                <button type="submit" style="width: 100%" type="button" class="btn btn-success">
+                                    <spring:message code="comics.shop.catalog.search.button.label"/>
+                                </button>
                             </div>
                         </form>
                     </c:if>

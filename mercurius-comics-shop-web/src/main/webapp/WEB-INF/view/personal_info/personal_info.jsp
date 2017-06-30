@@ -7,7 +7,8 @@
 <html lang="en">
 <head>
     <jsp:include page="/WEB-INF/view/common/css_style_libraries.jsp"/>
-    <title><c:out value="${personalInfoForm.firstName} ${personalInfoForm.lastName}"/> - personal info</title>
+    <title><c:out value="${personalInfoForm.firstName} ${personalInfoForm.lastName}"/> -
+        <spring:message code="personal.info.personal.info.header"/></title>
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -32,6 +33,9 @@
                 <%-- Personal info --%>
                 <div class="col-xs-12 col-md-8">
                     <div class="panel panel-default" style="margin-bottom: 0px">
+                        <h3 style="border-bottom: 1px solid #DDDDDD; padding: 0px 0px 12px 23px; margin-top: 15px;">
+                            <spring:message code="personal.info.personal.info.header"/>
+                        </h3>
                         <form:form method="POST" action="/update_personal_info" modelAttribute="personalInfoForm"
                                 cssClass="form-horizontal" cssStyle="padding: 15px;">
                             <%-- Phone number --%>
