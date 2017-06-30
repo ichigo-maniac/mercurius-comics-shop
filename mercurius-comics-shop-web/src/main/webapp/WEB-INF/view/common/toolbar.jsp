@@ -52,8 +52,8 @@
                        data-toggle="dropdown" href="#" role="button" aria-haspopup="true" id="solr"
                        aria-expanded="false">
                         <c:choose>
-                            <c:when test="${not empty sessionScope.currentUser.firstName}">
-                                <c:out value="${sessionScope.currentUser.firstName}"/>
+                            <c:when test="${not empty requestScope.currentUser.firstName}">
+                                <c:out value="${requestScope.currentUser.firstName}"/>
                             </c:when>
                             <c:otherwise>
                                 [Username]

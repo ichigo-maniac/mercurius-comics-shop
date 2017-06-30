@@ -1,12 +1,9 @@
 package net.sample.comics.shop.controller;
 
 import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
-import net.sample.comics.shop.facades.ISTUserFacade;
 import net.sample.comics.shop.forms.PersonalInfoForm;
 import org.mercuriusframework.dto.UserEntityDto;
 import org.mercuriusframework.entities.CustomerEntity;
-import org.mercuriusframework.services.EntityService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -20,24 +17,12 @@ import javax.validation.Valid;
  * Personal info page controller
  */
 @Controller
-public class PersonalInfoPageController {
+public class PersonalInfoPageController extends AbstractController {
 
     /**
      * Constants
      */
     private static final String PERSONAL_INFO_PATH = "/personal_info";
-
-    /**
-     * User facade
-     */
-    @Autowired
-    private ISTUserFacade userFacade;
-
-    /**
-     * Entity service
-     */
-    @Autowired
-    private EntityService entityService;
 
     /**
      * Personal info page
