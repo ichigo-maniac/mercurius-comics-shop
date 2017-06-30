@@ -18,7 +18,9 @@
                         <li>
                             <a href="<c:url value="${builtUrl}"><c:param name="page" value="0"/>
                                 <c:forEach var="queryParam" items="${queryParams}">
-                                    <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                    <c:forEach var="queryValue" items="${queryParam.value}">
+                                        <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                    </c:forEach>
                                 </c:forEach>
                             </c:url>" aria-label="First">
                                 <span aria-hidden="true">&laquo;</span>
@@ -30,7 +32,9 @@
                         <li>
                             <a href="<c:url value="${builtUrl}"><c:param name="page" value="${productsResult.currentPage - 2}"/>
                                 <c:forEach var="queryParam" items="${queryParams}">
-                                    <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                    <c:forEach var="queryValue" items="${queryParam.value}">
+                                        <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                    </c:forEach>
                                 </c:forEach>
                             </c:url>" aria-label="Current">
                                 <span>${productsResult.currentPage - 1}</span>
@@ -42,7 +46,9 @@
                         <li>
                             <a href="<c:url value="${builtUrl}"><c:param name="page" value="${productsResult.currentPage - 1}"/>
                                 <c:forEach var="queryParam" items="${queryParams}">
-                                    <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                    <c:forEach var="queryValue" items="${queryParam.value}">
+                                        <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                    </c:forEach>
                                 </c:forEach>
                             </c:url>" aria-label="Current">
                                 <span>${productsResult.currentPage}</span>
@@ -53,7 +59,9 @@
                     <li class="active">
                         <a href="<c:url value="${builtUrl}"><c:param name="page" value="${productsResult.currentPage}"/>
                             <c:forEach var="queryParam" items="${queryParams}">
-                                <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                <c:forEach var="queryValue" items="${queryParam.value}">
+                                    <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                </c:forEach>
                             </c:forEach>
                         </c:url>" aria-label="Current">
                             <span>${productsResult.currentPage + 1}</span>
@@ -64,7 +72,9 @@
                         <li>
                             <a href="<c:url value="${builtUrl}"><c:param name="page" value="${productsResult.currentPage + 1}"/>
                                 <c:forEach var="queryParam" items="${queryParams}">
-                                    <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                    <c:forEach var="queryValue" items="${queryParam.value}">
+                                        <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                    </c:forEach>
                                 </c:forEach>
                             </c:url>" aria-label="Current">
                                 <span>${productsResult.currentPage + 2}</span>
@@ -76,7 +86,9 @@
                         <li>
                             <a href="<c:url value="${builtUrl}"><c:param name="page" value="${productsResult.currentPage + 2}"/>
                                 <c:forEach var="queryParam" items="${queryParams}">
-                                    <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                    <c:forEach var="queryValue" items="${queryParam.value}">
+                                        <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                    </c:forEach>
                                 </c:forEach>
                             </c:url>"
                                aria-label="Current">
@@ -89,7 +101,9 @@
                         <li>
                             <a href="<c:url value="${builtUrl}"><c:param name="page" value="${productsResult.pagesCount - 1}"/>
                                 <c:forEach var="queryParam" items="${queryParams}">
-                                    <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                    <c:forEach var="queryValue" items="${queryParam.value}">
+                                        <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                    </c:forEach>
                                 </c:forEach>
                             </c:url>"
                                aria-label="Last">
@@ -106,7 +120,9 @@
                         <li <c:if test="${index == productsResult.currentPage}">class="active"</c:if>>
                             <a href="<c:url value="${builtUrl}"><c:param name="page" value="${index}"/>
                                 <c:forEach var="queryParam" items="${queryParams}">
-                                    <c:param name="${queryParam.key}" value="${queryParam.value}"/>
+                                    <c:forEach var="queryValue" items="${queryParam.value}">
+                                        <c:param name="${queryParam.key}" value="${queryValue}"/>
+                                    </c:forEach>
                                 </c:forEach>
                             </c:url>">
                                 <span aria-hidden="true">${index + 1}</span>

@@ -27,10 +27,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * Category page controller
@@ -144,11 +141,28 @@ public class CategoryPageController extends AbstractController {
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
         model.addAttribute("productsResult", products);
-        model.addAttribute("queryParams", new HashMap<String, String>());
         model.addAttribute("facets", facetEntityConverter.convertAll(facets));
         model.addAttribute("builtUrl", request.getRequestURI());
         model.addAttribute("facetPrefix", MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORY_FACET_PARAM_PREFIX);
+        model.addAttribute("queryParams", buildQueryParams(model));
         return MercuriusComicsShopConstants.VIEW.CATEGORY_PAGE;
+    }
+
+    /**
+     * Build query params
+     * @param model Attributes model
+     * @return Map of params
+     */
+    private Map<String, Object> buildQueryParams(Model model) {
+        Map<String, Object> queryParams = new HashMap<>();
+        Map<String, Object> attributesMap = model.asMap();
+        for (String attributeName : attributesMap.keySet()) {
+            if (attributeName.startsWith(MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORY_FACET_PARAM_PREFIX)) {
+                String[] values = (String[]) attributesMap.get(attributeName);
+                queryParams.put(attributeName, values);
+            }
+        }
+        return queryParams;
     }
 
     /**

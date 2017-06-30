@@ -74,11 +74,27 @@ public class SearchController {
         model.addAttribute("builtUrl", request.getRequestURI());
         model.addAttribute("facets", facetEntityConverter.convertAll(facets));
         model.addAttribute("facetPrefix", MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORY_FACET_PARAM_PREFIX);
-        /** Create params map */
-        Map<String, String> queryParams = new HashMap<>();
-        queryParams.put("searchText", searchText);
-        model.addAttribute("queryParams", queryParams);
+        model.addAttribute("queryParams", buildQueryParams(model, searchText));
         return MercuriusComicsShopConstants.VIEW.SEARCH_PAGE;
+    }
+
+    /**
+     * Build query params
+     * @param model Attributes model
+     * @param searchText Search text
+     * @return Map of params
+     */
+    private Map<String, Object> buildQueryParams(Model model, String searchText) {
+        Map<String, Object> queryParams = new HashMap<>();
+        queryParams.put("searchText", searchText);
+        Map<String, Object> attributesMap = model.asMap();
+        for (String attributeName : attributesMap.keySet()) {
+            if (attributeName.startsWith(MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORY_FACET_PARAM_PREFIX)) {
+                String[] values = (String[]) attributesMap.get(attributeName);
+                queryParams.put(attributeName, values);
+            }
+        }
+        return queryParams;
     }
 
     /**
