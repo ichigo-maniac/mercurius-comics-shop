@@ -40,18 +40,6 @@ public class VkOauthController extends AbstractOauthController {
     private static final String VK_LAST_NAME = "last_name";
 
     /**
-     * Configuration service
-     */
-    @Autowired
-    private ConfigurationService configurationService;
-
-    /**
-     * Oauth connection repository
-     */
-    @Autowired
-    private ConnectionFactoryRegistry connectionRepository;
-
-    /**
      * Rest template
      */
     @Autowired
@@ -91,7 +79,7 @@ public class VkOauthController extends AbstractOauthController {
         AccessGrant accessGrant = operations.exchangeForAccess(authCode,
                 configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.APP_HOST_PATH) + SUCCEED_REDIRECT_PATH, null);
         /** Load data */
-        String url = URIBuilder.fromUri(configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.VK_OAUTH_METHOD) + USER_GET_METHOD)
+        String url = URIBuilder.fromUri(configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.VK_OAUTH_METHOD) + USER_GET_METHOD)
                 .queryParam("access_token", accessGrant.getAccessToken())
                 .build().toString();
         String result = restTemplate.getForObject(url, String.class);
@@ -101,7 +89,7 @@ public class VkOauthController extends AbstractOauthController {
         Integer uid = profileObject.getInt(VK_ACCOUNT_UID);
         /** Create auth profile attribute and redirect */
         return authorizeCustomer(SocialNetworkType.VK_COM, uid.toString(),
-                profileObject.getString(VK_FIRST_NAME), profileObject.getString(VK_LAST_NAME));
+                profileObject.getString(VK_FIRST_NAME), profileObject.getString(VK_LAST_NAME), "");
     }
 
 

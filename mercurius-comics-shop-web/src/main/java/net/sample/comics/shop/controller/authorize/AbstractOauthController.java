@@ -4,8 +4,10 @@ import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
 import net.sample.comics.shop.facades.ISTUserFacade;
 import org.mercuriusframework.entities.CustomerEntity;
 import org.mercuriusframework.enums.SocialNetworkType;
+import org.mercuriusframework.services.ConfigurationService;
 import org.mercuriusframework.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.social.connect.support.ConnectionFactoryRegistry;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -18,13 +20,25 @@ public class AbstractOauthController {
      * User facade
      */
     @Autowired
-    private ISTUserFacade userFacade;
+    protected ISTUserFacade userFacade;
 
     /**
      * Customer service
      */
     @Autowired
-    private CustomerService customerService;
+    protected CustomerService customerService;
+
+    /**
+     * Oauth connection repository
+     */
+    @Autowired
+    protected ConnectionFactoryRegistry connectionRepository;
+
+    /**
+     * Configuration service
+     */
+    @Autowired
+    protected ConfigurationService configurationService;
 
     /**
      * Authorize customer or create a new one
@@ -34,10 +48,10 @@ public class AbstractOauthController {
      * @param lastName Last name
      * @return Redirect path
      */
-    protected String authorizeCustomer(SocialNetworkType socialNetworkType, String socialNetworkId, String firstName, String lastName) {
+    protected String authorizeCustomer(SocialNetworkType socialNetworkType, String socialNetworkId, String firstName, String lastName, String email) {
         CustomerEntity customerEntity = customerService.getCustomerBySocialNetworkIdAndType(socialNetworkType, socialNetworkId);
         if (customerEntity == null) {
-            customerEntity = userFacade.createCustomer(socialNetworkType, socialNetworkId, firstName, lastName);
+            customerEntity = userFacade.createCustomer(socialNetworkType, socialNetworkId, firstName, lastName, email);
             userFacade.logInUser(customerEntity);
             return MercuriusComicsShopConstants.REDIRECT.HOME;
         } else {

@@ -18,13 +18,13 @@ public class ISTUserFacadeImpl extends UserFacadeImpl implements ISTUserFacade {
     /**
      * Create customer
      * @param socialNetworkType Social network type
-     * @param socialNetworkId   Social network id
-     * @param firstName         First name
-     * @param lastName          Last name
+     * @param socialNetworkId Social network id
+     * @param firstName First name
+     * @param lastName Last name
+     * @param email Email (may be null)
      * @return Created customer
      */
-    @Override
-    public CustomerEntity createCustomer(SocialNetworkType socialNetworkType, String socialNetworkId, String firstName, String lastName) {
+    public CustomerEntity createCustomer(SocialNetworkType socialNetworkType, String socialNetworkId, String firstName, String lastName, String email) {
         CustomerEntity customerEntity = new CustomerEntity();
         customerEntity.setAuthenticationType(AuthenticationType.OAUTH);
         customerEntity.setSocialNetworkType(socialNetworkType);
@@ -32,6 +32,7 @@ public class ISTUserFacadeImpl extends UserFacadeImpl implements ISTUserFacade {
         customerEntity.setName(lastName + " " + firstName);
         customerEntity.setFirstName(firstName);
         customerEntity.setLastName(lastName);
+        customerEntity.setEmail(email);
         return entityService.save(customerEntity);
     }
 

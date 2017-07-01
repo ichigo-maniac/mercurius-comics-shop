@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.social.connect.support.ConnectionFactoryRegistry;
+import org.springframework.social.facebook.connect.FacebookConnectionFactory;
 import org.springframework.social.vkontakte.connect.VKontakteConnectionFactory;
 
 /**
@@ -30,8 +31,13 @@ public class OAuthConfiguration {
         ConnectionFactoryRegistry registry = new ConnectionFactoryRegistry();
         /** VK.COM */
         registry.addConnectionFactory(new VKontakteConnectionFactory(
-                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.VK_CLIENT_ID),
-                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.VK_SECRET)
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.VK_CLIENT_ID),
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.VK_SECRET)
+        ));
+        /** Facebook */
+        registry.addConnectionFactory(new FacebookConnectionFactory(
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.FACEBOOK_CLIENT_ID),
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.FACEBOOK_SECRET)
         ));
         return registry;
     }

@@ -16,9 +16,10 @@ public interface ISTUserFacade extends UserFacade {
      * @param socialNetworkId Social network id
      * @param firstName First name
      * @param lastName Last name
+     * @param email Email (may be null)
      * @return Created customer
      */
-    CustomerEntity createCustomer(SocialNetworkType socialNetworkType, String socialNetworkId, String firstName, String lastName);
+    CustomerEntity createCustomer(SocialNetworkType socialNetworkType, String socialNetworkId, String firstName, String lastName, String email);
 
     /**
      * Update personal info

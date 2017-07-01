@@ -31,9 +31,14 @@ public class MercuriusComicsShopConstants {
      */
     public class PARAMETERS {
         public static final String APP_HOST_PATH = "comics.shop.application.host.path";
-        public static final String VK_CLIENT_ID = "comics.shop.vk.com.clientId";
-        public static final String VK_SECRET = "comics.shop.vk.com.clientSecret";
-        public static final String VK_OAUTH_METHOD = "comics.shop.vk.com.oauth.method";
+        public class OAUTH {
+            public static final String VK_CLIENT_ID = "comics.shop.vk.com.clientId";
+            public static final String VK_SECRET = "comics.shop.vk.com.clientSecret";
+            public static final String VK_OAUTH_METHOD = "comics.shop.vk.com.oauth.method";
+            public static final String FACEBOOK_CLIENT_ID = "comics.shop.facebook.clientId";
+            public static final String FACEBOOK_SECRET = "comics.shop.facebook.clientSecret";
+            public static final String FACEBOOK_SCOPE = "comics.shop.facebook.scope";
+        }
     }
 
     /**
