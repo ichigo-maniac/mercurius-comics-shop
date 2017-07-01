@@ -1,12 +1,10 @@
-package net.sample.comics.shop.controller.authorize;
+package net.sample.comics.shop.controller.authentication;
 
 import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.mercuriusframework.enums.SocialNetworkType;
-import org.mercuriusframework.services.ConfigurationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.social.connect.support.ConnectionFactoryRegistry;
 import org.springframework.social.oauth2.AccessGrant;
 import org.springframework.social.oauth2.GrantType;
 import org.springframework.social.oauth2.OAuth2Operations;

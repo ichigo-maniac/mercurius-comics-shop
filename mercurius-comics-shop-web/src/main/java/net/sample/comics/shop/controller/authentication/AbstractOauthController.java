@@ -1,4 +1,4 @@
-package net.sample.comics.shop.controller.authorize;
+package net.sample.comics.shop.controller.authentication;
 
 import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
 import net.sample.comics.shop.facades.ISTUserFacade;
