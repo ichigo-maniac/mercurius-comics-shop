@@ -37,9 +37,9 @@
                             <spring:message code="personal.info.personal.info.header"/>
                         </h3>
                         <form:form method="POST" action="/update_personal_info" modelAttribute="personalInfoForm"
-                                cssClass="form-horizontal" cssStyle="padding: 15px;">
+                                cssClass="form-horizontal" cssStyle="padding: 15px;" onsubmit="return validatePersonalInformation();">
                             <%-- Phone number --%>
-                            <div class="form-group">
+                            <div id="phoneNumberGroup" class="form-group">
                                 <label for="phoneNumber" class="col-sm-3 control-label">
                                     <spring:message code="personal.info.form.phone.number.label"/>
                                 </label>
@@ -48,14 +48,14 @@
                                 </div>
                             </div>
                             <%-- Email --%>
-                            <div class="form-group">
+                            <div id="emailGroup" class="form-group">
                                 <label for="email" class="col-sm-3 control-label">Email</label>
                                 <div class="col-sm-9">
                                     <form:input path="email" cssClass="form-control" id="email"/>
                                 </div>
                             </div>
                             <%-- First name --%>
-                            <div class="form-group">
+                            <div id="firstNameGroup" class="form-group">
                                 <label for="firstName" class="col-sm-3 control-label">
                                     <spring:message code="personal.info.form.first.name.label"/>
                                 </label>
@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <%-- Last name --%>
-                            <div class="form-group">
+                            <div id="lastNameGroup" class="form-group">
                                 <label for="lastName" class="col-sm-3 control-label">
                                     <spring:message code="personal.info.form.last.name.label"/>
                                 </label>
@@ -89,5 +89,45 @@
 </div>
 <%-- Javascript libraries --%>
 <jsp:include page="/WEB-INF/view/common/javascript_libraries.jsp"/>
+<script>
+
+    $("#phoneNumber").mask('+0-000-000-0000');
+
+    function validatePersonalInformation() {
+        $(".form-group").attr("class", "form-group");
+        /** Phone number */
+        var phoneNumber = $("#phoneNumber").val();
+        var phoneNumberReg = /^\+\d-[\d]{3}\-[\d]{3}-[\d]{4}$|^[ ]*$/;
+        if (!phoneNumberReg.test(phoneNumber)) {
+            highlightErrorGroup("phoneNumberGroup", "<spring:message code="personal.info.form.phone.number.error"/>");
+            return false;
+        }
+        /** Email */
+        var emailReg = /^[_A-Za-z0-9-]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$/;
+        var email = $("#email").val();
+        if (!emailReg.test(email)) {
+            highlightErrorGroup("emailGroup", "<spring:message code="personal.info.form.email.error"/>");
+            return false;
+        }
+        /** First and last name */
+        var firstName = $("#firstName").val();
+        if (firstName.length < 2 || firstName.length > 20) {
+            highlightErrorGroup("firstNameGroup", "<spring:message code="personal.info.form.first.name.error"/>");
+            return false;
+        }
+        var lastName = $("#lastName").val();
+        if (lastName.length < 2 || lastName.length > 20) {
+            highlightErrorGroup("lastNameGroup", "<spring:message code="personal.info.form.last.name.error"/>");
+            return false;
+        }
+        return true;
+    }
+
+    function highlightErrorGroup(groupId, alertMessage) {
+        $("#" + groupId).attr("class", "form-group has-error");
+        alertify.error(alertMessage);
+    }
+
+</script>
 </body>
 </html>

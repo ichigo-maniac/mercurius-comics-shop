@@ -30,6 +30,7 @@ public class PersonalInfoForm {
     /**
      * Phone number
      */
+    @Pattern(regexp = "^\\+\\d-[\\d]{3}\\-[\\d]{3}-[\\d]{4}$|^[ ]*$")
     private String phoneNumber;
 
     /**

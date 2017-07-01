@@ -5,3 +5,4 @@
 <script src="/resources/lib/js/bootstrap-select.min.js"></script>
 <script src="/resources/lib/js/alertify.min.js"></script>
 <script src="/resources/lib/js/json2.js"></script>
+<script src="/resources/lib/js/jquery.mask.min.js"></script>
