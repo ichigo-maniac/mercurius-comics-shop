@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.social.connect.support.ConnectionFactoryRegistry;
 import org.springframework.social.facebook.connect.FacebookConnectionFactory;
+import org.springframework.social.linkedin.connect.LinkedInConnectionFactory;
 import org.springframework.social.vkontakte.connect.VKontakteConnectionFactory;
 
 /**
@@ -38,6 +39,11 @@ public class OAuthConfiguration {
         registry.addConnectionFactory(new FacebookConnectionFactory(
                 configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.FACEBOOK_CLIENT_ID),
                 configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.FACEBOOK_SECRET)
+        ));
+        /** LinkedIn */
+        registry.addConnectionFactory(new LinkedInConnectionFactory(
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.LINKEDIN_CLIENT_ID),
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.LINKEDIN_SECRET)
         ));
         return registry;
     }

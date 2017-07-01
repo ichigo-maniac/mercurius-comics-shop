@@ -38,6 +38,8 @@ public class MercuriusComicsShopConstants {
             public static final String FACEBOOK_CLIENT_ID = "comics.shop.facebook.clientId";
             public static final String FACEBOOK_SECRET = "comics.shop.facebook.clientSecret";
             public static final String FACEBOOK_SCOPE = "comics.shop.facebook.scope";
+            public static final String LINKEDIN_CLIENT_ID = "comics.shop.linkedin.clientId";
+            public static final String LINKEDIN_SECRET = "comics.shop.linkedin.clientSecret";
         }
     }
 
