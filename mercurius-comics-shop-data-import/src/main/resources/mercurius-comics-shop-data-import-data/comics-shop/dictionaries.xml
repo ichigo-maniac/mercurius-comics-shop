@@ -13,6 +13,10 @@
                 <column property="name">Издательство</column>
                 <column include-in-search="true" property="code">dictionary_publisher</column>
             </value>
+            <value>
+                <column property="name">Платформа</column>
+                <column include-in-search="true" property="code">dictionary_videogames_platform</column>
+            </value>
         </values>
     </insert-update>
 
@@ -54,6 +58,43 @@
             <value>
                 <column property="name">Xl Media</column>
                 <column include-in-search="true" property="code">publisher_xl_media</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Dictionary items -->
+    <insert-update entity-name="DictionaryItem">
+        <common-values>
+            <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_videogames_platform</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="name">Playstation 3</column>
+                <column include-in-search="true" property="code">videogames_platform_playstation_3</column>
+            </value>
+            <value>
+                <column property="name">Playstation 4</column>
+                <column include-in-search="true" property="code">videogames_platform_playstation_4</column>
+            </value>
+            <value>
+                <column property="name">Xbox 360</column>
+                <column include-in-search="true" property="code">videogames_platform_xbox_360</column>
+            </value>
+            <value>
+                <column property="name">Xbox One</column>
+                <column include-in-search="true" property="code">videogames_platform_xbox_one</column>
+            </value>
+            <value>
+                <column property="name">Nintendo 3DS</column>
+                <column include-in-search="true" property="code">videogames_platform_nintendo_3ds</column>
+            </value>
+            <value>
+                <column property="name">Nintendo Wii U</column>
+                <column include-in-search="true" property="code">videogames_platform_nintendo_wii_u</column>
+            </value>
+            <value>
+                <column property="name">Nintendo Switch</column>
+                <column include-in-search="true" property="code">videogames_platform_nintendo_switch</column>
             </value>
         </values>
     </insert-update>

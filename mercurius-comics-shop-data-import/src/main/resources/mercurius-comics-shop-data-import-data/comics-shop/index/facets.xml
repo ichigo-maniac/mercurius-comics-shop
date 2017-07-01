@@ -27,6 +27,18 @@
                     master_catalog::books;ranobe;manga
                 </column>
             </value>
+
+            <value>
+                <column property="code" include-in-search="true">videogames_platform_facet</column>
+                <column property="name">Платформа</column>
+                <column property="forAllCategories">false</column>
+                <column property="facetType" value-import-bean="enumImportBean">DICTIONARY</column>
+                <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="solrCriteriaValueType" value-import-bean="enumImportBean">IN</column>
+                <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">
+                    master_catalog::video_games
+                </column>
+            </value>
         </values>
     </insert-update>
 
