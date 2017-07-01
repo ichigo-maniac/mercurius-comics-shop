@@ -88,9 +88,13 @@
             <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect" style="background-color: white; border-top: 1px solid lightgrey">
                 <%-- Tabs panel --%>
                 <div class="mdl-tabs__tab-bar" >
-                    <a href="#description-panel" class="mdl-tabs__tab is-active" style="font-weight: bold">Description</a>
+                    <a href="#description-panel" class="mdl-tabs__tab is-active" style="font-weight: bold">
+                        <spring:message code="product.page.description.tab.label"/>
+                    </a>
                     <c:if test="${not empty product.featureValues}">
-                        <a href="#specifications-panel" class="mdl-tabs__tab" style="font-weight: bold">Specifications</a>
+                        <a href="#specifications-panel" class="mdl-tabs__tab" style="font-weight: bold">
+                            <spring:message code="product.page.specification.tab.label"/>
+                        </a>
                     </c:if>
                 </div>
                 <%-- Description --%>
@@ -113,7 +117,14 @@
                                                 <b><c:out value="${featureValue.feature.name}"/></b>
                                             </td>
                                             <td style="width: 50%;text-align: left;  border-color: white">
-                                                <c:out value="${featureValue.value}"/>
+                                                <c:choose>
+                                                    <c:when test="${featureValue.feature.featureType eq 'DICTIONARY_TYPE'}">
+                                                        <c:out value="${featureValue.value.name}"/>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <c:out value="${featureValue.value}"/>
+                                                    </c:otherwise>
+                                                </c:choose>
                                             </td>
                                         </tr>
                                     </c:forEach>
