@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.social.connect.support.ConnectionFactoryRegistry;
 import org.springframework.social.facebook.connect.FacebookConnectionFactory;
 import org.springframework.social.linkedin.connect.LinkedInConnectionFactory;
+import org.springframework.social.twitter.connect.TwitterConnectionFactory;
 import org.springframework.social.vkontakte.connect.VKontakteConnectionFactory;
 
 /**
@@ -44,6 +45,11 @@ public class OAuthConfiguration {
         registry.addConnectionFactory(new LinkedInConnectionFactory(
                 configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.LINKEDIN_CLIENT_ID),
                 configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.LINKEDIN_SECRET)
+        ));
+        /** Twitter */
+        registry.addConnectionFactory(new TwitterConnectionFactory(
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.TWITTER_CLIENT_ID),
+                configurationService.getParameter(MercuriusComicsShopConstants.PARAMETERS.OAUTH.TWITTER_SECRET)
         ));
         return registry;
     }

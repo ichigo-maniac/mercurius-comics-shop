@@ -61,6 +61,14 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">LEGO CITY: Undercover</column>
+                <column include-in-search="true" property="code">lego_city_undercover_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В игре LEGO CITY Undercover вы примерите на себя роль Чейза Маккейна — офицера полиции, которому поручена операция под прикрытием по поиску преступника Рекса Фьюри. В совместном режиме для двух игроков можно исследовать открытый мир мегаполиса LEGO City, состоящего из более чем 20 кварталов, в котором вас ждут расследования, угонщики, вождение автомобилей и сотни собираемых предметов. LEGO CITY Undercover — это сочетание колоритного сюжета с фирменным юмором LEGO.
+                </column>
+            </value>
+
         </values>
     </insert-update>
 
