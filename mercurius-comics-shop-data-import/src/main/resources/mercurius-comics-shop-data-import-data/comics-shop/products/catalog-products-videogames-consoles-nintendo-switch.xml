@@ -70,4 +70,26 @@
 
     </insert-update>
 
+    <!-- Products -->
+    <insert-update entity-name="Product">
+        <!-- Common column values -->
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_wii_u</column>
+            <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::nintendo_wii_u</column>
+        </common-values>
+
+        <values>
+            <value>
+                <column property="name">Nintendo Wii U Premium Pack + Super Mario Maker</column>
+                <column include-in-search="true" property="code">nintendo_wii_u_premiup_pack_mario_maker</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Игровая приставка Nintendo Wii U Premium Pack + Super Mario Maker является легендарным собратом одной из самых популярных приставок от компании Nintendo, имеет не только стильный черный обтекаемый корпус, но и любопытную комплектацию. Контроллер управления Wii U - сенсорное устройство с экраном, отслеживающее точную смену движений и углов наклона, имеет HD и 3D графику, гироскоп для точнейшего считывания движений, является полностью беспроводным. С приставкой идут так же стилус Wii U Game Pad для более точного детального управления в некоторых играх, блоки питания для приставки и контроллера, и две подставки. Так же поставляется захватывающий комплект Super Mario Maker, в нем есть фигурка Марио, артбук и сборник почти всех самых лучших игр про водопроводчика Марио. Такие носители как CD/DVD, Blu-ray легко совмещаются с моделью Nintendo Wii U Premium Pack, поэтому на подключенном мониторе можно просматривать любые фильмы и клипы. Подключаться к ТВ возможно при помощи как HDMI выхода, так и композитного AV разъема. Консоль имеет 4 порта USB, оснащена Wi-Fi и Bluetooth-ом. Процессор вида IBM Power PC разгоняется до 1.24 ГГц, поэтому каждая игра работает без проблем. 32 Гб постоянной хватит на сохранение игр, фильмов.
+                </column>
+            </value>
+        </values>
+    </insert-update>
+
 </data-import>
