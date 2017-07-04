@@ -92,4 +92,64 @@
         </values>
     </insert-update>
 
+    <!-- Products -->
+    <insert-update entity-name="Product">
+        <!-- Common column values -->
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_3ds</column>
+            <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::nintendo_3ds</column>
+        </common-values>
+
+        <values>
+            <value>
+                <column property="name">New Nintendo 3DS XL Солгалео и Лунала. Ограниченное издание</column>
+                <column include-in-search="true" property="code">nintendo_new_3ds_xl_solgaleo_lunala</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    New Nintendo 3DS XL – это последняя редакция портативной игровой приставки от Nintendo, особенностью которой является наличие суперстабильного 3D, второго аналогового стика и дополнительных кнопок, а также поддержка интерактивных фигурок и карточек amiibo и большие экраны. Улучшенная функциональность New Nintendo 3DS XL позволяет насладиться специально разработанными для неё играми или обеспечить наивысший комфорт в уже знакомых вам играх для систем линеек Nintendo 3DS и Nintendo DS. Вместе с New Nintendo 3DS XL вас ждут новые возможности, новая скорость, новые элементы управления и целый спектр новых игровых впечатлений!
+                    Комплектация: консоль New Nintendo 3DS XL с изображением легендарных покемонов из Pokémon Sun и Pokémon Moon, карта памяти microSD 4 GB, набор из карт дополненной реальности, руководство пользователя. Зарядное устройство в комплект не входит. Гарантия составляет 12 месяцев с момента покупки.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">New Nintendo 3DS XL + Игра Animal Crossing: Happy Home Designer</column>
+                <column include-in-search="true" property="code">nintendo_new_3ds_xl_animal_crossing_home_designer</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Игровая консоль New Nintendo 3DS XL это новые возможности настроек, новая скорость, новые элементы управления, суперстабильное 3D изображение, экраны размера XL (размер верхнего экрана 4.88 дюйма, размер нижнего экрана 4.18 дюйма), поддержка amiibo ицелый спектр новых игровых впечатлений! В игре Animal Crossing: Happy Home Designer вам предстоит создавать стильные дома, роскошные сады и прекрасные городские площади, работая в агентстве недвижимости Nook’s Homes, которым руководит единственный и неповторимый Том Нук. В ваши обязанности входит разработка дизайна домов для разных зверей. Общайтесь с потенциальными клиентами, чтобы узнать об их предпочтениях, a затем создавайте дома их мечты. Данный набор включает в себя белую систему New Nin tendo 3DS XL с уникальным оформлением по мотивам игры, предварительно установленную на карту памяти 4GB microSD цифровую копию игры Animal Crossing: Happy Home Designer и одну особую карту amiibo. Обратите внимание на то, что зарядное устройство в комплект не входит.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">New Nintendo 3DS XL (жемчужно-белый)</column>
+                <column include-in-search="true" property="code">nintendo_new_3ds_xl_perl_white</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    New Nintendo 3DS XL – это последняя редакция портативной игровой приставки от Nintendo, особенностью которой является наличие суперстабильного 3D, второго аналогового стика и дополнительных кнопок, а также поддержка интерактивных фигурок и карточек amiibo и большие экраны. Улучшенная функциональность New Nintendo 3DS XL позволяет насладиться специально разработанными для неё играми или обеспечить наивысший комфорт в уже знакомых вам играх для систем линеек Nintendo 3DS и Nintendo DS. Вместе с New Nintendo 3DS XL вас ждут новые возможности, новая скорость, новые элементы управления и целый спектр новых игровых впечатлений!
+                    Комплектация: консоль New Nintendo 3DS XL жемчужно-белого цвета, карта памяти microSD 4 GB, набор из карт дополненной реальности, руководство пользователя. Зарядное устройство в комплект не входит. Гарантия составляет 12 месяцев с момента покупки.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">New Nintendo 2DS XL (черный + бирюзовый)</column>
+                <column include-in-search="true" property="code">nintendo_new_2ds_xl_black_purple</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Встречайте пополнение в семействе Nintendo 3DS – игровую консоль New Nintendo 2DS XL, которая воспроизводит все игры для Nintendo 3DS в 2D. Вас ждет совершенно новая Nintendo 2DS с большим экраном в 4,88 дюйма, которая весит всего 260 грамм.
+                    Система обладает такой же вычислительной мощностью, как New Nintendo 3DS XL, и встроенной поддержкой NFC для фигурок и карт amiibo (продаются отдельно). Кроме того, система New Nintendo 2DS XL оборудована стиком C, а также кнопками ZL и ZR, расширяя возможности управления в совместимых играх. Вы сможете играть в 2D во все игры, вышедшие для Nintendo 3DS, New Nintendo 3DS и Nintendo DS.
+                    Комплектация: система New Nintendo 2DS XL (черно-бирюзового цвета), стилус New Nintendo 2DS XL, карта памяти microSDHC (4 ГБ), набор из карт дополненной реальности AR (6 шт.), блок питания и руководство пользователя.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">New Nintendo 2DS XL (белый + оранжевый)</column>
+                <column include-in-search="true" property="code">nintendo_new_2ds_xl_white_orange</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Встречайте пополнение в семействе Nintendo 3DS – игровую консоль New Nintendo 2DS XL, которая воспроизводит все игры для Nintendo 3DS в 2D. Вас ждет совершенно новая Nintendo 2DS с большим экраном в 4,88 дюйма, которая весит всего 260 грамм.
+                    Система обладает такой же вычислительной мощностью, как New Nintendo 3DS XL, и встроенной поддержкой NFC для фигурок и карт amiibo (продаются отдельно). Кроме того, система New Nintendo 2DS XL оборудована стиком C, а также кнопками ZL и ZR, расширяя возможности управления в совместимых играх. Вы сможете играть в 2D во все игры, вышедшие для Nintendo 3DS, New Nintendo 3DS и Nintendo DS.
+                    Комплектация: система New Nintendo 2DS XL (бело-оранжевого цвета), стилус New Nintendo 2DS XL, карта памяти microSDHC (4 ГБ), набор из карт дополненной реальности AR (6 шт.), блок питания и руководство пользователя.
+                </column>
+            </value>
+        </values>
+    </insert-update>
+
 </data-import>
