@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Products -->
+    <insert-update entity-name="Product">
+        <!-- Common column values -->
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_3ds_games</column>
+            <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::nintendo_3ds_games</column>
+        </common-values>
+        <!-- Entity values -->
+        <values>
+
+            <value>
+                <column property="name">Pokemon Rumble World</column>
+                <column include-in-search="true" property="code">pokemon_rumble_world_nintendo_3ds</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Pokemon Rumble World для Nintendo 3DS с головой окунет вас в удивительный мир, населенный игрушечными версиями покемонов. Так уж получилось, что правитель королевства игрушек задумал пополнить коллекцию за счет как можно большего числа уникальных экземпляров. И кому как не вам предстоит взвалить на свои плечи столь ответственное задание?
+                    Отличительной особенностью игры является то, что в роли персонажа выступает ваш собственный Mii. Путешествуя по бескрайним просторам игрового мира, вы будете сражаться с дикими покемонами. В случае победы, вас одарят монетками, которые можно будет потратить на приобретение новых предметов и аксессуаров для своего героя.
+                    Также можно будет обмениваться информацией с прочими пользователями посредством StreetPass.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Pokemon Ultra Moon</column>
+                <column include-in-search="true" property="code">pokemon_ultra_moon_nintendo_3ds</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Pokémon Ultra Moon - расширенное издание Pokemon Moon, вышедшее в 2016 году в честь 20-летнего юбилея франшизы Pokemon.
+                    В этой игре вас ждут новые приключения, новые покемоны и, конечно же, совершенно новая локация в лице тропического региона под названием Алора.
+                    Отличительной особенностью проектов является совместимость с онлайн-сервисом Pokémon Bank, который позволяет импортировать покемонов, ранее пойманных в ряде игр серии. Например, Pokémon Omega Ruby и Alpha Sapphire. Или Pokémon X и Y.
+                    В стартовый набор каждой из игр входят три покемона - Роулет, Литтен и Попплио.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Pokemon Ultra Sun</column>
+                <column include-in-search="true" property="code">pokemon_ultra_sun_nintendo_3ds</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Pokémon Ultra Sun - расширенное издание Pokemon Sun, вышедшее в 2016 году в честь 20-летнего юбилея франшизы Pokemon.
+                    В этой игре вас ждут новые приключения, новые покемоны и, конечно же, совершенно новая локация в лице тропического региона под названием Алора.
+                    Отличительной особенностью проектов является совместимость с онлайн-сервисом Pokémon Bank, который позволяет импортировать покемонов, ранее пойманных в ряде игр серии. Например, Pokémon Omega Ruby и Alpha Sapphire. Или Pokémon X и Y.
+                    В стартовый набор каждой из игр входят три покемона - Роулет, Литтен и Попплио.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Pokemon Y</column>
+                <column include-in-search="true" property="code">pokemon_y_nintendo_3ds</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Отправляйтесь в таинственную землю Kalos для новых приключений в игре Pokemon для Nintendo 3DS!
+                    Вас ждут новая история, задания, обитатели и интересные загадки. Узнайте тайну Kalos и откройте первыми новых покемонов.
+                    Выберите для начала путешествия одну из версий игр - Pokemon X или Pokemon Y.
+                    Вам станет доступен один из трех новых покемонов для невероятных трехмерных приключений на Nintendo 3DS.
+                    Легенда загадочных земель ждет Вас в Pokemon X/Y.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Pokemon X</column>
+                <column include-in-search="true" property="code">pokemon_x_nintendo_3ds</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Отправляйтесь в таинственную землю Kalos для новых приключений в игре Pokemon для Nintendo 3DS!
+                    Вас ждут новая история, задания, обитатели и интересные загадки. Узнайте тайну Kalos и откройте первыми новых покемонов.
+                    Выберите для начала путешествия одну из версий игр - Pokemon X или Pokemon Y.
+                    Вам станет доступен один из трех новых покемонов для невероятных трехмерных приключений на Nintendo 3DS.
+                    Легенда загадочных земель ждет Вас в Pokemon X/Y.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Pokemon Sun</column>
+                <column include-in-search="true" property="code">pokemon_sun_nintendo_3ds</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В 2016 году исполняется 20 лет Pokémon Red и Blue - культовым ролевым играм, положившим начало гигантской и невероятно успешной франшизе.
+                    Чтобы по достоинству отметить столь знаменательное событие, компания Nintendo решила сделать своим фанатам отличный подарок в лице Pokémon Sun и Pokémon Moon. В этих играх вас ждут новые приключения, новые покемоны и, конечно же, совершенно новая локация в лице тропического региона под названием Алора.
+                    Отличительной особенностью проектов является совместимость с онлайн-сервисом Pokémon Bank, который позволяет импортировать покемонов, ранее пойманных в ряде игр серии. Например, Pokémon Omega Ruby и Alpha Sapphire. Или Pokémon X и Y.
+                    В стартовый набор каждой из игр входят три покемона - Роулет, Литтен и Попплио.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Pokemon Moon</column>
+                <column include-in-search="true" property="code">pokemon_moon_nintendo_3ds</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    В 2016 году исполняется 20 лет Pokémon Red и Blue - культовым ролевым играм, положившим начало гигантской и невероятно успешной франшизе.
+                    Чтобы по достоинству отметить столь знаменательное событие, компания Nintendo решила сделать своим фанатам отличный подарок в лице Pokémon Sun и Pokémon Moon. В этих играх вас ждут новые приключения, новые покемоны и, конечно же, совершенно новая локация в лице тропического региона под названием Алора.
+                    Отличительной особенностью проектов является совместимость с онлайн-сервисом Pokémon Bank, который позволяет импортировать покемонов, ранее пойманных в ряде игр серии. Например, Pokémon Omega Ruby и Alpha Sapphire. Или Pokémon X и Y.
+                    В стартовый набор каждой из игр входят три покемона - Роулет, Литтен и Попплио.
+                </column>
+            </value>
+
+        </values>
+    </insert-update>
+
+</data-import>
