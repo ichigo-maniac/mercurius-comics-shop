@@ -1,6 +1,7 @@
 package net.sample.comics.shop.facades;
 
 import net.sample.comics.shop.forms.PersonalInfoForm;
+import net.sample.comics.shop.forms.RegistrationForm;
 import org.mercuriusframework.entities.CustomerEntity;
 import org.mercuriusframework.enums.SocialNetworkType;
 import org.mercuriusframework.facades.UserFacade;
@@ -20,6 +21,13 @@ public interface ISTUserFacade extends UserFacade {
      * @return Created customer
      */
     CustomerEntity createCustomer(SocialNetworkType socialNetworkType, String socialNetworkId, String firstName, String lastName, String email);
+
+    /**
+     * Create customer
+     * @param registrationForm Registration form
+     * @return Created customer
+     */
+    CustomerEntity createCustomer(RegistrationForm registrationForm);
 
     /**
      * Update personal info

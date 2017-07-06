@@ -1,27 +1,15 @@
 package net.sample.comics.shop.forms;
 
-import org.mercuriusframework.entities.AbstractUserEntity;
-import org.mercuriusframework.entities.CustomerEntity;
-import org.mercuriusframework.enums.AuthenticationType;
-import org.mercuriusframework.enums.SocialNetworkType;
-
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 /**
- * Personal info form
+ * Registration form
  */
-public class PersonalInfoForm {
+public class RegistrationForm implements Serializable {
 
-    /**
-     * Social network type
-     */
-    private SocialNetworkType socialNetworkType;
-
-    /**
-     * Use password authentication flag
-     */
-    private boolean usePasswordAuthentication;
+    private static final long serialVersionUID = 1132404395570724876L;
 
     /**
      * First name
@@ -44,7 +32,7 @@ public class PersonalInfoForm {
     /**
      * Phone number
      */
-    @Pattern(regexp = "^\\+\\d-[\\d]{3}\\-[\\d]{3}-[\\d]{4}$|^[ ]*$")
+    @Pattern(regexp = "^\\+\\d-[\\d]{3}\\-[\\d]{3}-[\\d]{4}$")
     private String phoneNumber;
 
     /**
@@ -58,59 +46,6 @@ public class PersonalInfoForm {
      */
     @Size(min = 8, max = 30)
     private String repeatPassword;
-
-    /**
-     * Default constructor
-     */
-    public PersonalInfoForm() {
-    }
-
-    /**
-     * Constructor
-     * @param userEntity User entity
-     */
-    public PersonalInfoForm(AbstractUserEntity userEntity) {
-        if (userEntity instanceof CustomerEntity) {
-            this.socialNetworkType = ((CustomerEntity) userEntity).getSocialNetworkType();
-        }
-        this.usePasswordAuthentication = userEntity.getAuthenticationType() == AuthenticationType.PASSWORD;
-        this.email = userEntity.getEmail();
-        this.firstName = userEntity.getFirstName();
-        this.lastName = userEntity.getLastName();
-        this.phoneNumber = userEntity.getPhoneNumber();
-    }
-
-    /**
-     * Get social network type
-     * @return Social network type
-     */
-    public SocialNetworkType getSocialNetworkType() {
-        return socialNetworkType;
-    }
-
-    /**
-     * Set social network type
-     * @param socialNetworkType Social network type
-     */
-    public void setSocialNetworkType(SocialNetworkType socialNetworkType) {
-        this.socialNetworkType = socialNetworkType;
-    }
-
-    /**
-     * Get use password authentication flag
-     * @return Use password authentication flag
-     */
-    public boolean isUsePasswordAuthentication() {
-        return usePasswordAuthentication;
-    }
-
-    /**
-     * Set use password authentication flag
-     * @param usePasswordAuthentication Use password authentication flag
-     */
-    public void setUsePasswordAuthentication(boolean usePasswordAuthentication) {
-        this.usePasswordAuthentication = usePasswordAuthentication;
-    }
 
     /**
      * Get first name
@@ -207,4 +142,5 @@ public class PersonalInfoForm {
     public void setRepeatPassword(String repeatPassword) {
         this.repeatPassword = repeatPassword;
     }
+
 }

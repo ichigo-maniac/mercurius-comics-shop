@@ -2,9 +2,11 @@ package net.sample.comics.shop.facades.impl;
 
 import net.sample.comics.shop.facades.ISTUserFacade;
 import net.sample.comics.shop.forms.PersonalInfoForm;
+import net.sample.comics.shop.forms.RegistrationForm;
 import org.mercuriusframework.entities.AbstractUserEntity;
 import org.mercuriusframework.entities.CustomerEntity;
 import org.mercuriusframework.enums.AuthenticationType;
+import org.mercuriusframework.enums.PasswordEncodingType;
 import org.mercuriusframework.enums.SocialNetworkType;
 import org.mercuriusframework.facades.impl.UserFacadeImpl;
 import org.springframework.stereotype.Service;
@@ -34,6 +36,27 @@ public class ISTUserFacadeImpl extends UserFacadeImpl implements ISTUserFacade {
         customerEntity.setLastName(lastName);
         customerEntity.setEmail(email);
         return entityService.save(customerEntity);
+    }
+
+    /**
+     * Create customer
+     * @param registrationForm Registration form
+     * @return Created customer
+     */
+    @Override
+    public CustomerEntity createCustomer(RegistrationForm registrationForm) {
+        CustomerEntity customerEntity = new CustomerEntity();
+        customerEntity.setCode(registrationForm.getEmail());
+        customerEntity.setPhoneNumber(registrationForm.getPhoneNumber());
+        customerEntity.setAuthenticationType(AuthenticationType.PASSWORD);
+        customerEntity.setName(registrationForm.getLastName() + " " + registrationForm.getLastName());
+        customerEntity.setFirstName(registrationForm.getFirstName());
+        customerEntity.setLastName(registrationForm.getLastName());
+        customerEntity.setEmail(registrationForm.getEmail());
+        entityService.save(customerEntity);
+        /** Update password */
+        updateUserPassword(customerEntity, registrationForm.getPassword(), PasswordEncodingType.MD5);
+        return customerEntity;
     }
 
     /**
