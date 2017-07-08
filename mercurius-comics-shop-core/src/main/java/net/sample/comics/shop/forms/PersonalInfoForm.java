@@ -50,13 +50,11 @@ public class PersonalInfoForm {
     /**
      * Password
      */
-    @Size(min = 8, max = 30)
     private String password;
 
     /**
      * Repeat password
      */
-    @Size(min = 8, max = 30)
     private String repeatPassword;
 
     /**

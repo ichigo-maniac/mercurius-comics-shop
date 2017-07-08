@@ -3,6 +3,7 @@ package net.sample.comics.shop.facades.impl;
 import net.sample.comics.shop.facades.ISTUserFacade;
 import net.sample.comics.shop.forms.PersonalInfoForm;
 import net.sample.comics.shop.forms.RegistrationForm;
+import org.apache.commons.lang.StringUtils;
 import org.mercuriusframework.entities.AbstractUserEntity;
 import org.mercuriusframework.entities.CustomerEntity;
 import org.mercuriusframework.enums.AuthenticationType;
@@ -74,6 +75,9 @@ public class ISTUserFacadeImpl extends UserFacadeImpl implements ISTUserFacade {
             userEntity.setLastName(personalInfoForm.getLastName());
             userEntity.setPhoneNumber(personalInfoForm.getPhoneNumber());
             entityService.save(userEntity);
+            if (userEntity.getAuthenticationType() == AuthenticationType.PASSWORD && StringUtils.isNotEmpty(personalInfoForm.getPassword())) {
+                updateUserPassword(userEntity, personalInfoForm.getPassword(), PasswordEncodingType.MD5);
+            }
             return true;
         } else {
             return false;

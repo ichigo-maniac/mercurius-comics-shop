@@ -97,6 +97,26 @@
                                     <form:input path="lastName" cssClass="form-control" id="lastName"/>
                                 </div>
                             </div>
+                            <%-- Password --%>
+                            <c:if test="${personalInfoForm.usePasswordAuthentication}">
+                                <div id="passwordGroup" class="form-group">
+                                    <label for="password" class="col-sm-3 control-label">
+                                        <spring:message code="registration.form.password.label"/>
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <form:password path="password" cssClass="form-control" id="password"/>
+                                    </div>
+                                </div>
+                                <%-- Repeat password --%>
+                                <div id="repeatPasswordGroup" class="form-group">
+                                    <label for="repeatPassword" class="col-sm-3 control-label">
+                                        <spring:message code="registration.form.repeat.password.label"/>
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <form:password path="repeatPassword" cssClass="form-control" id="repeatPassword"/>
+                                    </div>
+                                </div>
+                            </c:if>
                             <%-- Submit --%>
                             <div class="form-group">
                                 <div class="col-sm-offset-3 col-sm-9">
@@ -143,6 +163,17 @@
         var lastName = $("#lastName").val();
         if (lastName.length < 2 || lastName.length > 20) {
             highlightErrorGroup("lastNameGroup", "<spring:message code="personal.info.form.last.name.error"/>");
+            return false;
+        }
+        /** Password */
+        var password = $("#password").val();
+        var repeatPassword = $("#repeatPassword").val();
+        if (password != repeatPassword) {
+            highlightErrorGroup("passwordGroup", "<spring:message code="registration.form.password.mismatch.error"/>");
+            return false;
+        }
+        if ((password.length > 30 || password.length < 8) && password.length != 0) {
+            highlightErrorGroup("passwordGroup", "<spring:message code="registration.form.password.length.error"/>");
             return false;
         }
         return true;
