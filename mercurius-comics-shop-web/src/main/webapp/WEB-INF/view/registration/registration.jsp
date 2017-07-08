@@ -28,7 +28,7 @@
                             <spring:message code="registration.header"/>
                         </h3>
                         <form:form method="POST" action="/complete_registration" modelAttribute="registrationForm"
-                                   cssClass="form-horizontal" cssStyle="padding: 15px;" onsubmit="return validatePersonalInformation();">
+                                   cssClass="form-horizontal" cssStyle="padding: 15px;" onsubmit="return validateRegistrationInformation();">
                             <%-- Phone number --%>
                             <div id="phoneNumberGroup" class="form-group">
                                 <label for="phoneNumber" class="col-sm-3 control-label">
@@ -104,7 +104,7 @@
 
     $("#phoneNumber").mask('+0-000-000-0000');
 
-    function validatePersonalInformation() {
+    function validateRegistrationInformation() {
         $(".form-group").attr("class", "form-group");
         /** Phone number */
         var phoneNumber = $("#phoneNumber").val();

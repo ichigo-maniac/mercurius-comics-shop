@@ -41,7 +41,7 @@
                         </a>
                     </div>
                     <%-- Form sing in --%>
-                    <form:form class="form-horizontal">
+                    <form:form action="/login" method="POST" class="form-horizontal">
                         <%-- Email --%>
                         <div class="form-group">
                             <div class="col-sm-12">
