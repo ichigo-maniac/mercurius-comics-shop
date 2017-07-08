@@ -36,6 +36,12 @@
                         <h3 style="border-bottom: 1px solid #DDDDDD; padding: 0px 0px 12px 23px; margin-top: 15px;">
                             <spring:message code="personal.info.personal.info.header"/>
                         </h3>
+                        <c:if test="${dataUpdated == true}">
+                            <div class="alert alert-success alert-dismissible" role="alert" style="margin: 5px 15px 0px 15px;">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <spring:message code="personal.info.update.completed"/>
+                            </div>
+                        </c:if>
                         <form:form method="POST" action="/update_personal_info" modelAttribute="personalInfoForm"
                                 cssClass="form-horizontal" cssStyle="padding: 15px;" onsubmit="return validatePersonalInformation();">
                             <c:if test="${personalInfoForm.socialNetworkType != null}">

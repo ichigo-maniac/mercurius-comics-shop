@@ -10,6 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
 
@@ -42,11 +43,12 @@ public class PersonalInfoPageController extends AbstractController {
     /**
      * Update personal info
      * @param personalInfoForm Personal info form
+     * @param redirectAttributes Redirect attributes
      * @param result Binding result
      * @return Redirect path
      */
     @RequestMapping(method = RequestMethod.POST, value = "/update_personal_info")
-    public String updatePersonalInfo(@Valid @ModelAttribute("personalInfoForm") PersonalInfoForm personalInfoForm, BindingResult result) {
+    public String updatePersonalInfo(@Valid @ModelAttribute("personalInfoForm") PersonalInfoForm personalInfoForm, BindingResult result, RedirectAttributes redirectAttributes) {
         /** Check form for errors and authenticated user */
         if (result.hasErrors()) {
             return MercuriusComicsShopConstants.REDIRECT.HOME;
@@ -57,6 +59,7 @@ public class PersonalInfoPageController extends AbstractController {
         /** Update user */
         UserEntityDto currentUser = userFacade.getCurrentUser();
         if (userFacade.updatePersonalInfo(currentUser.getUuid(), personalInfoForm)) {
+            redirectAttributes.addFlashAttribute("dataUpdated", true);
             return "redirect:" + PERSONAL_INFO_PATH;
         } else {
             return MercuriusComicsShopConstants.REDIRECT.HOME;
