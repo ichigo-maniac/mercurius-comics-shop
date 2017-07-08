@@ -1706,7 +1706,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::noragami_01</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_01</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -1724,7 +1724,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::noragami_02</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_02</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -1742,7 +1742,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::noragami_03</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_03</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -1760,7 +1760,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::noragami_04</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_04</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>
@@ -1778,7 +1778,7 @@
     <insert-update entity-name="FeatureValue">
         <common-values>
             <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
-            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::noragami_05</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_05</column>
             <column property="groupName">Общее</column>
         </common-values>
         <values>

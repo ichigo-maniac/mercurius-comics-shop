@@ -827,7 +827,7 @@
 
             <value>
                 <column property="name">Бездомный бог. Том 01</column>
-                <column include-in-search="true" property="code">noragami_01</column>
+                <column include-in-search="true" property="code">manga_noragami_01</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Однажды одна девочка, которую травили в школе, увидела на исчирканной стене туалета номер телефона с подписью «Решаю любые проблемы». Она была в таком отчаянии, что позвонила по этому номеру ― но чего она совсем не ожидала, так это, что перед ней со словами «Бог по вызову Ято!» появится наглый парень в спортивном костюме... Что же это за бог такой, если у него нет ни храма, ни верующих? Какой толк от такого божества?
                 </column>
@@ -835,7 +835,7 @@
 
             <value>
                 <column property="name">Бездомный бог. Том 02</column>
-                <column include-in-search="true" property="code">noragami_02</column>
+                <column include-in-search="true" property="code">manga_noragami_02</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Ято продолжает трудиться не покладая рук ради достижения своей мечты — стать настоящим богом со множеством почитателей. Только помимо выполнения мелких повседневных поручений от людей ему теперь приходится присматривать за своим новым подопечным Юкинэ, ставшим для Ято оружием-реликвией. Но недавно умерший угрюмый четырнадцатилетний подросток не рвется внимать наставлениям «учителя», да и пример для подражания из Ято неважный...
                 </column>
@@ -843,7 +843,7 @@
 
             <value>
                 <column property="name">Бездомный бог. Том 03</column>
-                <column include-in-search="true" property="code">noragami_03</column>
+                <column include-in-search="true" property="code">manga_noragami_03</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Что ни день, то новая проблема у Ято. После битвы с Бисямон он понимает, что слишком слаб, чтобы справиться с ней, и тут неожиданно на помощь Ято приходит его старая подруга - реликвия, известная под прозвищем Бездомная. Но появление бывшей реликвии вызывает приступ ревности у Юкинэ, у которого и так накопилось достаточно обид на Ято, и он решает бросить своего хозяина...
                 </column>
@@ -851,7 +851,7 @@
 
             <value>
                 <column property="name">Бездомный бог. Том 04</column>
-                <column include-in-search="true" property="code">noragami_04</column>
+                <column include-in-search="true" property="code">manga_noragami_04</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     После обряда Покаяния вечным ссорам между Ято и Юкинэ пришел конец - теперь они сражаются с призраками вдвойне эффективнее, чем прежде. Но возникает новая проблема: для того чтобы наконец-то помочь Хиёри перестать быть полупризраком и покидать тело, Ято должен прекратить видеться с ней. Вдобавок ко всему Бездомная вместе с реликвией Бисямон по имени Кугаха замышляют что-то недоброе...
                 </column>
@@ -859,7 +859,7 @@
 
             <value>
                 <column property="name">Бездомный бог. Том 05</column>
-                <column include-in-search="true" property="code">noragami_05</column>
+                <column include-in-search="true" property="code">manga_noragami_05</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Кугаха хочет убить богиню Бисямон, чтобы та возродилась заново. Для этого он планирует стравить Бисямон с ее давним врагом Ято, и ради своей цели готов пойти на ужасные вещи... Тем временем Бисямон узнает, что ее самый верный слуга и союзник, Кадзума, помогал Ято и Юкинэ с обрядом покаяния, и разумеется, приходит в бешенство. Чем закончится противостояние Ято и Бисямон и что же все-таки произошло между ними в прошлом и стало причиной раздора?
                 </column>
