@@ -36,7 +36,7 @@
                 <column property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
                 <column property="solrCriteriaValueType" value-import-bean="enumImportBean">IN</column>
                 <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">
-                    master_catalog::video_games
+                    master_catalog::video_games;video_game_consoles
                 </column>
             </value>
         </values>

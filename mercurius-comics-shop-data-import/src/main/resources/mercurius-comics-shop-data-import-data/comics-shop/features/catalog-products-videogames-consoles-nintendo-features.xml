@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Features -->
+
+    <insert-update entity-name="Feature">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="code">videogames_platform_feature</column>
+                <column property="includeInIndex">true</column>
+                <column property="solrDocumentFieldName">videogames_platform</column>
+                <column property="name">Платформа</column>
+                <column property="featureType" value-import-bean="enumImportBean">DICTIONARY_TYPE</column>
+                <column property="dictionaryType" value-import-bean="uniqueCodeImportBean">dictionary_videogames_platform</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Nintendo Switch -->
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_switch_32gb_neon_red_blue</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_switch</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_switch_32gb_gray</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_switch</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_switch_32gb_neon_red_blue_splatoon_2</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_switch</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_switch_32gb_neon_red_blue_mario_kart_deluxe_8</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_switch</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_switch_32gb_gray_mario_kart_deluxe_8</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_switch</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_switch_32gb_neon_red_blue_lego_city_undercover</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_switch</column>
+            </value>
+        </values>
+    </insert-update>
+
+
+    <!-- Nintendo 3ds -->
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_new_3ds_xl_solgaleo_lunala</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_3ds</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_new_3ds_xl_animal_crossing_home_designer</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_3ds</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_new_3ds_xl_perl_white</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_3ds</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_new_2ds_xl_black_purple</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_3ds</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_new_2ds_xl_white_orange</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_3ds</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <!-- Nintendo Wii U -->
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nintendo_wii_u_premiup_pack_mario_maker</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::videogames_platform_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::videogames_platform_nintendo_wii_u</column>
+            </value>
+        </values>
+    </insert-update>
+
+
+</data-import>
