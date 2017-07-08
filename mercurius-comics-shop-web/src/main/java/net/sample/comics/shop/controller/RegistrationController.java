@@ -26,6 +26,12 @@ public class RegistrationController extends AbstractController {
      * Constants
      */
     private static final String REGISTRATION_FORM_ATTRIBUTE = "registrationForm";
+    private static final String ERROR_MESSAGE_CODE_ATTRIBUTE = "errorCode";
+
+    /**
+     * Error code constants
+     */
+    private static final String DUPLICATE_EMAIL = "registration.duplicate.error";
 
     /**
      * User facade
@@ -76,6 +82,7 @@ public class RegistrationController extends AbstractController {
         /** Create a new user */
         if (userService.existCustomerWithEmail(registrationForm.getEmail())) {
             redirectAttributes.addFlashAttribute(REGISTRATION_FORM_ATTRIBUTE, registrationForm);
+            redirectAttributes.addFlashAttribute(ERROR_MESSAGE_CODE_ATTRIBUTE, DUPLICATE_EMAIL);
             return "redirect:/registration";
         }
         CustomerEntity newCustomer = userFacade.createCustomer(registrationForm);
