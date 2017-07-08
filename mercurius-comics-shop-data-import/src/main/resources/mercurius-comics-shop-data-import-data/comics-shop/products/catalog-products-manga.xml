@@ -777,6 +777,54 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Чудовище за соседней партой. Том 01</column>
+                <column include-in-search="true" property="code">manga_tonari_no_kaibutsu_kun_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Сидзуку Мидзутани интересуется только своей школьной успеваемостью и будущей карьерой, а со сверстниками держится прохладно, ограничиваясь в общении с ними простой вежливостью. Но однажды учительница просит ее отнести конспекты Хару Ёсиде - загадочному хулигану, который должен сидеть за соседней с Сидзуку партой, но перестал ходить на учебу после того, как подрался с одноклассниками в первый же свой день в школе. Ёсида же принимает визит одноклассницы за предложение дружбы и оказывается совсем не так страшен, как гуляющие о нем слухи...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Чудовище за соседней партой. Том 02</column>
+                <column include-in-search="true" property="code">manga_tonari_no_kaibutsu_kun_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Сидзуку Мидзутани, обнаружившая, что ее сосед по парте Хару совсем не чудовище, а наивный и очень добрый парень, постепенно понимает, что влюбилась в него. Но что чувствует сам Хару?.. Тем временем одноклассники перестают бояться Хару, и он неожиданно оказывается одним из самых популярных парней в школе, а Сидзуку испытывает новое, непривычное для нее чувство — ревность.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Чудовище за соседней партой. Том 03</column>
+                <column include-in-search="true" property="code">manga_tonari_no_kaibutsu_kun_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Сидзуку говорит Хару, что им лучше остаться друзьями, так как их будущие отношения могут помешать ее учебе. Но друзья советуют Хару не сдаваться и продолжать бороться за свою любовь. Тем временем начинается школьный фестиваль, и у Хару появляется серьезный соперник - Ямакэн, своенравный и избалованный парень из элитной школы, ни во что не ставящий ни правила, ни мнение окружающих...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Чудовище за соседней партой. Том 04</column>
+                <column include-in-search="true" property="code">manga_tonari_no_kaibutsu_kun_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Отношения между Сидзуку и Хару никак не сдвинутся с мертвой точки, пока Ямакэн не помогает девушке дельным советом, сказав, что ей вовсе не обязательно выбирать между любовью и учёбой. Но сам Ямакэн позже пожалеет о сказанном, когда осознает, что ему тоже нравится Сидзуку. Рано или поздно между Хару и Ямакэном должен произойти откровенный разговор об их чувствах к Сидзуку, и, учитывая трудный характер обоих, вряд ли дело кончится миром...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Чудовище за соседней партой. Том 05</column>
+                <column include-in-search="true" property="code">manga_tonari_no_kaibutsu_kun_05</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Сидзуку хочет как-то порадовать Хару и решает поехать с ним на выходных на горнолыжный курорт. А до этого в ее жизни происходит немало других событий, связанных как с самой Сидзуку, так и с ее новыми друзьями, и события эти в очередной раз осложняют ее и без того запутанные отношения с Хару...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Чудовище за соседней партой. Том 06</column>
+                <column include-in-search="true" property="code">manga_tonari_no_kaibutsu_kun_06</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    После совместной поездки в горы Хару и Сидзуку, кажется, наконец начинают лучше понимать друг друга и готовы идти на уступки. Но близятся две очень важных даты, которые могут как поспособствовать сближению наших героев, так и преподнести неприятные сюрпризы: день рождения Сидзуку и день святого Валентина!
+                </column>
+            </value>
+
         </values>
     </insert-update>
 
