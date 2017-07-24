@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <insert-update entity-name="Price">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column include-in-search="true" property="currency" value-import-bean="uniqueCodeImportBean">rub</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_04</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_05</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_06</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_07</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_08</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_09</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_10</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_11</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_12</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_13</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_spice_and_wolf_14</column>
+                <column property="priceValue">350.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hotarubi_no_mori_e</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_kaikisen</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hoshi_no_koe</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tokikake</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_first_squad</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_the_garden_of_words</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_bloodhound</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_kamisama_ga_uso_wo_tsuku</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_furou_kyoudai</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_gigantomakhia</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_wolfull_moon</column>
+                <column property="priceValue">350.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_the_magicians_bride_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_the_magicians_bride_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_the_magicians_bride_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_the_magicians_bride_04</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_the_magicians_bride_05</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_ibara_no_ou_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_ibara_no_ou_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_ibara_no_ou_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_ibara_no_ou_04</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_ibara_no_ou_05</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_ibara_no_ou_06</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_summer_wars_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_summer_wars_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_summer_wars_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_koe_no_katachi_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_koe_no_katachi_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sherlok_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sherlok_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sherlok_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_dangu_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_dangu_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_dangu_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_dangu_04</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_carnivorous_princess_yegrinna_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_carnivorous_princess_yegrinna_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_04</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_05</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_06</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_07</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_08</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_09</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_10</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_11</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_12</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_13</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_bride_of_the_water_god_14</column>
+                <column property="priceValue">350.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_doll_song_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_doll_song_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_doll_song_03</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_doll_song_04</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_doll_song_05</column>
+                <column property="priceValue">350.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manhua_vampire_library_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_skunk_and_ocelot_01</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_skunk_and_ocelot_02</column>
+                <column property="priceValue">350.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_yakutia</column>
+                <column property="priceValue">350.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_01</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_02</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_03</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_04</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_05</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_06</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_07</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_08</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_09</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_10</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_11</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_12</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_13</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tomodachi_ga_sukunai_14</column>
+                <column property="priceValue">300.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tonari_no_kaibutsu_kun_01</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tonari_no_kaibutsu_kun_02</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tonari_no_kaibutsu_kun_03</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tonari_no_kaibutsu_kun_04</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tonari_no_kaibutsu_kun_05</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tonari_no_kaibutsu_kun_06</column>
+                <column property="priceValue">300.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_01</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_02</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_03</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_04</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_05</column>
+                <column property="priceValue">300.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_steins_gates_01</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_steins_gates_02</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_steins_gates_03</column>
+                <column property="priceValue">300.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tate_no_yuusha_no_nariagari_01</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tate_no_yuusha_no_nariagari_02</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tate_no_yuusha_no_nariagari_03</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tate_no_yuusha_no_nariagari_04</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tate_no_yuusha_no_nariagari_05</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tate_no_yuusha_no_nariagari_06</column>
+                <column property="priceValue">300.0</column>
+            </value>
+
+        </values>
+
+    </insert-update>
+</data-import>
