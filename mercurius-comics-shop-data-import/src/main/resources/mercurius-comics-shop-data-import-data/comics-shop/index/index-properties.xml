@@ -17,6 +17,7 @@
                     LEFT JOIN FETCH product.mainCategory
                     LEFT JOIN FETCH product.categories
                     LEFT JOIN FETCH product.featureValues
+                    WHERE EXISTS (SELECT price FROM Price as price WHERE price.product = product)
                 </column>
                 <column property="indexEntityName">Product</column>
             </value>
