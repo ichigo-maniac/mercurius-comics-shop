@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <insert-update entity-name="Price">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column include-in-search="true" property="currency" value-import-bean="uniqueCodeImportBean">rub</column>
+        </common-values>
+        <values>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::dark_souls_3_xbox_one</column>
+                <column property="priceValue">2200.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::dark_souls_3_game_of_the_year_xbox_one</column>
+                <column property="priceValue">2500.0</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::gta_5_xbox_one</column>
+                <column property="priceValue">2200.0</column>
+            </value>
+
+        </values>
+    </insert-update>
+
+</data-import>
