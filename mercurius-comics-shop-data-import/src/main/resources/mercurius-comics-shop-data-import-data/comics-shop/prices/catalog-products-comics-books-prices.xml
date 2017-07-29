@@ -108,6 +108,47 @@
                 <column property="priceValue">1000.0</column>
             </value>
 
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_creature_of_the_night</column>
+                <column property="priceValue">650.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_murder_mystery</column>
+                <column property="priceValue">550.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_spawn_01</column>
+                <column property="priceValue">1000.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_spawn_02</column>
+                <column property="priceValue">1000.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_harrow_country_01</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_wytches_01</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_pretty_deadly</column>
+                <column property="priceValue">570.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_fell_feral_city</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_rachel_rising_01</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_dragon_age_library_edition_01</column>
+                <column property="priceValue">1450.0</column>
+            </value>
+
         </values>
     </insert-update>
 

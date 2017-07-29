@@ -460,5 +460,185 @@
         </values>
     </insert-update>
 
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_creature_of_the_night</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_murder_mystery</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_spawn_01</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_spawn_02</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_harrow_country_01</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_pretty_deadly</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_wytches_01</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_fell_feral_city</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_rachel_rising_01</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_dragon_age_library_edition_01</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_usa</column>
+            </value>
+        </values>
+    </insert-update>
+
 
 </data-import>
