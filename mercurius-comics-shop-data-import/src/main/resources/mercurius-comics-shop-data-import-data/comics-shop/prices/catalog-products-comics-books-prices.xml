@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <insert-update entity-name="Price">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column include-in-search="true" property="currency" value-import-bean="uniqueCodeImportBean">rub</column>
+        </common-values>
+        <values>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_01</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_02</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_03</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_04</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_05</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_06</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_01_deluxe</column>
+                <column property="priceValue">1000.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_01</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_02</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_03</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_04</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_bprd_1946</column>
+                <column property="priceValue">600.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_bprd_1947</column>
+                <column property="priceValue">600.0</column>
+            </value>
+
+        </values>
+    </insert-update>
+
+</data-import>
