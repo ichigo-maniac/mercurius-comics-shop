@@ -448,6 +448,34 @@
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_tate_no_yuusha_no_nariagari_06</column>
                 <column property="priceValue">300.0</column>
             </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_01</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_02</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_03</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_04</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_05</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_06</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_07</column>
+                <column property="priceValue">280.0</column>
+            </value>
 
         </values>
 

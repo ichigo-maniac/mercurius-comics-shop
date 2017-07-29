@@ -1955,4 +1955,130 @@
         </values>
     </insert-update>
 
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_01</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_02</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_03</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_04</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_05</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_06</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
+    <insert-update entity-name="FeatureValue">
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_hentai_ouji_to_warawanai_neko_07</column>
+            <column property="groupName">Общее</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::publisher_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::publisher_xl_media</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="feature" value-import-bean="catalogUniqueCodeImportBean">master_catalog::country_feature</column>
+                <column property="value" value-import-bean="featureValueImportBean">DICTIONARY_TYPE::country_japan</column>
+            </value>
+        </values>
+    </insert-update>
+
 </data-import>
