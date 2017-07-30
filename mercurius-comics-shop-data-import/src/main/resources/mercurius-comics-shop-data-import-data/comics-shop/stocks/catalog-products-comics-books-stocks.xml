@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <insert-update entity-name="Stock">
+        <common-values>
+            <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">main_warehouse</column>
+            <column include-in-search="true" property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="enabled">true</column>
+        </common-values>
+        <values>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_02</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_03</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_04</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_05</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_06</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_saga_01_deluxe</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_02</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_03</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_hellboy_04</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_bprd_1946</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_bprd_1947</column>
+                <column property="count">75</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_outcast_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_outcast_02</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_chew_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_chew_02</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_freakangels_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_freakangels_02</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_freakangels_03</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_freakangels_04</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_freakangels_05</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_freakangels_06</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_i_kill_giants</column>
+                <column property="count">75</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_creature_of_the_night</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_murder_mystery</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_spawn_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_spawn_02</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_harrow_country_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_wytches_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_pretty_deadly</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_fell_feral_city</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_rachel_rising_01</column>
+                <column property="count">75</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::comics_dragon_age_library_edition_01</column>
+                <column property="count">75</column>
+            </value>
+
+        </values>
+    </insert-update>
+
+</data-import>
