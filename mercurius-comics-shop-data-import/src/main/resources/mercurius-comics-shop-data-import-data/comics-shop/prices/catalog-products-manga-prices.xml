@@ -477,6 +477,39 @@
                 <column property="priceValue">280.0</column>
             </value>
 
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_blame_01</column>
+                <column property="priceValue">330.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_chibisan_date_01</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_chibisan_date_02</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_chibisan_date_03</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_chibisan_date_04</column>
+                <column property="priceValue">280.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sakamoto_desu_ga_01</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sakamoto_desu_ga_02</column>
+                <column property="priceValue">300.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sakamoto_desu_ga_03</column>
+                <column property="priceValue">300.0</column>
+            </value>
+
         </values>
 
     </insert-update>
