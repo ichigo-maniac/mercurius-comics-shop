@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <insert-update entity-name="Warehouse">
+        <values>
+            <value>
+                <column include-in-search="true" property="code">main_warehouse</column>
+                <column property="name">Main warehouse</column>
+                <column property="store" value-import-bean="uniqueCodeImportBean">default_store</column>
+                <column property="enabled">true</column>
+            </value>
+        </values>
+    </insert-update>
+
+</data-import>

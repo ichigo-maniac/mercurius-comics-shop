@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <insert-update entity-name="Stock">
+        <common-values>
+            <column include-in-search="true" property="warehouse" value-import-bean="uniqueCodeImportBean">main_warehouse</column>
+            <column include-in-search="true" property="unit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="enabled">true</column>
+        </common-values>
+        <values>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_01</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_02</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_03</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_04</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_05</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_06</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_spice_and_wolf_01</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_wolf_children_ame_yuki</column>
+                <column property="count">150</column>
+            </value>
+
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_no_game_no_life_01</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_kanojo_1000_nen_ikiteita</column>
+                <column property="count">150</column>
+            </value>
+
+        </values>
+    </insert-update>
+
+</data-import>
