@@ -86,6 +86,12 @@
                 <column property="entityFieldName">categories</column>
                 <column property="solrFieldConverterBeanName">productCategoriesSolrFieldConverter</column>
             </value>
+            <value>
+                <column include-in-search="true" property="code">product_index_field_prices</column>
+                <column property="solrDocumentFieldName"></column>
+                <column property="entityFieldName">prices</column>
+                <column property="solrFieldConverterBeanName">productPriceSolrFieldConverter</column>
+            </value>
         </values>
     </insert-update>
 
@@ -98,7 +104,7 @@
                 <column property="solrCollectionName">mercurius_products_war</column>
                 <column property="indexEntityName">Product</column>
                 <column property="textSearchFields" value-import-bean="multiUniqueCodeImportBean">
-                    product_index_field_name;product_index_field_code;product_index_field_description
+                    product_index_field_name;product_index_field_code;product_index_field_description;product_index_field_prices
                 </column>
             </value>
         </values>
