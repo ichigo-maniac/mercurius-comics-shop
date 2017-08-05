@@ -6,3 +6,5 @@
 <script src="/resources/lib/js/alertify.min.js"></script>
 <script src="/resources/lib/js/json2.js"></script>
 <script src="/resources/lib/js/jquery.mask.min.js"></script>
+<script src="/resources/lib/js/jquery.numberMask.min.js"></script>
+<script src="/resources/lib/js/bootstrap-slider.min.js"></script>

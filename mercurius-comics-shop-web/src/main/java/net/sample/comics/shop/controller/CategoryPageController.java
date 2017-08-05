@@ -1,18 +1,23 @@
 package net.sample.comics.shop.controller;
 
 import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
+import org.apache.commons.lang.math.DoubleRange;
 import org.mercuriusframework.converters.impl.CategoryEntityConverter;
 import org.mercuriusframework.converters.impl.FacetEntityConverter;
 import org.mercuriusframework.converters.impl.ProductEntityConverter;
 import org.mercuriusframework.dto.CategoryEntityDto;
+import org.mercuriusframework.dto.CurrencyEntityDto;
 import org.mercuriusframework.dto.ProductEntityDto;
+import org.mercuriusframework.dto.UnitEntityDto;
 import org.mercuriusframework.entities.CategoryEntity;
 import org.mercuriusframework.entities.FacetEntity;
 import org.mercuriusframework.entities.ProductEntity;
 import org.mercuriusframework.enums.CategoryLoadOptions;
 import org.mercuriusframework.enums.ProductLoadOptions;
 import org.mercuriusframework.enums.SolrCriteriaValueType;
+import org.mercuriusframework.facades.CurrencyFacade;
 import org.mercuriusframework.facades.SolrSearchFacade;
+import org.mercuriusframework.facades.UnitFacade;
 import org.mercuriusframework.facades.solr.SolrCriteriaParameter;
 import org.mercuriusframework.services.CatalogUniqueCodeEntityService;
 import org.mercuriusframework.services.CategoryService;
@@ -78,14 +83,31 @@ public class CategoryPageController extends AbstractController {
     private SolrSearchFacade searchFacade;
 
     /**
+     * Currency facade
+     */
+    @Autowired
+    private CurrencyFacade currencyFacade;
+
+    /**
+     * Unit facade
+     */
+    @Autowired
+    private UnitFacade unitFacade;
+
+    /**
      * Main catalog page
      * @param page Current page
+     * @param bottomPrice Bottom price
+     * @param topPrice Top price
      * @param model Model
      * @param request Http-request
      * @return View path
      */
     @RequestMapping(method = RequestMethod.GET, value = "/catalog")
-    public String catalogPage(@RequestParam(name = "page", required = false, defaultValue = "0") Integer page, Model model, HttpServletRequest request) {
+    public String catalogPage(@RequestParam(name = "page", required = false, defaultValue = "0") Integer page,
+                              @RequestParam(name = "bottom_price", required = false) Double bottomPrice,
+                              @RequestParam(name = "top_price", required = false) Double topPrice,
+                              Model model, HttpServletRequest request) {
         CategoryEntity categoryEntity = catalogUniqueCodeEntityService.getEntityByCode("catalog", CategoryEntity.class);
         if (categoryEntity == null) {
             return MercuriusComicsShopConstants.VIEW.PAGE_NOT_FOUND;
@@ -94,7 +116,7 @@ public class CategoryPageController extends AbstractController {
         List<FacetEntity> facets = facetService.getFacetsByCategory(categoryEntity);
         /** Products */
         PageableResult<ProductEntityDto> products = searchFacade.search(MercuriusComicsShopConstants.SOLR_SEARCH.PRODUCT_SEARCH_RESOLVER,
-                "", createCriteriaParameters(request, model, categoryEntity), page,
+                "", createCriteriaParameters(request, model, categoryEntity, bottomPrice, topPrice), page,
                 productEntityConverter,
                 new ProductLoadOptions[]{ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE}, ProductEntity.CATEGORIES);
         /** Categories */
@@ -106,6 +128,8 @@ public class CategoryPageController extends AbstractController {
         });
         /** Set attributes */
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
+        model.addAttribute("bottomPrice", bottomPrice != null ? bottomPrice : 0);
+        model.addAttribute("topPrice", topPrice != null ? topPrice : 25000);
         model.addAttribute("categories", categoriesDto);
         model.addAttribute("productsResult", products);
         model.addAttribute("queryParams", new HashMap<String, String>());
@@ -119,12 +143,16 @@ public class CategoryPageController extends AbstractController {
      * Category page
      * @param categoryCode Category code
      * @param page Current page
+     * @param bottomPrice Bottom price
+     * @param topPrice Top price
      * @param model Model
      * @param request Http-request
      * @return View path
      */
     @RequestMapping(method = RequestMethod.GET, value = "/catalog/**/{categoryCode}")
     public String catalogPage(@PathVariable String categoryCode, @RequestParam(name = "page", required = false, defaultValue = "0") Integer page,
+                              @RequestParam(name = "bottom_price", required = false) Double bottomPrice,
+                              @RequestParam(name = "top_price", required = false) Double topPrice,
                               Model model, HttpServletRequest request) {
         CategoryEntity categoryEntity = catalogUniqueCodeEntityService.getEntityByCode(categoryCode, CategoryEntity.class);
         if (categoryEntity == null) {
@@ -134,11 +162,13 @@ public class CategoryPageController extends AbstractController {
         List<FacetEntity> facets = facetService.getFacetsByCategory(categoryEntity);
         /** Products */
         PageableResult<ProductEntityDto> products = searchFacade.search(MercuriusComicsShopConstants.SOLR_SEARCH.PRODUCT_SEARCH_RESOLVER,
-                "", createCriteriaParameters(request, model, categoryEntity), page,
+                "", createCriteriaParameters(request, model, categoryEntity, bottomPrice, topPrice), page,
                 productEntityConverter,
                 new ProductLoadOptions[]{ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE}, ProductEntity.CATEGORIES);
         /** Set attributes */
         model.addAttribute("category", categoryConverter.convert(categoryEntity, CategoryLoadOptions.BREAD_CRUMBS));
+        model.addAttribute("bottomPrice", bottomPrice != null ? bottomPrice : 0);
+        model.addAttribute("topPrice", topPrice != null ? topPrice : 25000);
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
         model.addAttribute("productsResult", products);
         model.addAttribute("facets", facetEntityConverter.convertAll(facets));
@@ -170,9 +200,11 @@ public class CategoryPageController extends AbstractController {
      * @param request Http-request
      * @param model View model
      * @param category Category
+     * @param bottomPrice Bottom price
+     * @param topPrice Top price
      * @return Array of parameters
      */
-    private SolrCriteriaParameter[] createCriteriaParameters(HttpServletRequest request, Model model, CategoryEntity category) {
+    private SolrCriteriaParameter[] createCriteriaParameters(HttpServletRequest request, Model model, CategoryEntity category, Double bottomPrice, Double topPrice) {
         List<String> paramNames = Collections.list(request.getParameterNames());
         List<SolrCriteriaParameter> result = new ArrayList<>();
         /** Check facet parameters */
@@ -187,6 +219,16 @@ public class CategoryPageController extends AbstractController {
         /** Category criteria parameter */
         result.add(new SolrCriteriaParameter(MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORIES_SOLR_FIELD,
                 category.getCode(), SolrCriteriaValueType.IS));
+        /** Price range parameters */
+        if (bottomPrice != null && topPrice != null) {
+            CurrencyEntityDto currency = currencyFacade.getDefaultCurrency();
+            UnitEntityDto unit = unitFacade.getDefaultUnit();
+            if (currency != null && unit != null) {
+                result.add(new SolrCriteriaParameter(MercuriusComicsShopConstants.SOLR_SEARCH.PRICE_SOLR_FIELD +
+                        unit.getCode() + "_" + currency.getCode(),
+                        new DoubleRange(bottomPrice, topPrice), SolrCriteriaValueType.BETWEEN));
+            }
+        }
         return result.toArray(new SolrCriteriaParameter[result.size()]);
     }
 }

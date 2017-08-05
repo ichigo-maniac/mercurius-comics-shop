@@ -1,6 +1,8 @@
 <%@tag body-content="empty" trimDirectiveWhitespaces="true" pageEncoding="UTF-8" %>
 <%@attribute name="productsResult" required="true" type="org.mercuriusframework.services.query.PageableResult" %>
 <%@attribute name="builtUrl" required="true" type="java.lang.String" %>
+<%@attribute name="bottomPrice" required="true" type="java.lang.Double" %>
+<%@attribute name="topPrice" required="true" type="java.lang.Double" %>
 <%@attribute name="queryParams" required="true" type="java.util.Map" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
@@ -22,6 +24,8 @@
                                         <c:param name="${queryParam.key}" value="${queryValue}"/>
                                     </c:forEach>
                                 </c:forEach>
+                                <c:param name="bottom_price" value="${bottomPrice}"/>
+                                <c:param name="top_price" value="${topPrice}"/>
                             </c:url>" aria-label="First">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
@@ -36,6 +40,8 @@
                                         <c:param name="${queryParam.key}" value="${queryValue}"/>
                                     </c:forEach>
                                 </c:forEach>
+                                <c:param name="bottom_price" value="${bottomPrice}"/>
+                                <c:param name="top_price" value="${topPrice}"/>
                             </c:url>" aria-label="Current">
                                 <span>${productsResult.currentPage - 1}</span>
                             </a>
@@ -50,6 +56,8 @@
                                         <c:param name="${queryParam.key}" value="${queryValue}"/>
                                     </c:forEach>
                                 </c:forEach>
+                                <c:param name="bottom_price" value="${bottomPrice}"/>
+                                <c:param name="top_price" value="${topPrice}"/>
                             </c:url>" aria-label="Current">
                                 <span>${productsResult.currentPage}</span>
                             </a>
@@ -63,6 +71,8 @@
                                     <c:param name="${queryParam.key}" value="${queryValue}"/>
                                 </c:forEach>
                             </c:forEach>
+                            <c:param name="bottom_price" value="${bottomPrice}"/>
+                            <c:param name="top_price" value="${topPrice}"/>
                         </c:url>" aria-label="Current">
                             <span>${productsResult.currentPage + 1}</span>
                         </a>
@@ -76,6 +86,8 @@
                                         <c:param name="${queryParam.key}" value="${queryValue}"/>
                                     </c:forEach>
                                 </c:forEach>
+                                <c:param name="bottom_price" value="${bottomPrice}"/>
+                                <c:param name="top_price" value="${topPrice}"/>
                             </c:url>" aria-label="Current">
                                 <span>${productsResult.currentPage + 2}</span>
                             </a>
@@ -90,6 +102,8 @@
                                         <c:param name="${queryParam.key}" value="${queryValue}"/>
                                     </c:forEach>
                                 </c:forEach>
+                                <c:param name="bottom_price" value="${bottomPrice}"/>
+                                <c:param name="top_price" value="${topPrice}"/>
                             </c:url>"
                                aria-label="Current">
                                 <span>${productsResult.currentPage + 3}</span>
@@ -105,6 +119,8 @@
                                         <c:param name="${queryParam.key}" value="${queryValue}"/>
                                     </c:forEach>
                                 </c:forEach>
+                                <c:param name="bottom_price" value="${bottomPrice}"/>
+                                <c:param name="top_price" value="${topPrice}"/>
                             </c:url>"
                                aria-label="Last">
                                 <span aria-hidden="true">&raquo;</span>
@@ -124,6 +140,8 @@
                                         <c:param name="${queryParam.key}" value="${queryValue}"/>
                                     </c:forEach>
                                 </c:forEach>
+                                <c:param name="bottom_price" value="${bottomPrice}"/>
+                                <c:param name="top_price" value="${topPrice}"/>
                             </c:url>">
                                 <span aria-hidden="true">${index + 1}</span>
                             </a>

@@ -12,6 +12,7 @@ public class MercuriusComicsShopConstants {
         public static final String PRODUCT_SEARCH_RESOLVER = "productSearchResolver";
         public static final String CATEGORY_FACET_PARAM_PREFIX = "category-facet-";
         public static final String CATEGORIES_SOLR_FIELD = "categories";
+        public static final String PRICE_SOLR_FIELD = "price_";
     }
 
     /**

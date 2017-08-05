@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="/resources/lib/css/bootstrap-select.min.css"/>
 <link rel="stylesheet" href="/resources/lib/css/bootstrap.alertify.min.css"/>
 <link rel="stylesheet" href="/resources/lib/css/alertify.min.css"/>
+<link rel="stylesheet" href="/resources/lib/css/bootstrap-slider.min.css"/>
 <link rel="stylesheet" href="/resources/app/css/styles.css"/>
 <style>
     #view-source {
