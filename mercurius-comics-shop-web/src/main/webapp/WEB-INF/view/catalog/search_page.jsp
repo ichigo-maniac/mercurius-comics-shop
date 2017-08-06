@@ -25,24 +25,8 @@
                     <form method="GET" action="${builtUrl}">
                         <%-- Price --%>
                         <input type="hidden" name="searchText" value="<c:out value="${searchText}"/>">
-                        <div class="panel panel-success">
-                            <div class="panel-heading"><spring:message code="comics.shop.catalog.price.range.label"/></div>
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input id="bottom_price_input" name="bottom_price" type="text" class="number_field" style="width: 100%;"
-                                               value="<c:out value="${bottomPrice}"/>">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input id="top_price_input" name="top_price" class="number_field" type="text" style="width: 100%;"
-                                               value="<c:out value="${topPrice}"/>">
-                                    </div>
-                                </div>
-                                <div style="margin-top: 10px">
-                                    <input id="price_range" style="width: 100%;">
-                                </div>
-                            </div>
-                        </div>
+                        <catalog:catalog_price_facet bottomPrice="${bottomPrice}" topPrice="${topPrice}"/>
+                        <%-- Facets --%>
                         <c:if test="${not empty facets}">
                             <c:forEach var="facet" items="${facets}">
                                 <div class="panel panel-success">
@@ -133,43 +117,6 @@
 </div>
 <%-- Javascript libraries --%>
 <jsp:include page="/WEB-INF/view/common/javascript_libraries.jsp"/>
-<script>
-    $(document).ready(function() {
-        /** Price range **/
-        $("#price_range").slider({
-            min : 0,
-            max : 25000,
-            value : [${bottomPrice}, ${topPrice}],
-            range : true,
-            step : 10
-        }).on("change", function() {
-            var values = $("#price_range").slider("getValue");
-            var bottomPrice = values[0];
-            var topPrice = values[1];
-            $("#bottom_price_input").val(bottomPrice);
-            $("#top_price_input").val(topPrice);
-        });
-
-        $(".number_field").numberMask({type:'float', beforePoint:10, afterPoint:6, decimalMark:'.'});
-
-        /** Number fields */
-        $("#bottom_price_input").on("change", function() {
-            updatePriceSlider();
-        });
-        $("#top_price_input").on("change", function() {
-            updatePriceSlider();
-        });
-
-    });
-
-    function updatePriceSlider() {
-        var priceRange = [];
-        priceRange.push(parseFloat($("#bottom_price_input").val()));
-        priceRange.push(parseFloat($("#top_price_input").val()));
-        $("#price_range").slider("setValue", priceRange);
-        $("#price_range").slider("relayout");
-    }
-
-</script>
+<script src="/resources/app/js/price.range.facet.js"></script>
 </body>
 </html>
