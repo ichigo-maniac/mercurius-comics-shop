@@ -1,14 +1,11 @@
 package net.sample.comics.shop.controller;
 
 import net.sample.comics.shop.constants.MercuriusComicsShopConstants;
+import net.sample.comics.shop.dto.ISTFacetEntityDto;
 import org.apache.commons.lang.math.DoubleRange;
 import org.mercuriusframework.converters.impl.CategoryEntityConverter;
-import org.mercuriusframework.converters.impl.FacetEntityConverter;
 import org.mercuriusframework.converters.impl.ProductEntityConverter;
-import org.mercuriusframework.dto.CategoryEntityDto;
-import org.mercuriusframework.dto.CurrencyEntityDto;
-import org.mercuriusframework.dto.ProductEntityDto;
-import org.mercuriusframework.dto.UnitEntityDto;
+import org.mercuriusframework.dto.*;
 import org.mercuriusframework.entities.CategoryEntity;
 import org.mercuriusframework.entities.FacetEntity;
 import org.mercuriusframework.entities.ProductEntity;
@@ -19,6 +16,7 @@ import org.mercuriusframework.facades.CurrencyFacade;
 import org.mercuriusframework.facades.SolrSearchFacade;
 import org.mercuriusframework.facades.UnitFacade;
 import org.mercuriusframework.facades.solr.SolrCriteriaParameter;
+import org.mercuriusframework.fillers.impl.FacetEntityFiller;
 import org.mercuriusframework.services.CatalogUniqueCodeEntityService;
 import org.mercuriusframework.services.CategoryService;
 import org.mercuriusframework.services.FacetService;
@@ -71,10 +69,10 @@ public class CategoryPageController extends AbstractController {
     private FacetService facetService;
 
     /**
-     * Facet entity converter
+     * Facet entity filler
      */
     @Autowired
-    private FacetEntityConverter facetEntityConverter;
+    private FacetEntityFiller facetEntityFiller;
 
     /**
      * Search facade
@@ -133,7 +131,7 @@ public class CategoryPageController extends AbstractController {
         model.addAttribute("categories", categoriesDto);
         model.addAttribute("productsResult", products);
         model.addAttribute("queryParams", new HashMap<String, String>());
-        model.addAttribute("facets", facetEntityConverter.convertAll(facets));
+        model.addAttribute("facets", buildFacets(facets, categoryEntity));
         model.addAttribute("builtUrl", request.getRequestURI());
         model.addAttribute("facetPrefix", MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORY_FACET_PARAM_PREFIX);
         return MercuriusComicsShopConstants.VIEW.CATEGORY_PAGE;
@@ -171,7 +169,7 @@ public class CategoryPageController extends AbstractController {
         model.addAttribute("topPrice", topPrice != null ? topPrice : 25000);
         model.addAttribute("categories", categoryConverter.convertAll(subCategories));
         model.addAttribute("productsResult", products);
-        model.addAttribute("facets", facetEntityConverter.convertAll(facets));
+        model.addAttribute("facets", buildFacets(facets, categoryEntity));
         model.addAttribute("builtUrl", request.getRequestURI());
         model.addAttribute("facetPrefix", MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORY_FACET_PARAM_PREFIX);
         model.addAttribute("queryParams", buildQueryParams(model));
@@ -230,5 +228,35 @@ public class CategoryPageController extends AbstractController {
             }
         }
         return result.toArray(new SolrCriteriaParameter[result.size()]);
+    }
+
+    /**
+     * Build facets
+     * @param facetEntities Facet entities
+     * @param categoryEntity Category
+     * @return List of facets
+     */
+    private List<ISTFacetEntityDto> buildFacets(List<FacetEntity> facetEntities, CategoryEntity categoryEntity) {
+        List<ISTFacetEntityDto> result = new ArrayList<>();
+        SolrCriteriaParameter categoryParameter = new SolrCriteriaParameter(MercuriusComicsShopConstants.SOLR_SEARCH.CATEGORIES_SOLR_FIELD,
+                categoryEntity.getCode(), SolrCriteriaValueType.IS);
+        for (FacetEntity facetEntity : facetEntities) {
+            ISTFacetEntityDto facetEntityDto = new ISTFacetEntityDto();
+            facetEntityFiller.fillIn(facetEntity, facetEntityDto);
+            Map<String, Long> valuesCount = new HashMap<>();
+            /** Load values */
+            for (DictionaryItemEntityDto item : facetEntityDto.getAvailableValues()) {
+                SolrCriteriaParameter facetParameter = new SolrCriteriaParameter(facetEntityDto.getSolrDocumentFieldName(), item.getCode(), SolrCriteriaValueType.IS);
+                Long count = searchFacade.count(MercuriusComicsShopConstants.SOLR_SEARCH.PRODUCT_SEARCH_RESOLVER, "", categoryParameter, facetParameter);
+                if (count > 0) {
+                    valuesCount.put(item.getCode(), count);
+                }
+            }
+            if (!valuesCount.keySet().isEmpty()) {
+                facetEntityDto.setValuesCounts(valuesCount);
+                result.add(facetEntityDto);
+            }
+        }
+        return result;
     }
 }

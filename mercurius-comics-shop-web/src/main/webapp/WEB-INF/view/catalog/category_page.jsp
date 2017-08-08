@@ -38,35 +38,7 @@
                         <%-- Price --%>
                         <catalog:catalog_price_facet bottomPrice="${bottomPrice}" topPrice="${topPrice}"/>
                         <%-- Facets --%>
-                        <c:if test="${not empty facets}">
-                            <c:forEach var="facet" items="${facets}">
-                                <div class="panel panel-success">
-                                    <div class="panel-heading"><c:out value="${facet.name}"/></div>
-                                    <c:set var="facetValuesName" scope="page" value="${facetPrefix}${facet.solrDocumentFieldName}"/>
-                                    <div class="panel-body">
-                                        <c:forEach var="dictionaryItem" items="${facet.availableValues}">
-                                            <%-- Check - is value selected --%>
-                                            <c:set var="selectedValue" value="false" scope="page"/>
-                                            <c:forEach var="currentValue" items="${requestScope[facetValuesName]}">
-                                                <c:if test="${currentValue eq dictionaryItem.code}">
-                                                    <c:set var="selectedValue" value="true" scope="page"/>
-                                                </c:if>
-                                            </c:forEach>
-                                            <%-- Show facet --%>
-                                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-<c:out value="${dictionaryItem.code}"/>">
-                                                <input type="checkbox" id="checkbox-<c:out value="${dictionaryItem.code}"/>"
-                                                       <c:if test="${selectedValue}">checked</c:if>
-                                                       name="<c:out value="${facetPrefix}"/><c:out value="${facet.solrDocumentFieldName}"/>"
-                                                       class="mdl-checkbox__input" value="<c:out value="${dictionaryItem.code}"/>">
-                                                <span class="mdl-checkbox__label" style="font-weight: normal; margin-left: 10px;">
-                                                    <c:out value="${dictionaryItem.name}"/>
-                                                </span>
-                                            </label>
-                                        </c:forEach>
-                                    </div>
-                                </div>
-                            </c:forEach>
-                        </c:if>
+                        <catalog:catalog_facets facetPrefix="${facetPrefix}" facets="${facets}"/>
                         <div class="bs-example" data-example-id="btn-variants">
                             <button type="submit" style="width: 100%" type="button" class="btn btn-success">
                                 <spring:message code="comics.shop.catalog.search.button.label"/>
