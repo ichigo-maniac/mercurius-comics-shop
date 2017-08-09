@@ -69,6 +69,78 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">Ultra Street Fighter II: The Final Challengers</column>
+                <column include-in-search="true" property="code">ultra_street_figther_2_final_challengers_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Культовый файтинг родом из 90-х возвращается на Nintendo Switch с кучей новых функций! Вас встретит звездная линейка персонажей, включая бойцов и боссов из оригинальной игры, персонажей из Super Street Fighter II, а также новичков — Злого Рю и Жестокого Кэна! Выбирайте классическую пиксельную графику, чтобы вспомнить о былых деньках, или наслаждайтесь современной графикой! Благодаря Joy-Con вы можете вызвать друга на поединок где угодно и когда угодно. Выполняйте эффектные комбинации ударов и покажите сопернику, кто здесь сильнейший! Помимо поединков один на один, вы можете объединиться с другом, чтобы вместе сразиться с компьютерным противником в новом режиме Buddy Battle.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">1-2-Switch</column>
+                <column include-in-search="true" property="code">1_2_switch_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Это первая видеоигра Nintendo, в которой игроки соревнуются в забавных играх и при этом смотрят в глаза друг другу, а не на экран телевизора. Устраивайте ковбойские дуэли, копируйте танцевальные движения друг друга — игры 1-2-Switch изобретательно используют многочисленные особенности Nintendo Switch и способны оживить любую вечеринку где угодно и когда угодно. При первом запуске в игре 1-2-Switch доступны только 7 различных мини-игр. Для того, чтобы разблокировать все 28 мини-игр, вам необходимо сыграть 6 раз в представленные мини-игры (например, по одному разу в шесть доступных мини-игр, либо по три раза в две доступные мини-игры).
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Disgaea 5</column>
+                <column include-in-search="true" property="code">disgaea_5_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Великий и ужасный повелитель по имени Войд Дарк намерен поработить бесчисленные миры, но один юный демон по имени Килия намерен положить конец его правлению. В игре Disgaea 5 Complete вы поведете за собой армию стойких повстанцев, чтобы покончить с тиранией зла. Безостановочный экшен и увлекательный сюжет Disgaea 5 Complete не дадут вам заскучать ни на секунду. Особенности: Включает все дополнения, вышедшие для игры Disgaea 5: Alliance of Vengeance – 8 бонусных сценариев и 7 новых персонажей; Легендарная тактическая игра приглашает окунуться в захватывающую сюжетную линию и новичков, и ветеранов серии; Более сотни часов игрового контента!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Mario + Rabbids Kingdom Battle Collector's Edition</column>
+                <column include-in-search="true" property="code">mario_rabbids_kingdom_battle_collection_edition_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Mario + Rabbids: Kingdom Battle - это ролевой проект, с участием кроликов Ubisoft и персонажей вселенной Mario, геймплей представляет из себя исследования игрового мира и пошаговые бои. Игрокам доступны четыре крупных мира со множеством отсылок ко вселенной Mario, головоломок и секретных локаций.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Mario + Rabbids Kingdom Battle</column>
+                <column include-in-search="true" property="code">mario_rabbids_kingdom_battle_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Mario + Rabbids: Kingdom Battle - это ролевой проект, с участием кроликов Ubisoft и персонажей вселенной Mario, геймплей представляет из себя исследования игрового мира и пошаговые бои. Игрокам доступны четыре крупных мира со множеством отсылок ко вселенной Mario, головоломок и секретных локаций.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">NBA 2K18</column>
+                <column include-in-search="true" property="code">nba_2k18_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Продолжение легендарной серии баскетбольных симуляторов NBA 2K – признанного мирового лидера в этом жанре видеоигр. NBA 2K18 выведет серию на новый уровень, еще увереннее стирая грань между игрой и реальностью.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Puyo Puyo Tetris</column>
+                <column include-in-search="true" property="code">puyo_puyo_tetris_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Tetris, одна из самых известных видеоигр за всю историю, и Puyo Puyo от SEGA объединят свои лучшие черты в этой динамичной и веселой игре для компании друзей! Вас ждет множество различных режимов: от режимов для одного игрока Adventure и Challenge до жарких схваток для четырех игроков в аркадных режимах. Игроков порадует не только разнообразие Tetris/Puyo, но и внутриигровой магазин, где можно получить новых персонажей, новые фоны и новые графические темы для Puyos и Tetriminos. Вы даже можете попробовать свои силы онлайн в многопользовательских режимах Puzzle League или Free Play для четырех человек. Вы сможете играть вчетвером. Puyo Puyo - это очень популярная в Японии серия головоломок. Пары Пуё падают сверху экрана, и их надо собирать внизу. Но в отличие от классического тетриса здесь не надо составлять линии - достаточно лишь собрать группу Пуё одного цвета, чтобы они исчезли с экрана. При этом пары легко делятся и падают вниз, если попадают одним краем на другую "каплю"
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Just Dance 2018</column>
+                <column include-in-search="true" property="code">just_dance_2018_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Где бы вы ни жили, сколько бы вам ни было лет, вы можете выкрутить громкость на полную мощность и отдаться стихии танца. Вместе с Just Dance 2018 каждый сможет почувствовать себя настоящей звездой танцпола! Этой осенью вас ждет продолжение самой масштабной серии музыкальных видеоигр всех времен* - на данный момент продано более 63 миллионов копий Just Dance**. Новая версия порадует и звезд вечеринок, и начинающих танцоров, и настоящих профессионалов, готовых к новым испытаниям. Зажигать вместе с Just Dance стало просто как никогда! Присоединяйтесь к более 118 миллионам игроков всего мира и покажите все, на что вы способны! Танцуйте до упаду под ритмы 24K Magic (Bruno Mars), Side to Side (Ariana Grande ft. Nicki Minaj), The Way I Are (Dance With Somebody – Bebe Rexha ft. Lil Wayne) и Chantaje (Shakira ft. Maluma). Насладитесь «классикой», например, Daddy Cool в исполнении Groove Century, а если вы любите K-Pop, не пропустите композицию Bubble Pop от Hyuna.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Тачки 3: Навстречу победе</column>
+                <column include-in-search="true" property="code">cars_3_nintendo_switch</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Cars 3: Driven to Win продолжает серию игр Cars, основанных на серии мультфильмов с одноименным названием. В этой части вас ждет 20 настраиваемых автомобилей, включая Молнию Маккуина, Джексона Шторма и Круза Рамиреза, более 20 треков, расположенных в 13 локациях из мультфильма, 6 режимов и различные испытания. Во время заездов вы сможете использовать различные навыки и способности, включая дрифтинг, турбоускорение, двухколесное вождение, вождение задом наперед и другие трюки
+                </column>
+            </value>
+
         </values>
     </insert-update>
 

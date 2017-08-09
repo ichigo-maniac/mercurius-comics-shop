@@ -35,6 +35,43 @@
                 <column property="count">15</column>
             </value>
 
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ultra_street_figther_2_final_challengers_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::1_2_switch_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::disgaea_5_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::mario_rabbids_kingdom_battle_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::mario_rabbids_kingdom_battle_collection_edition_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::nba_2k18_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::puyo_puyo_tetris_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::just_dance_2018_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::cars_3_nintendo_switch</column>
+                <column property="count">15</column>
+            </value>
+
         </values>
     </insert-update>
 
