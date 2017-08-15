@@ -34,6 +34,18 @@
                 <column property="count">150</column>
             </value>
             <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_07</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_sword_art_online_08</column>
+                <column property="count">150</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_kimi_no_na_wa</column>
+                <column property="count">200</column>
+            </value>
+            <value>
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::ranobe_spice_and_wolf_01</column>
                 <column property="count">150</column>
             </value>

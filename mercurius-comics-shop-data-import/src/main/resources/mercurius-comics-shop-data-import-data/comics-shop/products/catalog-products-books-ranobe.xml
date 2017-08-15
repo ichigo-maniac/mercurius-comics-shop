@@ -76,6 +76,31 @@
             </value>
 
             <value>
+                <column property="name">Sword Art Online. Том 07</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_07</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Прошло несколько недель после истории с Дес Ганом. В мире VRMMO следующего поколения Alfheim Online, населённом феями, происходит нечто странное. На 24-м уровне новой зоны «Летающая крепость Айнкрад», к северу от главного города появился загадочный игрок. Он ставит на кон свой оригинальный навык мечника и раз за разом побеждает в дуэлях всех претендентов. Асуна бросает вызов непобедимому мечнику по имени Дзэккэн, одолевшему даже «Чёрного мечника» Кирито, но тоже терпит поражение...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Sword Art Online. Том 08</column>
+                <column include-in-search="true" property="code">ranobe_sword_art_online_08</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    «Убийство в безопасной зоне». На одном из средних уровней SAO умер игрок, причём в безопасной зоне, где нельзя погибнуть. За необычное дело берутся Кирито и Асуна. «Калибр». Наконец-то в мире ALO стал доступен квест, ведущий к легендарному мечу Экскалибру. Кирито тоже горит желанием поучаствовать в гонке за ним, однако чем это обернётся?.. «Первый день». Акихико Каяба только что объявил о начале смертельной игры. Кирито берёт квест, который помнит по бета-тесту, чтобы раздобыть клинок помощнее.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Твоё имя (Роман)</column>
+                <column include-in-search="true" property="code">ranobe_kimi_no_na_wa</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Мицухе, старшекласснице из деревни в горах, снится сон, что она становится парнем из Токио. Таки, старшеклассник из Токио, видит сон, что он стал девушкой, живущей где-то в глубинке. Они разделяют тела и отношения, а их жизни неразрывно переплелись… Знакомство двух людей, никогда не видевших друг друга, приводит в движение шестерёнки судьбы.
+                    Роман «Твоё имя» стал основой одноимённого анимационного фильма «Твоё имя», созданного режиссёром Макото Синкаем.
+                </column>
+            </value>
+
+            <value>
                 <column property="name">Волчица и пряности. Том 01</column>
                 <column include-in-search="true" property="code">ranobe_spice_and_wolf_01</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
@@ -109,7 +134,7 @@
             </value>
 
             <value>
-                <column property="name">Волчьи дети Амэ и Юки</column>
+                <column property="name">Волчьи дети Амэ и Юки (Роман)</column>
                 <column include-in-search="true" property="code">ranobe_wolf_children_ame_yuki</column>
                 <column property="description" value-import-bean="bigStringImportBean">master_catalog::
                     Девятнадцатилетняя Хана влюбилась в парня-волка, и вскоре у них родились два ребёнка-оборотня — Юки и Амэ, которые могли принимать обличие и человека, и волка. Это история о тринадцати годах жизни Ханы и её детей.

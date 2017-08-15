@@ -1068,6 +1068,89 @@
                 </column>
             </value>
 
+            <value>
+                <column property="name">To your eternity. Том 01</column>
+                <column include-in-search="true" property="code">manga_to_your_eternity_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Некто бросил на землю сферу.
+                    Узнавая новое, та принимает живые формы, смерти вопреки.
+                    Мимолётная встреча с мальчиком...
+                    Свет, запахи, звуки, тепло, боль, радость, скорбь... Мир полный ощущений, открывается ей.
+                    Так начинается история про обретение самого себя.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчьи дети Амэ и Юки. Том 01</column>
+                <column include-in-search="true" property="code">manga_wolf_children_ame_yuki_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Студентка Хана встречает последнего оборотня. Их любовь, похожая на сказку, дарит жизнь двум волчьим детям - сестричке Юки и братцу Амэ.
+                    Так начинается трогательная история о матери и её детях.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчьи дети Амэ и Юки. Том 02</column>
+                <column include-in-search="true" property="code">manga_wolf_children_ame_yuki_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Мать двоих детей поселилась в деревне на родине отца. Природа холодна и сурова к Хане, но местные жители помогают ей своим теплом.
+                    Тем временем Амэ и Юки начинают подрастать...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Волчьи дети Амэ и Юки. Том 03</column>
+                <column include-in-search="true" property="code">manga_wolf_children_ame_yuki_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Юки нарушает данное матери обещание, превращаться в волка и ранит Сохэя, нового мальчика в классе. Амэ всё сильнее тянется к лесу. Тем временем на деревню и окружающий лес обрушивается страшная будя...
+                    Трогательный том завершающий путешествие длинною в тринадцать лет.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Девочка из чужеземья. Том 01</column>
+                <column include-in-search="true" property="code">manga_totsuki_ni_no_shojo_01</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Давным-давно мир был разделён на две страны: Чужеземье, где обитали жуткие с виду существа — на всякого, кто их касался, попадало проклятие, - и Родину, где жили люди.
+                    Двое их обитателей никогда бы не встретились, если бы не случай, положивший начало их тайной истории.
+                    Это сказка о тех, кто замер в предзакатном сумраке, навеки разделив утро и вечер...
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Девочка из чужеземья. Том 02</column>
+                <column include-in-search="true" property="code">manga_totsuki_ni_no_shojo_02</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Этого не должно было случиться... Чёрная, холодная рука коснулась щеки Шивы... Значит, на неё пало проклятие, и она превратиться в чужеземца. Маленькая девочка в растерянности а Доктор содрогается от ужаса И что означает слово "мама", которое пробормотал Чужеземец?..
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Невеста чародея. Том 06</column>
+                <column include-in-search="true" property="code">manga_the_magicians_bride_06</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Оба героя изменились с момента первой встречи: Элиас начал открывать для себя мир человеческих чувств, а Тисэ научилась не жить прошлым. Однажды
+                    их дом посещает ланнан-ши с мольбой о помощи. Но что Тисэ может сделать для неё?
+                    Фантастическая история о помолвке двух противоположностей продолжает раскрывать все тонкости отношений между человеком и нечеловеческим существом.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Форма голоса. Том 03</column>
+                <column include-in-search="true" property="code">manga_koe_no_katachi_03</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    «Сёко, не убегай!» Прошло пять лет. Сёя хочет в последний раз встретиться с Сёко. Неожиданно они услышали голоса друг друга. Так и начинается эта история.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Форма голоса. Том 04</column>
+                <column include-in-search="true" property="code">manga_koe_no_katachi_04</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    «Я хочу, чтобы Нисимия полюбила себя». Сёко Нисимия — глухая. Сёя Исида снова начал общаться с ней, и старается вернуть ей потерянное счастье. Сахара, Уэно, Каваи, Масиба, Нагацука... Сёя подарил Сёко новых друзей, но он пытается изменить и свою собственную судьбу...
+                </column>
+            </value>
+
         </values>
     </insert-update>
 
