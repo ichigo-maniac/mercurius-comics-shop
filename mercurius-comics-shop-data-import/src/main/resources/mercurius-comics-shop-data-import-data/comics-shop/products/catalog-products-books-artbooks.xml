@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data-import xmlns="http://mercurius-framework.org/data-import">
+
+    <!-- Products -->
+    <insert-update entity-name="Product">
+
+        <!-- Common column values -->
+        <common-values>
+            <column include-in-search="true" property="catalog" value-import-bean="uniqueCodeImportBean">master_catalog</column>
+            <column property="mainUnit" value-import-bean="catalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="units" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::pieces</column>
+            <column property="mainCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::artbooks</column>
+            <column property="categories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::artbooks</column>
+        </common-values>
+        <!-- Entity values -->
+        <values>
+            <value>
+                <column property="name">Мир игры Metal Gear Solid 5</column>
+                <column include-in-search="true" property="code">artbook_metal_gear_solid_5</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Перед вами уникальная книга, рассказывающая обо всех этапах разработки самой знаменитой игры студии Kojima Productions и включающая сотни никогда не опубликованных иллюстраций и набросков. Станьте свидетелем того, как создавалась последняя часть серии игр, положившим начало целому жанру, окунитесь в удивительный мир, сочетающий в себе драматического видение недалекого прошлого и остросюжетный экшен. Артбук "Мир игры Metal Gear Solid V" станет отличным дополнением к коллекции любого геймера!
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Мир игры DOOM</column>
+                <column include-in-search="true" property="code">artbook_doom</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    "Мир игры DOOM" - уникальная возможность увидеть, как создавался самый известный шутер всех времени и народов. На страницах этого артбука есть ландшафты Марса и темные уголки ужасающих глубин Ада, образы безжалостных демонов и смертоносное фантастическое оружие, а также рассказ о легендарном главном герое-морпехе. Все иллюстрации сопровождаются подробными комментариями разработчиков игры. Если Вы считаете себя поклонником самого захватывающего и кровавого экшена последних лет, то просто обязаны приобрести эту книгу.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Мир игры The Last of us</column>
+                <column include-in-search="true" property="code">artbook_the_last_of_us</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Шикарный артбук по культовой игре "The Last of Us". Плотная мелованная бумага. Твердая обложка. Отличный подарок для всех поклонников этой игры. История создания от "А" до "Я" в картинках, с комментариями самих разработчиков. Вступление от сценаристов.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Мир трилогии Uncharted</column>
+                <column include-in-search="true" property="code">artbook_uncharted_thrilogy</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Прекрасный артбук по культовой серии игр "Uncharted". Плотная мелованная бумага. Твердая обложка. Размеры: 23 x 31 сантиметра. Отличный подарок для всех поклонников этих игр. История создания от А до Я в картинках, с комментариями самих разработчиков, всех трех игр серии. Вступление от арт-директора студии Naughty Dog.
+                </column>
+            </value>
+
+            <value>
+                <column property="name">Мир игры Uncharted 4 : Путь вора</column>
+                <column include-in-search="true" property="code">artbook_uncharted_4</column>
+                <column property="description" value-import-bean="bigStringImportBean">master_catalog::
+                    Красочный артбук, сопровождающий выход игры Uncharted 4 - продолжения культовой трилогии Uncharted. Содержит раскадровки, наброски персонажей, дизайны уровней, комментарии разработчиков.
+                    Твердый переплет, мелованная бумага, увеличенный формат.
+                </column>
+            </value>
+
+        </values>
+
+    </insert-update>
+
+
+</data-import>

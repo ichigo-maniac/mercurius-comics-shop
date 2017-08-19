@@ -131,6 +131,13 @@
                 <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::books</column>
             </value>
 
+            <value>
+                <column property="name">Артбуки</column>
+                <column include-in-search="true" property="code">artbooks</column>
+                <column property="mainSuperCategory" value-import-bean="catalogUniqueCodeImportBean">master_catalog::books</column>
+                <column property="superCategories" value-import-bean="multiCatalogUniqueCodeImportBean">master_catalog::books</column>
+            </value>
+
             <!-- Video games -->
             <value>
                 <column property="name">Playstation 3</column>

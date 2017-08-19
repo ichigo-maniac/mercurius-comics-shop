@@ -34,6 +34,7 @@ public class ComicsShopPackageDataImportService implements PackageDataImportServ
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "dictionaries.xml"));
         /** Products */
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-books-ranobe.xml"));
+        logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-books-artbooks.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-manga.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-videogames-consoles-nintendo.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "products/catalog-products-videogames-ps4.xml"));
@@ -44,6 +45,7 @@ public class ComicsShopPackageDataImportService implements PackageDataImportServ
 
         /** Features */
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "features/catalog-products-books-ranobe-features.xml"));
+        logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "features/catalog-products-books-artbooks-features.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "features/catalog-products-manga-features.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "features/catalog-products-videogames-nintendo-switch-features.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "features/catalog-products-videogames-nintendo-3ds-features.xml"));
@@ -54,6 +56,7 @@ public class ComicsShopPackageDataImportService implements PackageDataImportServ
 
         /** Prices */
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "prices/catalog-products-books-ranobe-prices.xml"));
+        logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "prices/catalog-products-books-artbooks-prices.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "prices/catalog-products-manga-prices.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "prices/catalog-products-videogames-consoles-nintendo-prices.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "prices/catalog-products-videogames-ps4-prices.xml"));
@@ -65,6 +68,7 @@ public class ComicsShopPackageDataImportService implements PackageDataImportServ
         /** Stocks */
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "stocks/warehouses.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "stocks/catalog-products-books-ranobe-stocks.xml"));
+        logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "stocks/catalog-products-books-artbooks-stocks.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "stocks/catalog-products-comics-books-stocks.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "stocks/catalog-products-manga-stocks.xml"));
         logResult.append(dataImportService.importClasspathData(RESOURCE_PATH + "stocks/catalog-products-videogames-consoles-nintendo-stocks.xml"));
