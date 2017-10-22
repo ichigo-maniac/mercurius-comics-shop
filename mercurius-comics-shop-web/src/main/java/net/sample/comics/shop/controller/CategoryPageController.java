@@ -113,8 +113,9 @@ public class CategoryPageController extends AbstractController {
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
         List<FacetEntity> facets = facetService.getFacetsByCategory(categoryEntity);
         /** Products */
+        String sortCode = null;
         PageableResult<ProductEntityDto> products = searchFacade.search(MercuriusComicsShopConstants.SOLR_SEARCH.PRODUCT_SEARCH_RESOLVER,
-                "", createCriteriaParameters(request, model, categoryEntity, bottomPrice, topPrice), page,
+                "", createCriteriaParameters(request, model, categoryEntity, bottomPrice, topPrice), page, sortCode,
                 productEntityConverter,
                 new ProductLoadOptions[]{ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE}, ProductEntity.CATEGORIES);
         /** Categories */
@@ -159,8 +160,9 @@ public class CategoryPageController extends AbstractController {
         List<CategoryEntity> subCategories = categoryService.getSubCategoriesByCategoryUuid(categoryEntity.getUuid());
         List<FacetEntity> facets = facetService.getFacetsByCategory(categoryEntity);
         /** Products */
+        String sortCode = null;
         PageableResult<ProductEntityDto> products = searchFacade.search(MercuriusComicsShopConstants.SOLR_SEARCH.PRODUCT_SEARCH_RESOLVER,
-                "", createCriteriaParameters(request, model, categoryEntity, bottomPrice, topPrice), page,
+                "", createCriteriaParameters(request, model, categoryEntity, bottomPrice, topPrice), page, sortCode,
                 productEntityConverter,
                 new ProductLoadOptions[]{ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE}, ProductEntity.CATEGORIES);
         /** Set attributes */

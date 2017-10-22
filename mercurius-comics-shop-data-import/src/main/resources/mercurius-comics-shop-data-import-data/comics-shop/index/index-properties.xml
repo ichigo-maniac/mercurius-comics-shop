@@ -110,4 +110,18 @@
         </values>
     </insert-update>
 
+    <insert-update entity-name="SolrSort">
+        <common-values>
+            <column include-in-search="true" property="solrSearchResolver" value-import-bean="uniqueCodeImportBean">productSearchResolver</column>
+        </common-values>
+        <values>
+            <value>
+                <column property="name">По названию (по возрастанию)</column>
+                <column include-in-search="true" property="code">product_name_asc</column>
+                <column property="solrField">name</column>
+                <column property="directionType" value-import-bean="enumImportBean">ASC</column>
+            </value>
+        </values>
+    </insert-update>
+
 </data-import>

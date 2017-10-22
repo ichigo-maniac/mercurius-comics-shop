@@ -88,8 +88,9 @@ public class SearchController {
                                  @RequestParam(name = "bottom_price", required = false) Double bottomPrice,
                                  @RequestParam(name = "top_price", required = false) Double topPrice,
                                  Model model, HttpServletRequest request) {
+        String sortCode = null;
         PageableResult<ProductEntityDto> products = searchFacade.search(MercuriusComicsShopConstants.SOLR_SEARCH.PRODUCT_SEARCH_RESOLVER,
-                searchText, createCriteriaParameters(request, model, bottomPrice, topPrice), page,
+                searchText, createCriteriaParameters(request, model, bottomPrice, topPrice), page, sortCode,
                 productEntityConverter,
                 new ProductLoadOptions[]{ProductLoadOptions.DEFAULT_CURRENCY_AND_UNIT_PRICE}, ProductEntity.CATEGORIES);
 
