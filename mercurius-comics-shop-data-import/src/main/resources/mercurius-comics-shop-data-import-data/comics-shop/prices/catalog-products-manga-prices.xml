@@ -410,6 +410,10 @@
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_05</column>
                 <column property="priceValue">300.0</column>
             </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_06</column>
+                <column property="priceValue">300.0</column>
+            </value>
 
             <value>
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_steins_gates_01</column>
@@ -481,6 +485,19 @@
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_blame_01</column>
                 <column property="priceValue">330.0</column>
             </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_blame_02</column>
+                <column property="priceValue">330.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_blame_03</column>
+                <column property="priceValue">330.0</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_ajin_01</column>
+                <column property="priceValue">330.0</column>
+            </value>
+
             <value>
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_chibisan_date_01</column>
                 <column property="priceValue">280.0</column>
