@@ -414,7 +414,14 @@
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_06</column>
                 <column property="count">100</column>
             </value>
-
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_07</column>
+                <column property="count">100</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_noragami_08</column>
+                <column property="count">100</column>
+            </value>
             <value>
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_steins_gates_01</column>
                 <column property="count">100</column>
@@ -524,6 +531,10 @@
             </value>
             <value>
                 <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sakamoto_desu_ga_03</column>
+                <column property="count">100</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_sakamoto_desu_ga_04</column>
                 <column property="count">100</column>
             </value>
             <value>
