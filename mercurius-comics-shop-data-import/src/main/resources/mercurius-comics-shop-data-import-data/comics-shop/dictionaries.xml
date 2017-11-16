@@ -59,6 +59,10 @@
                 <column property="name">Xl Media</column>
                 <column include-in-search="true" property="code">publisher_xl_media</column>
             </value>
+            <value>
+                <column property="name">Азбука</column>
+                <column include-in-search="true" property="code">publisher_azbuka</column>
+            </value>
         </values>
     </insert-update>
 

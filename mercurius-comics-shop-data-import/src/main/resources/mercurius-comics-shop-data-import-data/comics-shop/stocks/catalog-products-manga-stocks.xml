@@ -574,6 +574,43 @@
                 <column property="count">100</column>
             </value>
 
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_01</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_02</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_03</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_04</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_05</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_06</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_07</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_08</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_attack_on_titan_no_regrets</column>
+                <column property="count">70</column>
+            </value>
+
         </values>
 
     </insert-update>
