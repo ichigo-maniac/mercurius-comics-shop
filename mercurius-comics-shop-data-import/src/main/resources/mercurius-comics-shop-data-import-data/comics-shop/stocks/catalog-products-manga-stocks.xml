@@ -611,6 +611,31 @@
                 <column property="count">70</column>
             </value>
 
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_bakuman_01</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_bakuman_02</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_bakuman_03</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_bakuman_04</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_all_you_need_is_kill_01</column>
+                <column property="count">70</column>
+            </value>
+            <value>
+                <column include-in-search="true" property="product" value-import-bean="catalogUniqueCodeImportBean">master_catalog::manga_all_you_need_is_kill_02</column>
+                <column property="count">70</column>
+            </value>
+
         </values>
 
     </insert-update>
