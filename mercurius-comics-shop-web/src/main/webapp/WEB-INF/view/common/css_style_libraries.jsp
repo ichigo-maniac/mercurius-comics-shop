@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="/resources/lib/css/alertify.min.css"/>
 <link rel="stylesheet" href="/resources/lib/css/bootstrap-slider.min.css"/>
 <link rel="stylesheet" href="/resources/app/css/styles.css"/>
+<link rel="stylesheet" href="/resources/app/css/common.css"/>
 <style>
     #view-source {
         position: fixed;

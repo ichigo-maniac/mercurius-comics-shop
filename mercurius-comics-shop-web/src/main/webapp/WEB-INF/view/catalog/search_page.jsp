@@ -29,7 +29,7 @@
                         <%-- Facets --%>
                         <catalog:catalog_facets facetPrefix="${facetPrefix}" facets="${facets}"/>
                         <div class="bs-example" data-example-id="btn-variants">
-                            <button type="submit" style="width: 100%" type="button" class="btn btn-success">
+                            <button type="submit" style="width: 100%" type="button" class="btn btn-primary">
                                 <spring:message code="comics.shop.catalog.search.button.label"/>
                             </button>
                         </div>

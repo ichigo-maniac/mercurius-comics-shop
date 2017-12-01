@@ -1,0 +1,4 @@
+div.pointer_panel:hover {
+    cursor: pointer;
+    background-color: #F7F7F7;
+}
