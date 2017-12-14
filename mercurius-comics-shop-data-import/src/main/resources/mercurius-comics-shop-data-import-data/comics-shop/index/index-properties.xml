@@ -121,6 +121,24 @@
                 <column property="solrField">name</column>
                 <column property="directionType" value-import-bean="enumImportBean">ASC</column>
             </value>
+            <value>
+                <column property="name">По названию (по убыванию)</column>
+                <column include-in-search="true" property="code">product_name_desc</column>
+                <column property="solrField">name</column>
+                <column property="directionType" value-import-bean="enumImportBean">DESC</column>
+            </value>
+            <value>
+                <column property="name">По цене (по возрастанию)</column>
+                <column include-in-search="true" property="code">price_pieces_rub_asc</column>
+                <column property="solrField">price_pieces_rub</column>
+                <column property="directionType" value-import-bean="enumImportBean">ASC</column>
+            </value>
+            <value>
+                <column property="name">По цене (по убыванию)</column>
+                <column include-in-search="true" property="code">price_pieces_rub_desc</column>
+                <column property="solrField">price_pieces_rub</column>
+                <column property="directionType" value-import-bean="enumImportBean">DESC</column>
+            </value>
         </values>
     </insert-update>
 
